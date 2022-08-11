@@ -11,6 +11,7 @@ export const Navbar = () => (
     <Link to="/home">Home</Link>
     <Link to="/about-me">About me</Link>
     <Link to="/projects">Projects</Link>
+    <Link to="/resume">Resume</Link>
     <Link to="/contact">Contact</Link>
   </NavbarWrapper>
 );
