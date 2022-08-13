@@ -1,17 +1,28 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-const NavbarWrapper = styled.div`
+const Wrapper = styled.div`
+  background-color: darkblue;
+  color: white;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
   gap: 10px;
 `;
 
+const Tab = styled.div`
+  padding: 10px;
+`
+
 export const Navbar = () => (
-  <NavbarWrapper>
-    <Link to="/home">Home</Link>
-    <Link to="/about-me">About me</Link>
-    <Link to="/projects">Projects</Link>
-    <Link to="/resume">Resume</Link>
-    <Link to="/contact">Contact</Link>
-  </NavbarWrapper>
+  <Wrapper>
+    <Tab><Link to="/home">Home</Link></Tab>
+    <Tab><Link to="/about-me">About me</Link></Tab>
+    <Tab><Link to="/projects">Projects</Link></Tab>
+    <Tab><Link to="/resume">Resume</Link></Tab>
+    <Tab><Link to="/contact">Contact</Link></Tab>
+  </Wrapper>
 );
