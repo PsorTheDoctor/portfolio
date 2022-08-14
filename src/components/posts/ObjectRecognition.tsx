@@ -10,15 +10,13 @@ const Wrapper = styled.div`
   margin-right: auto;
 `;
 
-const Header = styled.div`
-  font-size: 18px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+const Title = styled.div`
+  font-size: 20px;
+  font-weight: bold;
 `
 
-export const Contact = (props: PropsType) => (
+export const ObjectRecognition = (props: PropsType) => (
   <Wrapper>
-    <Header><p>Contact</p></Header>
-    <p>E-mail: adwol21@student.sdu.dk</p>
+    <Title>Object recognition for the autonomous vehicle</Title>
   </Wrapper>
 );
