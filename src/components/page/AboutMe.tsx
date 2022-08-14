@@ -125,7 +125,7 @@ export const AboutMe = () => (
     So far, I still take a part in some competitions once in a while. In my third year of
     studies I got into the final of KOKOS Students' Construction Contest in the category of Smart
     Robots. A work presented there was my old mechanical human arm project.
-    During the last semester of my bachelor's degree I was studying at SDU in Odense as
+    During the last semester of my bachelor's degree I was studying at University of Southern Denmark in Odense as
     an exchange student. I also was one of the total of four students that got a grant from
     Diamonds' Explorers foundation launched and led by previous rector of BUT – PhD Lech
     Dzienis. In the time of my stay in Denmark I was working at Nordbo Robotics company and I
