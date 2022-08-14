@@ -153,9 +153,9 @@ export const AboutMe = () => (
     </ul>
     <p><b>Favourite movies</b></p>
     <ul>
-      <li><i>The Butterfly Effect, The Island, Forrest Gump, The Curious Case of Benjamin Button</i></li>
+      <li><i>The Butterfly Effect, The Island, The Social Network, Forrest Gump, The Curious Case of Benjamin Button</i></li>
     </ul>
-    <p><b>TV episodes</b></p>
+    <p><b>TV series</b></p>
     <ul>
       <li><i>13 Reasons Why, Black Mirror, Sillicon Valley</i></li>
     </ul>

@@ -20,11 +20,12 @@ button {
   text-transform: uppercase;
   font-size: 13px;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
 button:hover {
   background-color: lightgreen;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .icon {

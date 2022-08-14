@@ -6,6 +6,7 @@ import { Contact } from "./Contact";
 import { Resume } from "./Resume";
 
 import { RoboticManipulation } from "../posts/RoboticManipulation";
+import { Thesis } from "../posts/Thesis";
 import { ObjectRecognition } from "../posts/ObjectRecognition";
 
 export const Page = () => (
@@ -18,6 +19,7 @@ export const Page = () => (
     <Route path="/contact" element={<Contact/>} />
 
     <Route path="/robotic-manipulation" element={<RoboticManipulation />} />
+    <Route path="/thesis" element={<Thesis />} />
     <Route path="/object-recognition" element={<ObjectRecognition />} />
   </Routes>
 );

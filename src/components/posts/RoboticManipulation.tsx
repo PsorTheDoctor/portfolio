@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import icp from "../../videos/icp.mp4";
 
@@ -26,6 +27,8 @@ export const RoboticManipulation = (props: PropsType) => (
   <Wrapper>
     <Title>Solving robotic manipulation problems</Title>
     <p>My bachelor thesis under the supervising of PhD Adam Wolniakowski.</p>
+
+    <button><Link to="/thesis">Full thesis</Link></button>
 
     <p>The purpose of this thesis was to develop a solution that allows for recognition of a
     given object and perform grasping of it by a manipulator. The further development of the
