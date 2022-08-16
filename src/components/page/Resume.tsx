@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Document, Page as PdfPage } from 'react-pdf';
+import { Document, Page } from 'react-pdf';
 import styled from 'styled-components';
 
 type PdfDocumentProps = {
@@ -23,7 +23,7 @@ export const Resume = () => {
   return (
     <Wrapper>
       <Document file="./cv_adam_wolkowycki.pdf" onLoadSuccess={onDocumentLoadSuccess}>
-        <PdfPage pageNumber={pageNumber} />
+        <Page pageNumber={pageNumber} width={1000} />
       </Document>
     </Wrapper>
   );

@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import { Document, Page as PdfPage } from 'react-pdf';
+import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
 import styled from 'styled-components';
 
 type PdfDocumentProps = {
-  numPages: number;
+  numPages: any;
 };
 
 const Wrapper = styled.div`
@@ -13,18 +13,22 @@ const Wrapper = styled.div`
 `
 
 export const Thesis = () => {
-  const [numPages, setNumPages] = useState(1);
+  const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
 
-  function onDocumentLoadSuccess({ numPages }: PdfDocumentProps ) {
+  function onDocumentLoadSuccess({ numPages }: PdfDocumentProps) {
     setNumPages(numPages);
+    setPageNumber(1);
   }
 
   return (
     <Wrapper>
       <Document file="./thesis.pdf" onLoadSuccess={onDocumentLoadSuccess}>
-        <PdfPage pageNumber={pageNumber} />
+        {Array.from(
+          new Array(numPages), (el, index) => (
+            <Page key={`page_${index + 1}`} pageNumber={index + 1} width={1000} />
+        ))}
       </Document>
     </Wrapper>
   );
-}
+};

@@ -88,7 +88,7 @@ export const AboutMe = () => (
     making a large project I had been thinking about for many years – a mechanical human arm.
     The arm had seven pneumatic and two electric functions. I have submitted a model to the EL-ROBO-MECH contest organized by Bialystok University of Technology, where it took third
     place winning money prize and the university priority admission card.
-    During a high scool my mentors were Sławomir Zieniewski and Ewa Trzeszczkowska.
+    During a high scool my mentors were teachers Sławomir Zieniewski and Ewa Trzeszczkowska.
     A scholarship wasn't only money I've got for education. I also managed to get a subsidy
     from European Union for 7-month long Java programming course. During this I also started to
     read about my completely new area of interest – the artificial intelligence. On a holidays
@@ -106,7 +106,7 @@ export const AboutMe = () => (
     Technology in 2018. A year after that I launched the Artificial Intelligence Research Club as a
     section of Robotics Students' Club at the Mechanical Faculty of BUT. We were group of
     students that were learning modern technologies such as: neural networks, machine learning
-    and computer vision by making more than dozen of projects on various topics. My favorite one used special
+    and computer vision by making more than a dozen of projects on various topics. My favorite one used special
     kind of neural networks – recurrent network with LSTM cells in order to generate text in the
     style of Shakespeare based on his dramas. Another example was neural net with convolutional
     layers that could draw an image in a style of any artist, eg. Picasso or Monet. I've also shown
