@@ -12,6 +12,10 @@ const Wrapper = styled.div`
   background-color: gray;
 `
 
+const PageWrapper = styled.div`
+  margin-bottom: 10px;
+`
+
 export const Thesis = () => {
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
@@ -26,7 +30,9 @@ export const Thesis = () => {
       <Document file="./thesis.pdf" onLoadSuccess={onDocumentLoadSuccess}>
         {Array.from(
           new Array(numPages), (el, index) => (
-            <Page key={`page_${index + 1}`} pageNumber={index + 1} width={1000} />
+            <PageWrapper>
+              <Page key={`page_${index + 1}`} pageNumber={index + 1} width={1000} />
+            </PageWrapper>
         ))}
       </Document>
     </Wrapper>
