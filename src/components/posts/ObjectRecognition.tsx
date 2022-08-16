@@ -8,6 +8,7 @@ const Wrapper = styled.div`
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 50px;
 `;
 
 const Title = styled.div`
@@ -24,7 +25,9 @@ const Image = styled.div`
 export const ObjectRecognition = (props: PropsType) => (
   <Wrapper>
     <Title>Object recognition for the autonomous vehicle</Title>
+    <p>A project with Polish company STEKOP.</p>
 
+    <p>Work in progress...</p>
     <Image>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/DgbUik2994E" title="YouTube video player" frameBorder="0" 
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>

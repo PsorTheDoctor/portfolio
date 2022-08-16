@@ -10,19 +10,20 @@ const Wrapper = styled.div`
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
+  text-align: justify;
 `;
 
 const Header = styled.div`
   font-size: 18px;
   padding-top: 10px;
   padding-bottom: 10px;
-`
+`;
 
 const Image = styled.div`
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
-`
+`;
 
 export const AboutMe = () => (
   <Wrapper>
@@ -87,6 +88,7 @@ export const AboutMe = () => (
     making a large project I had been thinking about for many years – a mechanical human arm.
     The arm had seven pneumatic and two electric functions. I have submitted a model to the EL-ROBO-MECH contest organized by Bialystok University of Technology, where it took third
     place winning money prize and the university priority admission card.
+    During a high scool my mentors were Sławomir Zieniewski and Ewa Trzeszczkowska.
     A scholarship wasn't only money I've got for education. I also managed to get a subsidy
     from European Union for 7-month long Java programming course. During this I also started to
     read about my completely new area of interest – the artificial intelligence. On a holidays
@@ -115,11 +117,11 @@ export const AboutMe = () => (
       <p>Regional E(x)plory competition, Warsaw 2019</p>
     </Image>
 
-    <p>During summer holidays I also reminded myself basics of Java and Android
+    {/* During summer holidays I also reminded myself basics of Java and Android
     programming. This time I made an app that uses machine learning systems to predict future
     cryptocurrency prices. The app itself has been submitted to Microsoft Imagine Cup
-    competition before the end of 2020.
-    Programming aside, I did an internship at Standard Motor Products factory that
+    competition before the end of 2020. */}
+    <p>Programming aside, I did an internship at Standard Motor Products factory that
     produces plastic components especially the ignition coils. My role was to clean and unassemble
     the molding folds, operate an EDM machine and make models of parts in a CAD software.
     So far, I still take a part in some competitions once in a while. In my third year of
@@ -130,10 +132,10 @@ export const AboutMe = () => (
     Diamonds' Explorers foundation launched and led by previous rector of BUT – PhD Lech
     Dzienis. In the time of my stay in Denmark I was working at Nordbo Robotics company and I
     wrote a thesis focused on robotic manipulation using computer vision system – a quintessential
-    problem in modern robotics.</p>
+    problem in modern robotics. My supervisor was PhD Adam Wolniakowski.</p>
 
     <p><b>Plans for future</b></p>
-    <p>In the near future, I am going to still develop further in the fields of my interests:
+    <p>In the near future I am going to still develop further in the fields of my interests:
     robotics, artificial intelligence, but also cognitive science and psychology. Before the end of my
     studies I want to publish articles about robotic manipulation and practical
     usage of AI systems.</p>

@@ -10,7 +10,7 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   background-color: gray;
-`
+`;
 
 export const Resume = () => {
   const [numPages, setNumPages] = useState(1);

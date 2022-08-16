@@ -14,7 +14,7 @@ const Header = styled.div`
   font-size: 18px;
   padding-top: 10px;
   padding-bottom: 10px;
-`
+`;
 
 export const Contact = (props: PropsType) => (
   <Wrapper>
