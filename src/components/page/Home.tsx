@@ -71,6 +71,26 @@ const Sponsor = styled.div`
   text-align: center;
 `;
 
+const Robot = styled(RobotIcon)`
+  transform: scale(1.5);
+  margin: 15px;
+`;
+
+const Terminal = styled(TerminalIcon)`
+  transform: scale(1.5);
+  margin: 15px;
+`;
+
+const Computer = styled(ComputerIcon)`
+  transform: scale(1.5);
+  margin: 15px;
+`;
+
+const Psychology = styled(PsychologyIcon)`
+  transform: scale(1.5);
+  margin: 15px;
+`;
+
 export const Home = (props: PropsType) => (
   <Wrapper>
     <Intro>
@@ -88,22 +108,22 @@ export const Home = (props: PropsType) => (
     <Header><p>Fields of interest</p></Header>
     <Hobbies>
       <Hobby>
-        <RobotIcon className="icon" />
+        <Robot />
         <p><h5>Robotics</h5></p>
         <p>Manipulators, autonomous <br/>mobile robots, controllers</p>
       </Hobby>
       <Hobby>
-        <TerminalIcon className="icon" />
+        <Terminal />
         <p><h5>Artificial Intelligence</h5></p>
         <p>Neural networks, unsupervised <br/>and reinforcement learning</p>
       </Hobby>
       <Hobby>
-        <ComputerIcon className="icon" />
+        <Computer />
         <p><h5>Computer Vision</h5></p>
         <p>Image processing, <br/>object recognition</p>
       </Hobby>
       <Hobby>
-        <PsychologyIcon className="icon" />
+        <Psychology />
         <p><h5>Psychology</h5></p>
         <p>Cognitive science, neurobiology, theory of mind</p>
       </Hobby>

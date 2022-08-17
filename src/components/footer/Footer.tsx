@@ -24,12 +24,12 @@ const Link = styled.a`
   };
 `
 
-const LiIcon = styled(LinkedInIcon)`
+const LinkedIn = styled(LinkedInIcon)`
   transform: scale(1.5);
   margin: 15px;
 `
 
-const GhIcon = styled(GitHubIcon)`
+const GitHub = styled(GitHubIcon)`
   transform: scale(1.5);
   margin: 15px;
 `
@@ -38,10 +38,10 @@ export const Footer = () => (
   <Wrapper>
     <SocialMedia>
       <Link href="https://www.linkedin.com/in/adam-wolkowycki-0a0570171" target="blank">
-        <LiIcon />
+        <LinkedIn />
       </Link>
       <Link href="https://github.com/PsorTheDoctor" target="blank">
-        <GhIcon />
+        <GitHub />
       </Link>
     </SocialMedia>
     Adam Wolkowycki ©2022
