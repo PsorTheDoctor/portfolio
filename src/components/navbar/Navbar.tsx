@@ -13,9 +13,10 @@ const Wrapper = styled.div`
   gap: 10px;
 `;
 
-const Tab = styled.div`
+const Tab = styled.a`
   padding: 10px;
-`
+
+`;
 
 export const Navbar = () => (
   <Wrapper>

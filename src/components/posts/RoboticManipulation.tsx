@@ -27,12 +27,24 @@ const Image = styled.div`
   padding-bottom: 30px;
 `
 
+const Button = styled.button`
+  background-color: blue;
+  height: 30px;
+  width: 150px;
+  border: 0;
+  border-radius: 15px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 10px;
+`
+
 export const RoboticManipulation = (props: PropsType) => (
   <Wrapper>
     <Title>Solving robotic manipulation problems</Title>
     <p>My bachelor thesis under the supervising of PhD Adam Wolniakowski.</p>
     
-    <button><Link to="/thesis">Thesis (in Polish)</Link></button>
+    <Button><Link to="/thesis">Thesis (in Polish)</Link></Button>
 
     <Image><img src={ur} width="600px" alt="UR5 Robot" /></Image>
     

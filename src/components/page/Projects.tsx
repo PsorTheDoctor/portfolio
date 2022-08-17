@@ -38,6 +38,18 @@ const Title = styled.div`
   margin-top: 10px;
 `;
 
+const Button = styled.button`
+  background-color: blue;
+  height: 30px;
+  width: 150px;
+  border: 0;
+  border-radius: 15px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 10px;
+`
+
 export const Projects = (props: PropsType) => (
   <div>
     <Header><p>Projects</p></Header>
@@ -49,7 +61,7 @@ export const Projects = (props: PropsType) => (
         </video>
         <Title>Object recognition for the autonomous vehicle</Title>
         <p>A project with Polish company STEKOP.</p>
-        <button><Link to="/object-recognition">Read more</Link></button>
+        <Button><Link to="/object-recognition">Read more</Link></Button>
       </Post>
 
       <Post>
@@ -59,7 +71,7 @@ export const Projects = (props: PropsType) => (
         </video>
         <Title>Solving robotic manipulation problems</Title>
         <p>My bachelor thesis under the supervising of PhD Adam Wolniakowski.</p>
-        <button><Link to="/robotic-manipulation">Read more</Link></button>
+        <Button><Link to="/robotic-manipulation">Read more</Link></Button>
       </Post>
     </Wrapper>
   </div>

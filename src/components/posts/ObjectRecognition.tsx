@@ -29,7 +29,7 @@ export const ObjectRecognition = (props: PropsType) => (
     <Title>Object recognition for the autonomous vehicle</Title>
     <p>A project with Polish company STEKOP.</p>
 
-    <p>The task was to create a real-time environment recognition system including object recognition
+    <p>The task was to create a real-time environment recognition system including object detection
     and distance estimation methods. Solved by using convolutional neural networks.
     </p>
     <Image>

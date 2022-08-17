@@ -16,7 +16,7 @@ export const Page = () => (
     <Route path="/about-me" element={<AboutMe />} />
     <Route path="/projects" element={<Projects/>} />
     <Route path="/resume" element={<Resume />} />
-    <Route path="/contact" element={<Contact/>} />
+    <Route path="/contact" element={<Contact />} />
 
     <Route path="/robotic-manipulation" element={<RoboticManipulation />} />
     <Route path="/thesis" element={<Thesis />} />
