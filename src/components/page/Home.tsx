@@ -4,7 +4,7 @@ import Adam from "../../images/greenscreen.jpg";
 
 import RobotIcon from "@mui/icons-material/PrecisionManufacturing";
 import ComputerIcon from '@mui/icons-material/Computer';
-import CameraIcon from '@mui/icons-material/Camera';
+import TerminalIcon from '@mui/icons-material/Terminal';
 import PsychologyIcon from '@mui/icons-material/Psychology';
 
 import DiamondExplorers from "../../images/odkrywcy_diamentow.png";
@@ -93,12 +93,12 @@ export const Home = (props: PropsType) => (
         <p>Manipulators, autonomous <br/>mobile robots, controllers</p>
       </Hobby>
       <Hobby>
-        <ComputerIcon className="icon" />
+        <TerminalIcon className="icon" />
         <p><h5>Artificial Intelligence</h5></p>
         <p>Neural networks, unsupervised <br/>and reinforcement learning</p>
       </Hobby>
       <Hobby>
-        <CameraIcon className="icon" />
+        <ComputerIcon className="icon" />
         <p><h5>Computer Vision</h5></p>
         <p>Image processing, <br/>object recognition</p>
       </Hobby>

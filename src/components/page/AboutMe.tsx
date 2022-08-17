@@ -117,10 +117,6 @@ export const AboutMe = () => (
       <p>Regional E(x)plory competition, Warsaw 2019</p>
     </Image>
 
-    {/* During summer holidays I also reminded myself basics of Java and Android
-    programming. This time I made an app that uses machine learning systems to predict future
-    cryptocurrency prices. The app itself has been submitted to Microsoft Imagine Cup
-    competition before the end of 2020. */}
     <p>Programming aside, I did an internship at Standard Motor Products factory that
     produces plastic components especially the ignition coils. My role was to clean and unassemble
     the molding folds, operate an EDM machine and make models of parts in a CAD software.
