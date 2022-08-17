@@ -44,7 +44,8 @@ export const RoboticManipulation = (props: PropsType) => (
     <p>Speaking of the origin, this thesis has been written mostly during my stay in Denmark
       where I spent my last semester of bachelor. It's focused on robotic manipulation which is a key problem
       in modern robotics. The idea came at the beginning of my studies when I joined KNR Robotic Science Club 
-      and wanted to work with robot arms that use information from camera in order to achieve dexterous manipulation.
+      at the Mechanical Faculty of Bialystok University of Technology.
+      I wanted to work with robot arms that use information from camera in order to achieve dexterous manipulation.
       Then I had a chance to meet PhD Adam Wolniakowski who was introduced to me as a person having knowledge
       about this topic and was helpful in solving robotic control issues. So, he finally became my supervisor.</p>
 
