@@ -12,6 +12,7 @@ const Wrapper = styled.div`
   margin-left: auto;
   margin-right: auto;
   text-align: justify;
+  margin-top: 10px;
   margin-bottom: 50px;
 `;
 

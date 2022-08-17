@@ -35,6 +35,7 @@ const Post = styled.div`
 const Title = styled.div`
   font-size: 20px;
   font-weight: bold;
+  margin-top: 10px;
 `;
 
 export const Projects = (props: PropsType) => (
