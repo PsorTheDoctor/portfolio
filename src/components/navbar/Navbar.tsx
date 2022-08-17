@@ -10,20 +10,24 @@ const Wrapper = styled.div`
   text-transform: uppercase;
   font-size: 13px;
   font-weight: bold;
-  gap: 10px;
 `;
 
-const Tab = styled.a`
+const Tab = styled(Link)`
+  color: white;
+  text-decoration: none;
   padding: 10px;
 
+  &:hover, &:focus, &:active {
+    color: lightgreen;
+  };
 `;
 
 export const Navbar = () => (
   <Wrapper>
-    <Tab><Link to="/home">Home</Link></Tab>
-    <Tab><Link to="/about-me">About me</Link></Tab>
-    <Tab><Link to="/projects">Projects</Link></Tab>
-    <Tab><Link to="/resume">Resume</Link></Tab>
-    <Tab><Link to="/contact">Contact</Link></Tab>
+    <Tab to="/home">Home</Tab>
+    <Tab to="/about-me">About me</Tab>
+    <Tab to="/projects">Projects</Tab>
+    <Tab to="/resume">Resume</Tab>
+    <Tab to="/contact">Contact</Tab>
   </Wrapper>
 );

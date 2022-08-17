@@ -37,6 +37,18 @@ const Button = styled.button`
   font-size: 13px;
   font-weight: bold;
   margin-bottom: 10px;
+  &:hover {
+    background-color: lightgreen;
+    transition: 0.3s;
+  }
+`
+
+const Thesis = styled(Link)`
+  color: white;
+  text-decoration: none;
+  &:hover {
+    color: white;
+  };
 `
 
 export const RoboticManipulation = (props: PropsType) => (
@@ -44,7 +56,7 @@ export const RoboticManipulation = (props: PropsType) => (
     <Title>Solving robotic manipulation problems</Title>
     <p>My bachelor thesis under the supervising of PhD Adam Wolniakowski.</p>
     
-    <Button><Link to="/thesis">Thesis (in Polish)</Link></Button>
+    <Button><Thesis to="/thesis">Thesis (in Polish)</Thesis></Button>
 
     <Image><img src={ur} width="600px" alt="UR5 Robot" /></Image>
     
