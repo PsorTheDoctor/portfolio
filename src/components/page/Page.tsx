@@ -8,6 +8,7 @@ import { Resume } from "./Resume";
 import { RoboticManipulation } from "../posts/RoboticManipulation";
 import { Thesis } from "../posts/Thesis";
 import { ObjectRecognition } from "../posts/ObjectRecognition";
+import { ImageGeneration } from "../posts/ImageGeneration";
 
 export const Page = () => (
   <Routes>
@@ -21,5 +22,6 @@ export const Page = () => (
     <Route path="/robotic-manipulation" element={<RoboticManipulation />} />
     <Route path="/thesis" element={<Thesis />} />
     <Route path="/object-recognition" element={<ObjectRecognition />} />
+    <Route path="/image-generation" element={<ImageGeneration />} />
   </Routes>
 );

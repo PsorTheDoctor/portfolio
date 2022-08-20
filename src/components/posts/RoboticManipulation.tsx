@@ -19,6 +19,7 @@ const Wrapper = styled.div`
 const Title = styled.div`
   font-size: 32px;
   font-weight: bold;
+  text-align: left;
 `
 
 const Image = styled.div`

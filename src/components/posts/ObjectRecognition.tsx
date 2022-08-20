@@ -18,6 +18,7 @@ const Wrapper = styled.div`
 const Title = styled.div`
   font-size: 32px;
   font-weight: bold;
+  text-align: left;
 `
 
 const Image = styled.div`
@@ -67,7 +68,7 @@ export const ObjectRecognition = (props: PropsType) => (
     about it. So, it's not needed to say I accepted the offer and sent them a resume with not much wondering.</p>
 
     <Image>
-      <img src={Rover} height="600px" alt="Military truck" />
+      <img src={Rover} height="600px" alt="Test vehicle" />
       <p>The trolley-sized vehicle for testing the software.</p>
     </Image>
 

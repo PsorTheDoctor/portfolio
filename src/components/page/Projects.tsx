@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import Kangaroo from "../../images/kangaroo.jpg";
 import ThumbYolo from "../../videos/thumb_yolo.mp4";
 import ThumbUR5 from "../../videos/thumb_ur5.mp4";
 
@@ -30,6 +31,10 @@ const Post = styled.div`
   width: 480px;
   float: left;
   padding-bottom: 20px;
+`;
+
+const Image = styled.div`
+  text-align: center;
 `;
 
 const Title = styled.div`
@@ -67,6 +72,15 @@ export const Projects = (props: PropsType) => (
     <Header><p>Projects</p></Header>
     <Wrapper>
       <Post>
+        <Image>
+          <img src={Kangaroo} width={393} height={270} alt="Kangaroo weraing an orange hoodie and blue sunglasses" />
+        </Image>
+        <Title>Testing image generation tools</Title>
+        <p>Review of DALL-E text-to-image generator OpenAI kindly shared with me.</p>
+        <Button><ReadMore to="/image-generation">Read more</ReadMore></Button>
+      </Post>
+
+      <Post>
         <video width="480px" loop autoPlay muted>
           <source src={ThumbYolo} type="video/mp4" />
           Your browser does not support the video tag.
@@ -75,7 +89,8 @@ export const Projects = (props: PropsType) => (
         <p>A project with Polish company STEKOP.</p>
         <Button><ReadMore to="/object-recognition">Read more</ReadMore></Button>
       </Post>
-
+    </Wrapper>
+    <Wrapper>
       <Post>
         <video width="480px" loop autoPlay muted>
           <source src={ThumbUR5} type="video/mp4" />

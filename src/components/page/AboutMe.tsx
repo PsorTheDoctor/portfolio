@@ -49,7 +49,7 @@ export const AboutMe = () => (
     <p><b>High School</b></p>
     <p>In 2015-2018 I attended the High School, where I studied at a class with extended math
     and physics. Then, at the age of sixteen I designed my first manipulator. It was formed as a lazy
-    vacation project among some others. It has four electric functions controlled remotely via IR:
+    vacation project among some others. It had four electric functions controlled remotely via IR:
     base rotation, lifting, gripper rotation and grasp. It was also my first model that I've presented
     out of home.</p>
 
@@ -140,7 +140,7 @@ export const AboutMe = () => (
     <ul>
       <li><i>Elon Musk</i> - Ashlee Vance</li>
       <li><i>Innovators</i> - Walter Isaacson</li>
-      <li><i>Losing My Virginity</i> - Richard Branson</li>
+      <li><i>Factfullness</i> - Hans Rosling</li>
       <li><i>The Accidental Billionaires</i> - Ben Melzrich</li>
       <li><i>Permanent Record</i> - Edward Snowden</li>
       <li><i>Outliers</i> - Malcolm Gladwell</li>
