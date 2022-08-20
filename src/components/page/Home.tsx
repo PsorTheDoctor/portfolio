@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Projects } from "./Projects";
-import Adam from "../../images/greenscreen.jpg";
+import Adam from "../../images/bluescreen.jpg";
 
 import RobotIcon from "@mui/icons-material/PrecisionManufacturing";
 import ComputerIcon from '@mui/icons-material/Computer';
@@ -22,13 +22,20 @@ const Wrapper = styled.div`
 `;
 
 const Intro = styled.div`
-  background-color: #ffe76d;
+  background-color: #0020c2;
+  background-image: url(${Adam});
+  background-repeat: no-repeat;
+  background-size: 400px;
+  background-position: right bottom;
+  min-height: 530px;
+  color: white;
   display: flex;
   flex-direction: row;
   margin-bottom: 50px;
 `;
 
 const About = styled.div`
+  width: 600px;
   padding-left: 30px;
   padding-top: 90px;
 `;
@@ -102,7 +109,6 @@ export const Home = (props: PropsType) => (
           <p>I received my bachelor degree at Bialystok University of Technology in Poland where I was founder and leader of AI science club and scholar of Diamonds' Explorers foundation.</p>
         </Serif>
       </About>
-      <img src={Adam} width="400px" alt="A photo of me" />
     </Intro>
 
     <Header><p>Fields of interest</p></Header>

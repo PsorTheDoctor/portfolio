@@ -14,7 +14,9 @@ const Wrapper = styled.div`
 `;
 
 const Header = styled.div`
-  font-size: 18px;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: left;
   padding-top: 10px;
   padding-bottom: 10px;
 `;
@@ -23,6 +25,14 @@ const Image = styled.div`
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
+`;
+
+const Img = styled.img`
+  max-width: 100%;
+`;
+
+const Video = styled.video`
+  max-width: 100%;
 `;
 
 export const AboutMe = () => (
@@ -54,10 +64,10 @@ export const AboutMe = () => (
     out of home.</p>
 
     <Image>
-      <video width="480px" loop autoPlay muted>
+      <Video width="480px" loop autoPlay muted>
         <source src={Manipulator} type="video/mp4" />
         Your browser does not support the video tag.
-      </video>
+      </Video>
       <p>My first manipulator</p>
     </Image>
 
@@ -74,7 +84,7 @@ export const AboutMe = () => (
     website about physics, but it has been never published.</p>
 
     <Image>
-      <img src={Debutant} width="480px" alt="EL-ROBO-MECH, Warsaw 2018" />
+      <Img src={Debutant} width="480px" alt="EL-ROBO-MECH, Warsaw 2018" />
       <p>Destination Imagination Olympics of Creativity, Wrocław 2016</p>
     </Image>
 
@@ -97,7 +107,7 @@ export const AboutMe = () => (
     that are hard to algorithmize, e.g. object recognition.</p>
 
     <Image>
-      <img src={ElRoboMech} width="600px" alt="EL-ROBO-MECH, Warsaw 2018" />
+      <Img src={ElRoboMech} width="600px" alt="EL-ROBO-MECH, Warsaw 2018" />
       <p>EL-ROBO-MECH award ceremony, Białystok 2018</p>
     </Image>
 
@@ -113,7 +123,7 @@ export const AboutMe = () => (
     some of them at my second Regional E(x)plory Competition.</p>
     
     <Image>
-      <img src={Explory} width="600px" alt="Regional E(x)plory Competition, Warsaw 2019" />
+      <Img src={Explory} width="600px" alt="Regional E(x)plory Competition, Warsaw 2019" />
       <p>Regional E(x)plory competition, Warsaw 2019</p>
     </Image>
 

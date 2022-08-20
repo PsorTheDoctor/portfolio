@@ -27,6 +27,14 @@ const Image = styled.div`
   padding-bottom: 10px;
 `
 
+const Img = styled.img`
+  max-width: 100%;
+`;
+
+const Iframe = styled.iframe`
+  max-width: 100%;
+`;
+
 const Button = styled.button`
   background-color: blue;
   height: 30px;
@@ -68,7 +76,7 @@ export const ObjectRecognition = (props: PropsType) => (
     about it. So, it's not needed to say I accepted the offer and sent them a resume with not much wondering.</p>
 
     <Image>
-      <img src={Rover} height="600px" alt="Test vehicle" />
+      <Img src={Rover} height="600px" alt="Test vehicle" />
       <p>The trolley-sized vehicle for testing the software.</p>
     </Image>
 
@@ -79,8 +87,8 @@ export const ObjectRecognition = (props: PropsType) => (
     belonging to eighty classes, such as: person, car, truck, bike, stop sign etc.</p>
 
     <Image>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/DgbUik2994E" title="YouTube video player" frameBorder="0" 
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+      <Iframe width="560" height="315" src="https://www.youtube.com/embed/DgbUik2994E" title="YouTube video player" frameBorder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></Iframe>
     </Image>
 
     <p>It was really satisfying to see how accurate some predictions were. 
@@ -92,7 +100,7 @@ export const ObjectRecognition = (props: PropsType) => (
     Kalman filter.</p>
 
     <Image>
-      <img src={Truck} width="600px" alt="Military truck" />
+      <Img src={Truck} width="600px" alt="Military truck" />
       <p>The military truck on which final solution will be implemented.</p>
     </Image>    
   </Wrapper>

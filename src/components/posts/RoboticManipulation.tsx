@@ -28,6 +28,18 @@ const Image = styled.div`
   padding-bottom: 30px;
 `
 
+const Img = styled.img`
+  max-width: 100%;
+`;
+
+const Video = styled.video`
+  max-width: 100%;
+`;
+
+const Iframe = styled.iframe`
+  max-width: 100%;
+`;
+
 const Button = styled.button`
   background-color: blue;
   height: 30px;
@@ -59,7 +71,7 @@ export const RoboticManipulation = (props: PropsType) => (
     
     <Button><Thesis to="/thesis">Thesis (in Polish)</Thesis></Button>
 
-    <Image><img src={ur} width="600px" alt="UR5 Robot" /></Image>
+    <Image><Img src={ur} width="600px" alt="UR5 Robot" /></Image>
     
     <p>The purpose of this thesis was to develop a solution that allows for recognition of a
     given object and perform grasping of it by a manipulator. The further development of the
@@ -102,10 +114,10 @@ export const RoboticManipulation = (props: PropsType) => (
     like at the following animation.</p>
 
     <Image>
-      <video width="400px" controls muted>
+      <Video width="400px" controls muted>
         <source src={icp} type="video/mp4" />
         Your browser does not support the video tag.
-      </video>
+      </Video>
     </Image>
 
     <p>Because the tasks I mentioned are often performed by a particular type of robots, in
@@ -117,8 +129,8 @@ export const RoboticManipulation = (props: PropsType) => (
     solving inverse kinematics task and clenched the gripper fingers.</p>
 
     <Image>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/hV26NNi602E" title="YouTube video player" frameBorder="0" 
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+      <Iframe width="560" height="315" src="https://www.youtube.com/embed/hV26NNi602E" title="YouTube video player" frameBorder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></Iframe>
     </Image>
 
     <p>All in all, the work is not self-sufficient system that would fulfill the industarial requirements in its current
