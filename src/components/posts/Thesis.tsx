@@ -10,11 +10,11 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   background-color: gray;
-`
+`;
 
 const PageWrapper = styled.div`
   margin-bottom: 10px;
-`
+`;
 
 export const Thesis = () => {
   const [numPages, setNumPages] = useState(null);

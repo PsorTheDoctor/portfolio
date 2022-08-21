@@ -21,18 +21,18 @@ const Link = styled.a`
   text-decoration: none;
   &:hover {
     color: lightgreen;
-  };
-`
+  }
+`;
 
 const LinkedIn = styled(LinkedInIcon)`
   transform: scale(1.5);
   margin: 15px;
-`
+`;
 
 const GitHub = styled(GitHubIcon)`
   transform: scale(1.5);
   margin: 15px;
-`
+`;
 
 export const Footer = () => (
   <Wrapper>

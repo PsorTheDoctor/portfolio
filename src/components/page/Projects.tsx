@@ -7,7 +7,12 @@ import ThumbUR5 from "../../videos/thumb_ur5.mp4";
 type PropsType = {};
 
 const Wrapper = styled.div`
-  display: flex;
+  @media (max-width: 1000px) {
+    display: block;
+  }
+  @media (min-width: 1000px) {
+    display: flex;
+  } 
   flex-direction: row;
   max-width: 1000px;
   margin-left: auto;
@@ -17,7 +22,7 @@ const Wrapper = styled.div`
 `;
 
 const Header = styled.div`
-  display: flex;
+  text-align: center;
   justify-content: center;
   text-transform: uppercase;
   font-size: 13px;
@@ -26,15 +31,17 @@ const Header = styled.div`
 `;
 
 const Post = styled.div`
-  display: flex;
-  flex-direction: column;
   width: 480px;
-  float: left;
+  margin-left: auto;
+  margin-right: auto;
   padding-bottom: 20px;
 `;
 
-const Image = styled.div`
+const Img = styled.img`
   text-align: center;
+  /* &:hover {
+    opacity: 0.9;
+  } */
 `;
 
 const Title = styled.div`
@@ -72,19 +79,21 @@ export const Projects = (props: PropsType) => (
     <Header><p>Projects</p></Header>
     <Wrapper>
       <Post>
-        <Image>
-          <img src={Kangaroo} width={393} height={270} alt="Kangaroo weraing an orange hoodie and blue sunglasses" />
-        </Image>
+        <Link to="/image-generation">
+          <Img src={Kangaroo} width={393} height={270} alt="Kangaroo weraing an orange hoodie and blue sunglasses" />
+        </Link>
         <Title>Testing image generation tools</Title>
-        <p>Review of DALL-E text-to-image generator OpenAI kindly shared with me.</p>
+        <p>Overview of DALL-E text-to-image generator OpenAI kindly shared with me.</p>
         <Button><ReadMore to="/image-generation">Read more</ReadMore></Button>
       </Post>
 
       <Post>
-        <video width="480px" loop autoPlay muted>
-          <source src={ThumbYolo} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        <Link to="/object-recognition">
+          <video width="480px" loop autoPlay muted>
+            <source src={ThumbYolo} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </Link>
         <Title>Object recognition for the autonomous vehicle</Title>
         <p>A project with Polish company STEKOP.</p>
         <Button><ReadMore to="/object-recognition">Read more</ReadMore></Button>
@@ -92,10 +101,12 @@ export const Projects = (props: PropsType) => (
     </Wrapper>
     <Wrapper>
       <Post>
-        <video width="480px" loop autoPlay muted>
-          <source src={ThumbUR5} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        <Link to="/robotic-manipulation">
+          <video width="480px" loop autoPlay muted>
+            <source src={ThumbUR5} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </Link>
         <Title>Solving robotic manipulation problems</Title>
         <p>My bachelor thesis under the supervising of PhD Adam Wolniakowski.</p>
         <Button><ReadMore to="/robotic-manipulation">Read more</ReadMore></Button>

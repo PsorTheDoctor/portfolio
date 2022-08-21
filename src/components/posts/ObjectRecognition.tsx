@@ -1,70 +1,27 @@
-import styled from "styled-components"
+import styled from "styled-components";
+import { Wrapper, Title, Image, Button, Img, Iframe } from "./Style";
 import Rover from "../../images/rover.jpg";
 import Truck from "../../images/truck.jpg";
+import Halftrack from "../../images/halftrack.jpg";
 
 type PropsType = {};
-
-const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: justify;
-  margin-top: 10px;
-  margin-bottom: 50px;
-`;
-
-const Title = styled.div`
-  font-size: 32px;
-  font-weight: bold;
-  text-align: left;
-`
-
-const Image = styled.div`
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-`
-
-const Img = styled.img`
-  max-width: 100%;
-`;
-
-const Iframe = styled.iframe`
-  max-width: 100%;
-`;
-
-const Button = styled.button`
-  background-color: blue;
-  height: 30px;
-  width: 200px;
-  border: 0;
-  border-radius: 15px;
-  text-transform: uppercase;
-  font-size: 13px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  &:hover {
-    background-color: lightgreen;
-    transition: 0.3s;
-  }
-`
 
 const Link = styled.a`
   color: white;
   text-decoration: none;
   &:hover {
     color: white;
-  };
-`
+  }
+`;
 
 export const ObjectRecognition = (props: PropsType) => (
   <Wrapper>
     <Title>Object recognition for the autonomous vehicle</Title>
     <p>A project with Polish company STEKOP.</p>
 
-    <Button><Link href="https://stekopsa.pl/ncbr/">Project Site (in Polish)</Link></Button>
+    <Button style={{width: 250}}>
+      <Link href="https://stekopsa.pl/ncbr/" target="blank">Project Site (in Polish)</Link>
+    </Button>
 
     <p>The task was to create a real-time GPU-accelerated environment recognition system including object detection
     and distance estimation methods. The final solution will be implemented to an autonomous military vehicle.</p>
@@ -102,6 +59,11 @@ export const ObjectRecognition = (props: PropsType) => (
     <Image>
       <Img src={Truck} width="600px" alt="Military truck" />
       <p>The military truck on which final solution will be implemented.</p>
-    </Image>    
+    </Image>
+
+    <Image>
+      <Img src={Halftrack} height="600px" alt="Half-tracked vehicle" />
+      <p>Another interesting terrain vehicle.</p>
+    </Image>        
   </Wrapper>
 );

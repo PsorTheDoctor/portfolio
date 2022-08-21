@@ -1,34 +1,13 @@
-import styled from "styled-components";
+import { Wrapper, Title, Image } from "./Style";
 import Kangaroo from "../../images/kangaroo.jpg";
+import Adam from "../../images/fgsm.jpg";
 
 type PropsType = {};
-
-const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: justify;
-  margin-top: 10px;
-  margin-bottom: 50px;
-`;
-
-const Title = styled.div`
-  font-size: 32px;
-  font-weight: bold;
-`
-
-const Image = styled.div`
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 30px;
-`
 
 export const ImageGeneration = (props: PropsType) => (
   <Wrapper>
     <Title>Testing image generation tools</Title>
-    <p>Review of DALL-E text-to-image generator OpenAI kindly shared with me.</p>
+    <p>Overview of DALL-E text-to-image generator OpenAI kindly shared with me.</p>
 
     <p>DALL-E 2 is AI system that can create realistic images from description
     in natural language, image edits and variations. It's successor of DALL-E presented
@@ -38,6 +17,7 @@ export const ImageGeneration = (props: PropsType) => (
 
     <Image>
       <img src={Kangaroo} width="600px" alt="Kangaroo wearing an orange hoodie and blue sunglasses" />
+      <p>Kangaroo wearing an orange hoodie and blue sunglasses <br />in photorealistic style.</p>
     </Image>
 
     <p><b>The rise of generative art</b></p>
@@ -52,6 +32,11 @@ export const ImageGeneration = (props: PropsType) => (
     realistic human faces has been prohibited. Anyway, I was able to create the variations
     of mine fooling the censordhip system by FGSM (Fast Gradient Shift Method) attack.
     The results were rather quite satisfying.</p>
+
+    <Image>
+      <img src={Adam} width="600px" alt="Variations of my face" />
+      <p>Variations of my face.</p>
+    </Image>
 
     <p>Telling the truth, it's actually third product OpenAI has shared with me. 
     Before that I was testing GPT-3 and its fine-tuned Codex model (GitHub Copilot 

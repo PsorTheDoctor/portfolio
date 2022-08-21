@@ -15,6 +15,7 @@ const Wrapper = styled.div`
 const Tab = styled(Link)`
   color: white;
   text-decoration: none;
+  text-align: center;
   padding: 10px;
 
   &:hover, &:focus, &:active {

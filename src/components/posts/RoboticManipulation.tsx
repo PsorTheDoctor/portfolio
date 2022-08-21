@@ -1,75 +1,25 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { Wrapper, Title, Image, Button, Img, Iframe, Video } from "./Style";
 import ur from "../../images/ur5.jpg";
 import icp from "../../videos/icp.mp4";
 
 type PropsType = {};
-
-const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: justify;
-  margin-top: 10px;
-  margin-bottom: 50px;
-`;
-
-const Title = styled.div`
-  font-size: 32px;
-  font-weight: bold;
-  text-align: left;
-`
-
-const Image = styled.div`
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 30px;
-`
-
-const Img = styled.img`
-  max-width: 100%;
-`;
-
-const Video = styled.video`
-  max-width: 100%;
-`;
-
-const Iframe = styled.iframe`
-  max-width: 100%;
-`;
-
-const Button = styled.button`
-  background-color: blue;
-  height: 30px;
-  width: 150px;
-  border: 0;
-  border-radius: 15px;
-  text-transform: uppercase;
-  font-size: 13px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  &:hover {
-    background-color: lightgreen;
-    transition: 0.3s;
-  }
-`
 
 const Thesis = styled(Link)`
   color: white;
   text-decoration: none;
   &:hover {
     color: white;
-  };
-`
+  }
+`;
 
 export const RoboticManipulation = (props: PropsType) => (
   <Wrapper>
     <Title>Solving robotic manipulation problems</Title>
     <p>My bachelor thesis under the supervising of PhD Adam Wolniakowski.</p>
     
-    <Button><Thesis to="/thesis">Thesis (in Polish)</Thesis></Button>
+    <Button style={{width: 200}}><Thesis to="/thesis">Thesis (in Polish)</Thesis></Button>
 
     <Image><Img src={ur} width="600px" alt="UR5 Robot" /></Image>
     
@@ -87,7 +37,7 @@ export const RoboticManipulation = (props: PropsType) => (
       Then I had a chance to meet PhD Adam Wolniakowski who was introduced to me as a person having knowledge
       about this topic and was helpful in solving robotic control issues. So, he finally became my supervisor.</p>
 
-    <p><b>What is dexterity and why is so important?</b></p>
+    <p><b>What is dexterity and why is it so important?</b></p>
     <p>Dexterity is a coordination of small muscles in movement with eyes, hands and fingers. It's also called fine motor skill.
       For example, it's a defining feature of a cat enabled by the use of its tail, claws and a lean body.
       The dexterous operations are common for many species by the use of their hands, beaks, jaws and tentacles. 

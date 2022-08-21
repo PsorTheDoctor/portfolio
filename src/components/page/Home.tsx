@@ -41,8 +41,9 @@ const About = styled.div`
 `;
 
 const Serif = styled.div`
-  font-family: Cambria;
-  font-size: 24px;
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&family=Roboto+Slab&family=Source+Serif+Pro:ital,wght@0,600;0,700;1,400;1,600&display=swap');
+  font-family: 'Noto Serif';
+  font-size: 23px;
 `;
 
 const Header = styled.div`
@@ -53,28 +54,48 @@ const Header = styled.div`
   font-weight: bold;
 `;
 
-const Hobbies = styled.div`  
-  display: flex;
+const Hobbies = styled.div`
+  @media (max-width: 1000px) {
+    display: block;
+  }
+  @media (min-width: 1000px) {
+    display: flex;
+  } 
   align-items: center;
   justify-content: space-around;
+  margin-right: auto;
+  margin-left: auto;
   margin-bottom: 25px;
 `;
 
+const HobbyRow = styled.div`
+  @media (max-width: 500px) {
+    display: block;
+  }
+  @media (min-width: 500px) {
+    display: flex;
+  } 
+  max-width: 500px;
+`;
+
 const Hobby = styled.div`
-  float: left;
   text-align: center;
   width: 250px;
 `;
 
-const Sponsors = styled.div`  
-  display: flex;
+const Sponsors = styled.div`
+  @media (max-width: 700px) {
+    display: block;
+  }
+  @media (min-width: 700px) {
+    display: flex;
+  } 
   align-items: center;
   justify-content: space-around;
   margin-bottom: 25px;
 `;
 
 const Sponsor = styled.div`
-  float: left;
   text-align: center;
 `;
 
@@ -106,33 +127,37 @@ export const Home = (props: PropsType) => (
         <h5>Robotics Engineer, Programmer</h5></p>
         <Serif>
           <p>I am robotics and AI enthusiast currently doing my master degree of Robot Systems: Advanced Robotics Technology at University of Southern Denmark.</p>
-          <p>I received my bachelor degree at Bialystok University of Technology in Poland where I was founder and leader of AI science club and scholar of Diamonds' Explorers foundation.</p>
+          <p>I received my bachelor of engineering at Bialystok University of Technology in Poland where I was founder and leader of AI science club and scholar of Diamonds' Explorers foundation.</p>
         </Serif>
       </About>
     </Intro>
 
     <Header><p>Fields of interest</p></Header>
     <Hobbies>
-      <Hobby>
-        <Robot />
-        <p><h5>Robotics</h5></p>
-        <p>Manipulators, autonomous <br/>mobile robots, controllers</p>
-      </Hobby>
-      <Hobby>
-        <Terminal />
-        <p><h5>Artificial Intelligence</h5></p>
-        <p>Neural networks, unsupervised <br/>and reinforcement learning</p>
-      </Hobby>
-      <Hobby>
-        <Computer />
-        <p><h5>Computer Vision</h5></p>
-        <p>Image processing, <br/>object recognition</p>
-      </Hobby>
-      <Hobby>
-        <Psychology />
-        <p><h5>Psychology</h5></p>
-        <p>Cognitive science, neurobiology, theory of mind</p>
-      </Hobby>
+      <HobbyRow>
+        <Hobby>
+          <Robot />
+          <p><h5>Robotics</h5></p>
+          <p>Manipulators, autonomous <br/>mobile robots, controllers</p>
+        </Hobby>
+        <Hobby>
+          <Terminal />
+          <p><h5>Artificial Intelligence</h5></p>
+          <p>Neural networks, unsupervised <br/>and reinforcement learning</p>
+        </Hobby>
+      </HobbyRow>
+      <HobbyRow>
+        <Hobby>
+          <Computer />
+          <p><h5>Computer Vision</h5></p>
+          <p>Image processing, <br/>object recognition</p>
+        </Hobby>
+        <Hobby>
+          <Psychology />
+          <p><h5>Psychology</h5></p>
+          <p>Cognitive science, neurobiology, theory of mind</p>
+        </Hobby>
+      </HobbyRow>
     </Hobbies>
 
     <Projects/>

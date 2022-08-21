@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 type PropsType = {};
 
@@ -11,7 +11,9 @@ const Wrapper = styled.div`
 `;
 
 const Header = styled.div`
-  font-size: 18px;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: left;
   padding-top: 10px;
   padding-bottom: 10px;
 `;
