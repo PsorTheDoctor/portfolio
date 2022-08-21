@@ -44,6 +44,15 @@ const Img = styled.img`
   } */
 `;
 
+const Video = styled.video`
+  @media (max-width: 700px) {
+    width: 100%;
+  }
+  @media (min-width: 700px) {
+    width: 480px;
+  } 
+`;
+
 const Title = styled.div`
   font-size: 20px;
   font-weight: bold;
@@ -89,10 +98,10 @@ export const Projects = (props: PropsType) => (
 
       <Post>
         <Link to="/object-recognition">
-          <video width="480px" loop autoPlay muted>
+          <Video loop autoPlay muted>
             <source src={ThumbYolo} type="video/mp4" />
             Your browser does not support the video tag.
-          </video>
+          </Video>
         </Link>
         <Title>Object recognition for the autonomous vehicle</Title>
         <p>A project with Polish company STEKOP.</p>
@@ -102,10 +111,10 @@ export const Projects = (props: PropsType) => (
     <Wrapper>
       <Post>
         <Link to="/robotic-manipulation">
-          <video width="480px" loop autoPlay muted>
+          <Video loop autoPlay muted>
             <source src={ThumbUR5} type="video/mp4" />
             Your browser does not support the video tag.
-          </video>
+          </Video>
         </Link>
         <Title>Solving robotic manipulation problems</Title>
         <p>My bachelor thesis under the supervising of PhD Adam Wolniakowski.</p>
