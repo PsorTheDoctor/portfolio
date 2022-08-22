@@ -30,7 +30,7 @@ export const ImageGeneration = (props: PropsType) => (
 
     <p>To avoid explicit usage of the model generation of some topics including 
     realistic human faces has been prohibited. Anyway, I've managed to create the variations
-    of mine fooling the censordhip system by FGSM (Fast Gradient Signed Method) attack.
+    of mine fooling the censorship system by FGSM (Fast Gradient Signed Method) attack.
     The results were rather quite satisfying.</p>
 
     <Image>

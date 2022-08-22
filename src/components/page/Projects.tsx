@@ -19,6 +19,7 @@ const Wrapper = styled.div`
   margin-right: auto;
   margin-bottom: 25px;
   justify-content: space-between;
+  padding: 10px;
 `;
 
 const Header = styled.div`

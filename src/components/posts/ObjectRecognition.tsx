@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { useState } from 'react';
 import { Wrapper, Title, Subtitle, Image, Button, Img, Iframe } from "./Style";
 import Rover from "../../images/rover.jpg";
 import Truck from "../../images/truck.jpg";
@@ -14,7 +15,75 @@ const Link = styled.a`
   }
 `;
 
-export const ObjectRecognition = (props: PropsType) => (
+const Radio = styled.div`
+  background-color: lightgray;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+`
+
+const LeftButton = styled.button`
+  background-color: lightgray;
+  height: 30px;
+  float: left;
+  border: 0;
+  border-radius: 15px 0 0 15px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-right: 20px;
+  &:focus {
+    background-color: blue;
+    color: white;
+    border-radius: 15px;
+  }
+`;
+
+const MiddleButton = styled.button`
+  background-color: lightgray;
+  height: 30px;
+  float: left;
+  border: 0;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: bold;;
+  padding-left: 20px;
+  padding-right: 20px;
+  &:focus {
+    background-color: blue;
+    color: white;
+    border-radius: 15px;
+  }
+`;
+
+const RightButton = styled.button`
+  background-color: lightgray;
+  height: 30px;
+  float: left;
+  border: 0;
+  border-radius: 0 15px 15px 0;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-right: 20px;
+  &:focus {
+    background-color: blue;
+    color: white;
+    border-radius: 15px;
+  }
+`;
+
+export const ObjectRecognition = () => {
+  const models = [
+    "https://www.youtube.com/embed/Y7qCvF73RXs", // v2
+    "https://www.youtube.com/embed/DgbUik2994E", // v3
+    "https://www.youtube.com/embed/LMtrFGAEDgg"  // v4
+  ];
+  const [model, setModel] = useState(models[0]);
+
+  return (
   <Wrapper>
     <Title>Object recognition for the autonomous vehicle</Title>
     <Subtitle>A project with Polish company STEKOP.</Subtitle>
@@ -43,9 +112,14 @@ export const ObjectRecognition = (props: PropsType) => (
     neural network architectures. I've used a first type in this project that allows to recognize objects 
     belonging to eighty classes, such as: person, car, truck, bike, stop sign etc.</p>
 
+    <Radio>
+      <LeftButton onClick={() => setModel(models[0])}>Model 1</LeftButton>
+      <MiddleButton onClick={() => setModel(models[1])}>Model 2</MiddleButton>
+      <RightButton onClick={() => setModel(models[2])}>Model 3</RightButton>
+    </Radio>
     <Image>
-      <Iframe width="560" height="315" src="https://www.youtube.com/embed/DgbUik2994E" title="YouTube video player" frameBorder="0" 
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></Iframe>
+      <iframe width="560" height="315" src={model} title="YouTube video player" frameBorder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
     </Image>
 
     <p>It was really satisfying to see how accurate some predictions were. 
@@ -66,4 +140,5 @@ export const ObjectRecognition = (props: PropsType) => (
       <p>Another interesting terrain vehicle.</p>
     </Image>        
   </Wrapper>
-);
+  );
+};

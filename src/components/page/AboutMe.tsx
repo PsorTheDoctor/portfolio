@@ -45,7 +45,7 @@ export const AboutMe = () => (
 
     <p><b>Early years</b></p>
     <p>Even being a kid I have been interested in technical fields. I've been building various
-    devices since my early years. I have built my first project – a mechanical monkey, when I was
+    devices since my early years. I built my first project – a mechanical monkey when I was
     six. The idea was dead simple. It was basically an automata propelled by single motor geared
     down twenty times by a worm gear. The arms worked as slider-crank linkages ended with claws
     that hooked a rope alternately. The result of this mechanism was a fully movable model of
@@ -94,9 +94,7 @@ export const AboutMe = () => (
 
     <p>In spring 2017 I took a part in Regional E(x)plory Competition for young scientists with
     the project of automatic gearbox I've developed on my own. I have shown it widely in Warsaw –
-    Polish capital city. I have also build one more project – a tracked robot as a loose interpretation
-    of Pixar's WALL-E. It had ten motors, driving tracks, arms with prehensile grippers, remote
-    control and was built just for fun.
+    Polish capital city. 
     With above achievements up to date, in my third year at high school I got my first
     schoolarship founded by a local seafood company SUEMPOL. With these money I've started
     making a large project I had been thinking about for many years – a mechanical human arm.
