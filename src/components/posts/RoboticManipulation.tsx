@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { Wrapper, Title, Image, Button, Img, Iframe, Video } from "./Style";
+import { Wrapper, Title, Subtitle, Image, Button, Img, Iframe, Video } from "./Style";
 import ur from "../../images/ur5.jpg";
 import icp from "../../videos/icp.mp4";
 
@@ -17,7 +17,7 @@ const Thesis = styled(Link)`
 export const RoboticManipulation = (props: PropsType) => (
   <Wrapper>
     <Title>Solving robotic manipulation problems</Title>
-    <p>My bachelor thesis under the supervising of PhD Adam Wolniakowski.</p>
+    <Subtitle>My bachelor thesis under the supervising of PhD Adam Wolniakowski.</Subtitle>
     
     <Button style={{width: 200}}><Thesis to="/thesis">Thesis (in Polish)</Thesis></Button>
 

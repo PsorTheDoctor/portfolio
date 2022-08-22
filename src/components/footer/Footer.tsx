@@ -7,14 +7,37 @@ const Wrapper = styled.div`
   color: white;
   height: 100px;
   text-align: center;
-`
+`;
 
-const SocialMedia = styled.div`
+const Container = styled.div`
+  display: flex;
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10px;
+`;
+
+const Button = styled.button`
+  background-color: blue;
+  color: white;
+  height: 30px;
+  width: 130px;
+  border: 0;
+  border-radius: 15px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: bold;
+  &:hover {
+    background-color: lightgreen;
+    transition: 0.3s;
+  }
+`;
+
+const SocialMedia = styled.div`
   text-align: right;
-`
+`;
 
 const Link = styled.a`
   color: white;
@@ -36,14 +59,19 @@ const GitHub = styled(GitHubIcon)`
 
 export const Footer = () => (
   <Wrapper>
-    <SocialMedia>
-      <Link href="https://www.linkedin.com/in/adam-wolkowycki-0a0570171" target="blank">
-        <LinkedIn />
-      </Link>
-      <Link href="https://github.com/PsorTheDoctor" target="blank">
-        <GitHub />
-      </Link>
-    </SocialMedia>
+    <Container>
+      <a href="mailto: adwol21@student.sdu.dk">
+        <Button>Contact</Button>
+      </a>
+      <SocialMedia>
+        <Link href="https://www.linkedin.com/in/adam-wolkowycki-0a0570171" target="blank">
+          <LinkedIn />
+        </Link>
+        <Link href="https://github.com/PsorTheDoctor" target="blank">
+          <GitHub />
+        </Link>
+      </SocialMedia>
+    </Container>
     Adam Wolkowycki ©2022
   </Wrapper>
 );

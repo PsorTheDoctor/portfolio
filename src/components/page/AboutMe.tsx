@@ -11,6 +11,7 @@ const Wrapper = styled.div`
   margin-left: auto;
   margin-right: auto;
   text-align: justify;
+  padding: 10px;
 `;
 
 const Header = styled.div`
@@ -33,6 +34,9 @@ const Img = styled.img`
 
 const Video = styled.video`
   max-width: 100%;
+  &::-webkit-media-controls {
+    display: none !important;
+  }
 `;
 
 export const AboutMe = () => (

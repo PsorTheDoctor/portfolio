@@ -31,7 +31,7 @@ const Header = styled.div`
 `;
 
 const Post = styled.div`
-  width: 480px;
+  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 20px;
@@ -45,12 +45,15 @@ const Img = styled.img`
 `;
 
 const Video = styled.video`
-  @media (max-width: 700px) {
+  @media (min-width: 480px) {
+    width: 480px;
+  }
+  @media (max-width: 480px) {
     width: 100%;
   }
-  @media (min-width: 700px) {
-    width: 480px;
-  } 
+  &::-webkit-media-controls {
+    display: none !important;
+  }
 `;
 
 const Title = styled.div`

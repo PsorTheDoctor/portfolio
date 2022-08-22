@@ -9,6 +9,7 @@ export const Wrapper = styled.div`
   text-align: justify;
   margin-top: 10px;
   margin-bottom: 50px;
+  padding: 10px;
 `;
 
 export const Title = styled.div`
@@ -17,10 +18,15 @@ export const Title = styled.div`
   text-align: left;
 `;
 
+export const Subtitle = styled.p`
+  text-align: left;
+`;
+
 export const Image = styled.div`
   text-align: center;
   padding-top: 10px;
   padding-bottom: 30px;
+  max-width: 100%;
 `;
 
 export const Img = styled.img`

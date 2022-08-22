@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Wrapper, Title, Image, Button, Img, Iframe } from "./Style";
+import { Wrapper, Title, Subtitle, Image, Button, Img, Iframe } from "./Style";
 import Rover from "../../images/rover.jpg";
 import Truck from "../../images/truck.jpg";
 import Halftrack from "../../images/halftrack.jpg";
@@ -17,7 +17,7 @@ const Link = styled.a`
 export const ObjectRecognition = (props: PropsType) => (
   <Wrapper>
     <Title>Object recognition for the autonomous vehicle</Title>
-    <p>A project with Polish company STEKOP.</p>
+    <Subtitle>A project with Polish company STEKOP.</Subtitle>
 
     <Button style={{width: 250}}>
       <Link href="https://stekopsa.pl/ncbr/" target="blank">Project Site (in Polish)</Link>

@@ -1,4 +1,4 @@
-import { Wrapper, Title, Image } from "./Style";
+import { Wrapper, Title, Subtitle, Image, Img } from "./Style";
 import Kangaroo from "../../images/kangaroo.jpg";
 import Adam from "../../images/fgsm.jpg";
 
@@ -7,7 +7,7 @@ type PropsType = {};
 export const ImageGeneration = (props: PropsType) => (
   <Wrapper>
     <Title>Testing image generation tools</Title>
-    <p>Overview of DALL-E text-to-image generator OpenAI kindly shared with me.</p>
+    <Subtitle>Overview of DALL-E text-to-image generator OpenAI kindly shared with me.</Subtitle>
 
     <p>DALL-E 2 is AI system that can create realistic images from description
     in natural language, image edits and variations. It's successor of DALL-E presented
@@ -16,8 +16,8 @@ export const ImageGeneration = (props: PropsType) => (
     of abstraction, such as kangaroo wearing an orange hoodie and blue sunglasses etc.</p>
 
     <Image>
-      <img src={Kangaroo} width="600px" alt="Kangaroo wearing an orange hoodie and blue sunglasses" />
-      <p>Kangaroo wearing an orange hoodie and blue sunglasses <br />in photorealistic style.</p>
+      <Img src={Kangaroo} width="600px" alt="Kangaroo wearing an orange hoodie and blue sunglasses" />
+      <p>Kangaroo wearing an orange hoodie and blue sunglasses in photorealistic style.</p>
     </Image>
 
     <p><b>The rise of generative art</b></p>
@@ -29,19 +29,19 @@ export const ImageGeneration = (props: PropsType) => (
     for them giving us DALL-E 2 followed by Google's Imagen and Parti.</p>
 
     <p>To avoid explicit usage of the model generation of some topics including 
-    realistic human faces has been prohibited. Anyway, I was able to create the variations
-    of mine fooling the censordhip system by FGSM (Fast Gradient Shift Method) attack.
+    realistic human faces has been prohibited. Anyway, I've managed to create the variations
+    of mine fooling the censordhip system by FGSM (Fast Gradient Signed Method) attack.
     The results were rather quite satisfying.</p>
 
     <Image>
-      <img src={Adam} width="600px" alt="Variations of my face" />
+      <Img src={Adam} width="600px" alt="Variations of my face" />
       <p>Variations of my face.</p>
     </Image>
 
     <p>Telling the truth, it's actually third product OpenAI has shared with me. 
     Before that I was testing GPT-3 and its fine-tuned Codex model (GitHub Copilot 
     is powered by it). Being a witness of how they could write natural language and code
-    also was amazing experience (GPT-3 even did my homework once), but images are a completely
+    also was exciting experience (GPT-3 even did my homework once), but images are a completely
     different story. It allows to see how much deep understanding actually is producing
     truly creative and unusual samples.
     </p>

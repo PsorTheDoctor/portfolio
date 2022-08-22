@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Projects } from "./Projects";
-import Adam from "../../images/bluescreen.jpg";
+import Adam from "../../images/adam.png";
 
 import RobotIcon from "@mui/icons-material/PrecisionManufacturing";
 import ComputerIcon from '@mui/icons-material/Computer';
@@ -27,6 +27,9 @@ const Intro = styled.div`
   background-repeat: no-repeat;
   background-size: 400px;
   background-position: right bottom;
+  @media (max-width: 900px) {
+    background-blend-mode: soft-light;
+  }
   min-height: 530px;
   color: white;
   display: flex;
@@ -84,10 +87,10 @@ const Hobby = styled.div`
 `;
 
 const Sponsors = styled.div`
-  @media (max-width: 700px) {
+  @media (max-width: 680px) {
     display: block;
   }
-  @media (min-width: 700px) {
+  @media (min-width: 680px) {
     display: flex;
   } 
   align-items: center;
@@ -166,7 +169,7 @@ export const Home = (props: PropsType) => (
     <Sponsors>
       <Sponsor><img src={DiamondExplorers} width="250px" alt="Odkrywcy Diamentów" /></Sponsor>
       <Sponsor><img src={PB} width="200px" alt="Bialystok University of Technology" /></Sponsor>
-      <Sponsor><img src={Suempol} width="250px" alt="Suempol" /></Sponsor>
+      <Sponsor><img src={Suempol} width="230px" alt="Suempol" /></Sponsor>
     </Sponsors>
   </Wrapper>
 );
