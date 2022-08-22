@@ -9,7 +9,7 @@ export const ImageGeneration = (props: PropsType) => (
     <Title>Testing image generation tools</Title>
     <Subtitle>Overview of DALL-E text-to-image generator OpenAI kindly shared with me.</Subtitle>
 
-    <p>DALL-E 2 is AI system that can create realistic images from description
+    <p>DALL-E 2 is an AI system that can create realistic images from description
     in natural language, image edits and variations. It's successor of DALL-E presented
     just a year before exceeding its possibilities. The best thing of this model is it can
     produce coherent illustrations by joining various concepts, attributes and styles of different level 

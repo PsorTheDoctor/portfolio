@@ -40,6 +40,7 @@ const Post = styled.div`
 
 const Img = styled.img`
   text-align: center;
+  max-width: 100%;
   /* &:hover {
     opacity: 0.9;
   } */
@@ -66,7 +67,7 @@ const Title = styled.div`
 const Button = styled.button`
   background-color: blue;
   height: 30px;
-  width: 150px;
+  width: 130px;
   border: 0;
   border-radius: 15px;
   text-transform: uppercase;

@@ -34,13 +34,13 @@ const Intro = styled.div`
   color: white;
   display: flex;
   flex-direction: row;
+  align-items: center;
   margin-bottom: 50px;
 `;
 
 const About = styled.div`
-  width: 600px;
-  padding-left: 30px;
-  padding-top: 90px;
+  width: 630px;
+  padding: 30px;
 `;
 
 const Serif = styled.div`

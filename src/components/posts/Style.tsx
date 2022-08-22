@@ -43,6 +43,7 @@ export const Iframe = styled.iframe`
 
 export const Button = styled.button`
   background-color: blue;
+  color: white;
   height: 30px;
   border: 0;
   border-radius: 15px;
@@ -50,6 +51,8 @@ export const Button = styled.button`
   font-size: 13px;
   font-weight: bold;
   margin-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   &:hover {
     background-color: lightgreen;
     transition: 0.3s;

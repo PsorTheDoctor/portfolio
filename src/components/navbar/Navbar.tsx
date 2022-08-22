@@ -10,6 +10,8 @@ const Wrapper = styled.div`
   text-transform: uppercase;
   font-size: 13px;
   font-weight: bold;
+  overflow: auto;
+  white-space: nowrap;
 `;
 
 const Tab = styled(Link)`

@@ -19,7 +19,7 @@ export const RoboticManipulation = (props: PropsType) => (
     <Title>Solving robotic manipulation problems</Title>
     <Subtitle>My bachelor thesis under the supervising of PhD Adam Wolniakowski.</Subtitle>
     
-    <Button style={{width: 200}}><Thesis to="/thesis">Thesis (in Polish)</Thesis></Button>
+    <Thesis to="/thesis"><Button>Thesis (in Polish)</Button></Thesis>
 
     <Image><Img src={ur} width="600px" alt="UR5 Robot" /></Image>
     

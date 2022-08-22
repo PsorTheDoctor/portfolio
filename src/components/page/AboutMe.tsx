@@ -100,7 +100,7 @@ export const AboutMe = () => (
     making a large project I had been thinking about for many years – a mechanical human arm.
     The arm had seven pneumatic and two electric functions. I have submitted a model to the EL-ROBO-MECH contest organized by Bialystok University of Technology, where it took third
     place winning money prize and the university priority admission card.
-    During a high school my mentors were teachers Sławomir Zieniewski and Ewa Trzeszczkowska.
+    In the time of high school my mentors were teachers Sławomir Zieniewski and Ewa Trzeszczkowska.
     A scholarship wasn't only money I've got for education. I also managed to get a subsidy
     from European Union for 7-month long Java programming course. During this I also started to
     read about my completely new area of interest – the artificial intelligence. On a holidays
