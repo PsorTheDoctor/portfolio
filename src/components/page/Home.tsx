@@ -43,9 +43,8 @@ const About = styled.div`
   padding: 30px;
 `;
 
-const Serif = styled.div`
-  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&family=Roboto+Slab&family=Source+Serif+Pro:ital,wght@0,600;0,700;1,400;1,600&display=swap');
-  font-family: 'Noto Serif';
+const Cambria = styled.div`
+  font-family: 'Cambria Font';
   font-size: 23px;
 `;
 
@@ -126,12 +125,12 @@ export const Home = (props: PropsType) => (
   <Wrapper>
     <Intro>
       <About>
-        <p><Serif><b>Adam Wolkowycki</b></Serif>
+        <p><Cambria><b>Adam Wolkowycki</b></Cambria>
         <h5>Robotics Engineer, Programmer</h5></p>
-        <Serif>
+        <Cambria>
           <p>I am robotics and AI enthusiast currently doing my master degree of Robot Systems: Advanced Robotics Technology at University of Southern Denmark.</p>
           <p>I received my bachelor of engineering at Bialystok University of Technology in Poland where I was founder and leader of AI science club and scholar of Diamonds' Explorers foundation.</p>
-        </Serif>
+        </Cambria>
       </About>
     </Intro>
 
