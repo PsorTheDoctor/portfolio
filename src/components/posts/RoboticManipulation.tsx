@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { Wrapper, Title, Subtitle, Image, Button, Img, Iframe, Video } from "./Style";
 import ur from "../../images/ur5.jpg";
@@ -6,7 +5,7 @@ import icp from "../../videos/icp.mp4";
 
 type PropsType = {};
 
-const Thesis = styled(Link)`
+const Link = styled.a`
   color: white;
   text-decoration: none;
   &:hover {
@@ -19,7 +18,9 @@ export const RoboticManipulation = (props: PropsType) => (
     <Title>Solving robotic manipulation problems</Title>
     <Subtitle>My bachelor thesis under the supervising of PhD Adam Wolniakowski.</Subtitle>
     
-    <Thesis to="/thesis"><Button>Thesis (in Polish)</Button></Thesis>
+    <Link href="https://drive.google.com/file/d/1PeADvlRFClfSULNUVIoF0y-2QDnNqUGp/view?usp=sharing">
+      <Button>Thesis (in Polish)</Button>
+    </Link>
 
     <Image><Img src={ur} width="600px" alt="UR5 Robot" /></Image>
     
