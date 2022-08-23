@@ -22,7 +22,7 @@ const Wrapper = styled.div`
 `;
 
 const Intro = styled.div`
-  background-color: #0020c2;
+  background-color: #0041c2;
   background-image: url(${Adam});
   background-repeat: no-repeat;
   background-size: 400px;

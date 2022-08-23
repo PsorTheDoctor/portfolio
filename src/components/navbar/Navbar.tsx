@@ -10,7 +10,7 @@ const Wrapper = styled.div`
   text-transform: uppercase;
   font-size: 13px;
   font-weight: bold;
-  overflow: auto;
+  overflow: hidden;
   white-space: nowrap;
 `;
 

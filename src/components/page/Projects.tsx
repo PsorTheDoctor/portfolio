@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Kangaroo from "../../images/kangaroo.jpg";
-import ThumbYolo from "../../videos/thumb_yolo.mp4";
-import ThumbUR5 from "../../videos/thumb_ur5.mp4";
+import Yolo from "../../images/yolo.gif";
+import Ur5 from "../../images/ur5.gif";
 
 type PropsType = {};
 
@@ -41,22 +41,22 @@ const Post = styled.div`
 const Img = styled.img`
   text-align: center;
   max-width: 100%;
-  /* &:hover {
+  &:hover {
     opacity: 0.9;
-  } */
+  }
 `;
 
-const Video = styled.video`
-  @media (min-width: 480px) {
-    width: 480px;
-  }
-  @media (max-width: 480px) {
-    width: 100%;
-  }
-  &::-webkit-media-controls {
-    display: none !important;
-  }
-`;
+// const Video = styled.video`
+//   @media (min-width: 480px) {
+//     width: 480px;
+//   }
+//   @media (max-width: 480px) {
+//     width: 100%;
+//   }
+//   &::-webkit-media-controls {
+//     display: none !important;
+//   }
+// `;
 
 const Title = styled.div`
   font-size: 20px;
@@ -103,10 +103,11 @@ export const Projects = (props: PropsType) => (
 
       <Post>
         <Link to="/object-recognition">
-          <Video loop autoPlay muted>
+          <Img src={Yolo} width={480} alt="Object recognition" />
+          {/* <Video loop autoPlay muted>
             <source src={ThumbYolo} type="video/mp4" />
             Your browser does not support the video tag.
-          </Video>
+          </Video> */}
         </Link>
         <Title>Object recognition for the autonomous vehicle</Title>
         <p>A project with Polish company STEKOP.</p>
@@ -116,10 +117,11 @@ export const Projects = (props: PropsType) => (
     <Wrapper>
       <Post>
         <Link to="/robotic-manipulation">
-          <Video loop autoPlay muted>
+          <Img src={Ur5}  width={480} alt="UR5 robot arm" />
+          {/* <Video loop autoPlay muted>
             <source src={ThumbUR5} type="video/mp4" />
             Your browser does not support the video tag.
-          </Video>
+          </Video> */}
         </Link>
         <Title>Solving robotic manipulation problems</Title>
         <p>My bachelor thesis under the supervising of PhD Adam Wolniakowski.</p>

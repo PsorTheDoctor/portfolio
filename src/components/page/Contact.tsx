@@ -22,7 +22,8 @@ const Header = styled.div`
 
 export const Contact = (props: PropsType) => (
   <Wrapper>
-    <Header><p>Contact</p></Header>
+    <p><Header>Contact</Header>
+    Feel free to contact me.</p>
     <p>E-mail: adwol21@student.sdu.dk</p>
   </Wrapper>
 );
