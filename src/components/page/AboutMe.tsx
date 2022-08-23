@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Manipulator from "../../images/manipulator.gif";
+// import Manipulator from "../../images/manipulator.gif";
 import Debutant from "../../images/debutant.jpg";
 import ElRoboMech from "../../images/elrobomech.jpg";
 import Explory from "../../images/explory.jpg";
@@ -54,7 +54,7 @@ export const AboutMe = () => (
     six. The idea was dead simple. It was basically an automata propelled by single motor geared
     down twenty times by a worm gear. The arms worked as slider-crank linkages ended with claws
     that hooked a rope alternately. The result of this mechanism was a fully movable model of
-    a monkey that works just fine. After getting bored with the monkey, I unassembled it to build
+    a monkey that works just fine. After getting bored with the monkey I unassembled it to build
     other creations such as: a spider driving on a rope, a jumping grasshopper, a fish with movable
     fins, a drill, a kitchen mixer and many more.</p>
     
@@ -72,10 +72,10 @@ export const AboutMe = () => (
     base rotation, lifting, gripper rotation and grasp. It was also my first model that I've presented
     out of home.</p>
 
-    <Image>
+    {/* <Image>
       <Img src={Manipulator} width="480px" alt="My first manipulator" />
       <p>My first manipulator</p>
-    </Image>
+    </Image> */}
 
     <p>Mechanical models aside, I also took the initative to participate Poland's Olympics of
     Creativity called Destination Imagination. I was a leader of 6-person team and our challenge
@@ -123,7 +123,7 @@ export const AboutMe = () => (
     and computer vision by making more than a dozen of projects on various topics. My favorite one used special
     kind of neural networks – recurrent network with LSTM cells in order to generate text in the
     style of Shakespeare based on his dramas. Another example was neural net with convolutional
-    layers that could draw an image in a style of any artist, eg. Picasso or Monet. I've also shown
+    layers that could draw an image in a style of any artist, e.g. Picasso or Monet. I've also shown
     some of them at my second Regional E(x)plory Competition.</p>
     
     <Image>
