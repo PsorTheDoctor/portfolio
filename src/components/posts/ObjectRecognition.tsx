@@ -145,7 +145,7 @@ export const ObjectRecognition = () => {
     dissapearing the prediction bounding boxes that, at least in the theory, could be simply solved by using
     Kalman filter.</p>
 
-    <Photos>
+    {/* <Photos>
       <Img src={Rover} alt="Test vehicle" />
       <Img src={Turtle} alt="Rover" />
       <Img src={Turtle2} alt="Rover" />
@@ -155,7 +155,7 @@ export const ObjectRecognition = () => {
       <Img src={Halftrack2} alt="Half-tracked vehicle" /> 
       <Img src={Truck} alt="Military truck" />
       <Img src={Truck2} alt="Military truck" />  
-    </Photos>    
+    </Photos>     */}
   </Wrapper>
   );
 };

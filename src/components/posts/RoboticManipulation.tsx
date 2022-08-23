@@ -1,24 +1,14 @@
-import styled from "styled-components";
-import { Wrapper, Title, Subtitle, Image, Button, Img, Iframe, Video } from "./Style";
+import { Wrapper, Title, Subtitle, Image, Button, Img, Iframe, Link } from "./Style";
 import ur from "../../images/ur5.jpg";
-import icp from "../../videos/icp.mp4";
 
 type PropsType = {};
-
-const Link = styled.a`
-  color: white;
-  text-decoration: none;
-  &:hover {
-    color: white;
-  }
-`;
 
 export const RoboticManipulation = (props: PropsType) => (
   <Wrapper>
     <Title>Solving robotic manipulation problems</Title>
     <Subtitle>My bachelor thesis under the supervising of PhD Adam Wolniakowski.</Subtitle>
     
-    <Link href="https://drive.google.com/file/d/1PeADvlRFClfSULNUVIoF0y-2QDnNqUGp/view?usp=sharing">
+    <Link href="https://drive.google.com/file/d/1PeADvlRFClfSULNUVIoF0y-2QDnNqUGp/view?usp=sharing" target="blank">
       <Button>Thesis (in Polish)</Button>
     </Link>
 
@@ -65,10 +55,8 @@ export const RoboticManipulation = (props: PropsType) => (
     like at the following animation.</p>
 
     <Image>
-      <Video width="400px" controls muted>
-        <source src={icp} type="video/mp4" />
-        Your browser does not support the video tag.
-      </Video>
+      <Iframe width="400" height="400" src="https://www.youtube.com/embed/pObjIXndby0" title="YouTube video player" frameBorder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></Iframe>
     </Image>
 
     <p>Because the tasks I mentioned are often performed by a particular type of robots, in

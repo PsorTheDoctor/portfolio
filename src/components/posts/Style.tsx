@@ -58,3 +58,11 @@ export const Button = styled.button`
     transition: 0.3s;
   }
 `;
+
+export const Link = styled.a`
+  color: white;
+  text-decoration: none;
+  &:hover {
+    color: white;
+  }
+`;

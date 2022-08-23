@@ -10,11 +10,22 @@ const Wrapper = styled.div`
   text-transform: uppercase;
   font-size: 13px;
   font-weight: bold;
-  overflow: hidden;
+  overflow: auto;
   white-space: nowrap;
 `;
 
 const Tab = styled(Link)`
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+
+  &:hover, &:focus, &:active {
+    color: lightgreen;
+  };
+`;
+
+const TabA = styled.a`
   color: white;
   text-decoration: none;
   text-align: center;
@@ -30,7 +41,7 @@ export const Navbar = () => (
     <Tab to="/home">Home</Tab>
     <Tab to="/about-me">About me</Tab>
     <Tab to="/projects">Projects</Tab>
-    <Tab to="/resume">Resume</Tab>
+    <TabA href="https://drive.google.com/file/d/1OVAmUhDNrCKoVpOLOMp0fW2mc3R06nHw/view?usp=sharing">Resume</TabA>
     <Tab to="/contact">Contact</Tab>
   </Wrapper>
 );

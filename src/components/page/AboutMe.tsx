@@ -1,9 +1,8 @@
 import styled from "styled-components";
-import Manipulator from "../../videos/manipulator.mp4";
+import Manipulator from "../../images/manipulator.gif";
 import Debutant from "../../images/debutant.jpg";
 import ElRoboMech from "../../images/elrobomech.jpg";
 import Explory from "../../images/explory.jpg";
-import { LinkOff } from "@mui/icons-material";
 
 const Wrapper = styled.div`
   display: flex;
@@ -33,12 +32,12 @@ const Img = styled.img`
   max-width: 100%;
 `;
 
-const Video = styled.video`
-  max-width: 100%;
-  &::-webkit-media-controls {
-    display: none !important;
-  }
-`;
+// const Video = styled.video`
+//   max-width: 100%;
+//   &::-webkit-media-controls {
+//     display: none !important;
+//   }
+// `;
 
 const Link = styled.a`
   text-decoration: none;
@@ -74,10 +73,7 @@ export const AboutMe = () => (
     out of home.</p>
 
     <Image>
-      <Video width="480px" loop autoPlay muted>
-        <source src={Manipulator} type="video/mp4" />
-        Your browser does not support the video tag.
-      </Video>
+      <Img src={Manipulator} width="480px" alt="My first manipulator" />
       <p>My first manipulator</p>
     </Image>
 
