@@ -43,7 +43,12 @@ const Img = styled.img`
   max-width: 100%;
   &:hover {
     opacity: 0.9;
+    transition: 0.3s;
   }
+`;
+
+const ImgWrapper = styled.div`
+  background-color: #0041c2;
 `;
 
 // const Video = styled.video`
@@ -94,7 +99,9 @@ export const Projects = (props: PropsType) => (
     <Wrapper>
       <Post>
         <Link to="/image-generation">
-          <Img src={Kangaroo} width={393} height={270} alt="Kangaroo weraing an orange hoodie and blue sunglasses" />
+          <ImgWrapper style={{width: 373}}>
+            <Img src={Kangaroo} width={393} height={270} alt="Kangaroo weraing an orange hoodie and blue sunglasses" />
+          </ImgWrapper>
         </Link>
         <Title>Testing image generation tools</Title>
         <p>Overview of DALL-E text-to-image generator OpenAI kindly shared with me.</p>
@@ -103,7 +110,9 @@ export const Projects = (props: PropsType) => (
 
       <Post>
         <Link to="/object-recognition">
-          <Img src={Yolo} width={480} alt="Object recognition" />
+          <ImgWrapper>
+            <Img src={Yolo} width={480} alt="Object recognition" />
+          </ImgWrapper>
           {/* <Video loop autoPlay muted>
             <source src={ThumbYolo} type="video/mp4" />
             Your browser does not support the video tag.
@@ -117,7 +126,9 @@ export const Projects = (props: PropsType) => (
     <Wrapper>
       <Post>
         <Link to="/robotic-manipulation">
-          <Img src={Ur5}  width={480} alt="UR5 robot arm" />
+          <ImgWrapper>
+            <Img src={Ur5}  width={480} alt="UR5 robot arm" />
+          </ImgWrapper>
           {/* <Video loop autoPlay muted>
             <source src={ThumbUR5} type="video/mp4" />
             Your browser does not support the video tag.

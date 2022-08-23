@@ -3,6 +3,7 @@ import Manipulator from "../../videos/manipulator.mp4";
 import Debutant from "../../images/debutant.jpg";
 import ElRoboMech from "../../images/elrobomech.jpg";
 import Explory from "../../images/explory.jpg";
+import { LinkOff } from "@mui/icons-material";
 
 const Wrapper = styled.div`
   display: flex;
@@ -37,6 +38,11 @@ const Video = styled.video`
   &::-webkit-media-controls {
     display: none !important;
   }
+`;
+
+const Link = styled.a`
+  text-decoration: none;
+  font-weight: bold;
 `;
 
 export const AboutMe = () => (
@@ -147,6 +153,12 @@ export const AboutMe = () => (
     robotics, artificial intelligence, but also cognitive science and psychology. Before the end of my
     studies I want to publish articles about robotic manipulation and practical
     usage of AI systems.</p>
+
+    <p><b>People who inspire me</b></p>
+    <ul>
+      <li><Link href="https://petrospsyllos.com/en/">Petros Psyllos</Link></li>
+      <li><Link href="https://pwwprojects.blogspot.com/">Piotr Wasilewski</Link></li>
+    </ul>
 
     <p><b>Recommended books</b></p>
     <ul>

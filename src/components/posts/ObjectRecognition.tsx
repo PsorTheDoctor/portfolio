@@ -31,6 +31,7 @@ const Radio = styled.div`
 
 const LeftButton = styled.button`
   background-color: lightgray;
+  color: black;
   height: 30px;
   float: left;
   border: 0;
@@ -49,6 +50,7 @@ const LeftButton = styled.button`
 
 const MiddleButton = styled.button`
   background-color: lightgray;
+  color: black;
   height: 30px;
   float: left;
   border: 0;
@@ -66,6 +68,7 @@ const MiddleButton = styled.button`
 
 const RightButton = styled.button`
   background-color: lightgray;
+  color: black;
   height: 30px;
   float: left;
   border: 0;
