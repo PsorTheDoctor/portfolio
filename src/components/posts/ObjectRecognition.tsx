@@ -2,15 +2,15 @@ import styled from "styled-components";
 import { useState } from 'react';
 import { Wrapper, Title, Subtitle, Image, Button, Iframe } from "./Style";
 
-import Rover from "../../images/rover.jpg";
-import Turtle from "../../images/turtle.jpg";
-import Turtle2 from "../../images/turtle2.jpg";
-import Quad from "../../images/quad.jpg";
-import Quad2 from "../../images/quad2.jpg";
-import Truck from "../../images/truck.jpg";
-import Truck2 from "../../images/truck2.jpg";
-import Halftrack from "../../images/halftrack.jpg";
-import Halftrack2 from "../../images/halftrack2.jpg";
+// import Rover from "../../images/rover.jpg";
+// import Turtle from "../../images/turtle.jpg";
+// import Turtle2 from "../../images/turtle2.jpg";
+// import Quad from "../../images/quad.jpg";
+// import Quad2 from "../../images/quad2.jpg";
+// import Truck from "../../images/truck.jpg";
+// import Truck2 from "../../images/truck2.jpg";
+// import Halftrack from "../../images/halftrack.jpg";
+// import Halftrack2 from "../../images/halftrack2.jpg";
 
 type PropsType = {};
 
@@ -85,15 +85,15 @@ const RightButton = styled.button`
   }
 `;
 
-const Photos = styled.div`
-  display: flex;
-  overflow: auto;
-`;
+// const Photos = styled.div`
+//   display: flex;
+//   overflow: auto;
+// `;
 
-const Img = styled.img`
-  height: 200px;
-  margin-right: 10px;
-`;
+// const Img = styled.img`
+//   height: 200px;
+//   margin-right: 10px;
+// `;
 
 export const ObjectRecognition = () => {
   const models = [

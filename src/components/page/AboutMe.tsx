@@ -1,5 +1,4 @@
 import styled from "styled-components";
-// import Manipulator from "../../images/manipulator.gif";
 import Debutant from "../../images/debutant.jpg";
 import ElRoboMech from "../../images/elrobomech.jpg";
 import Explory from "../../images/explory.jpg";
@@ -31,13 +30,6 @@ const Image = styled.div`
 const Img = styled.img`
   max-width: 100%;
 `;
-
-// const Video = styled.video`
-//   max-width: 100%;
-//   &::-webkit-media-controls {
-//     display: none !important;
-//   }
-// `;
 
 const Link = styled.a`
   text-decoration: none;
@@ -71,11 +63,6 @@ export const AboutMe = () => (
     vacation project among some others. It had four electric functions controlled remotely via IR:
     base rotation, lifting, gripper rotation and grasp. It was also my first model that I've presented
     out of home.</p>
-
-    {/* <Image>
-      <Img src={Manipulator} width="480px" alt="My first manipulator" />
-      <p>My first manipulator</p>
-    </Image> */}
 
     <p>Mechanical models aside, I also took the initative to participate Poland's Olympics of
     Creativity called Destination Imagination. I was a leader of 6-person team and our challenge
