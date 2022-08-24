@@ -23,12 +23,13 @@ const Wrapper = styled.div`
 `;
 
 const Header = styled.div`
+  background-color: whitesmoke;
   text-align: center;
   justify-content: center;
   text-transform: uppercase;
   font-size: 13px;
   font-weight: bold;
-  margin-top: 25px;
+  padding-top: 25px;
 `;
 
 const Post = styled.div`

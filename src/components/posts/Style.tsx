@@ -3,13 +3,12 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
+  background-color: whitesmoke;
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
   text-align: justify;
-  margin-top: 10px;
-  margin-bottom: 50px;
-  padding: 10px;
+  padding: 10px 10px 50px 10px;
 `;
 
 export const Title = styled.div`

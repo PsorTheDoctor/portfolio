@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import styled from "styled-components";
 import { Home } from "./Home";
 import { AboutMe } from "./AboutMe";
 import { Projects } from "./Projects";
@@ -8,16 +9,22 @@ import { RoboticManipulation } from "../posts/RoboticManipulation";
 import { ObjectRecognition } from "../posts/ObjectRecognition";
 import { ImageGeneration } from "../posts/ImageGeneration";
 
-export const Page = () => (
-  <Routes>
-    <Route path="/" element={<Home />} />
-    <Route path="/home" element={<Home />} />
-    <Route path="/about-me" element={<AboutMe />} />
-    <Route path="/projects" element={<Projects/>} />
-    <Route path="/contact" element={<Contact />} />
+const Wrapper = styled.div`
+  background-color: whitesmoke;
+`;
 
-    <Route path="/robotic-manipulation" element={<RoboticManipulation />} />
-    <Route path="/object-recognition" element={<ObjectRecognition />} />
-    <Route path="/image-generation" element={<ImageGeneration />} />
-  </Routes>
+export const Page = () => (
+  <Wrapper>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/home" element={<Home />} />
+      <Route path="/about-me" element={<AboutMe />} />
+      <Route path="/projects" element={<Projects/>} />
+      <Route path="/contact" element={<Contact />} />
+
+      <Route path="/robotic-manipulation" element={<RoboticManipulation />} />
+      <Route path="/object-recognition" element={<ObjectRecognition />} />
+      <Route path="/image-generation" element={<ImageGeneration />} />
+    </Routes>
+  </Wrapper>
 );
