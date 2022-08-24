@@ -44,8 +44,7 @@ const About = styled.div`
 `;
 
 const Serif = styled.div`
-  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&family=Roboto+Slab&family=Source+Serif+Pro:ital,wght@0,600;0,700;1,400;1,600&display=swap');
-  font-family: 'Noto Serif';
+  font-family: 'Noto Serif', serif;
   font-size: 23px;
 `;
 
