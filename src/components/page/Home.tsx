@@ -36,6 +36,7 @@ const Intro = styled.div`
   flex-direction: row;
   align-items: center;
   margin-bottom: 50px;
+  border-radius: 0 0 25px 25px ;
 `;
 
 const About = styled.div`
