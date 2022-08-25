@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import Debutant from "../../images/debutant.jpg";
 import ElRoboMech from "../../images/elrobomech.jpg";
 import Explory from "../../images/explory.jpg";
@@ -17,8 +18,6 @@ const Header = styled.div`
   font-size: 32px;
   font-weight: bold;
   text-align: left;
-  padding-top: 10px;
-  padding-bottom: 10px;
 `;
 
 const Image = styled.div`
@@ -31,31 +30,33 @@ const Img = styled.img`
   max-width: 100%;
 `;
 
-const Link = styled.a`
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  font-weight: bold;
+`;
+
+const LinkA = styled.a`
   text-decoration: none;
   font-weight: bold;
 `;
 
 export const AboutMe = () => (
   <Wrapper>
-    <Header><p>About me</p></Header>
+    <p><Header>About me</Header>
+    My name's Adam. I was born in Poland.</p>
 
     <p><b>Early years</b></p>
     <p>Even being a kid I have been interested in technical fields. I've been building various
     devices since my early years. I built my first project – a mechanical monkey when I was
     six. The idea was dead simple. It was basically an automata propelled by single motor geared
     down twenty times by a worm gear. The arms worked as slider-crank linkages ended with claws
-    that hooked a rope alternately. The result of this mechanism was a fully movable model of
-    a monkey that works just fine. After getting bored with the monkey I unassembled it to build
-    other creations such as: a spider driving on a rope, a jumping grasshopper, a fish with movable
-    fins, a drill, a kitchen mixer and many more.</p>
+    that were hooking a rope alternately. The result of this mechanism was a fully movable model of
+    a monkey that works just fine.</p>
     
     <p><b>Primary school</b></p>
     <p>Another things that kept me interested into mechanics were drivetrains. I built my first
     gearbox at the age of eleven. It was a simple 4-speed manual transmission that trasmitted
-    rotary movement form car wheels to fake piston engine. Not only gearboxes were in the fields
-    of my interests. I was also curious about suspension, steering and systems developed in
-    construction equipment.</p>
+    rotary movement form car wheels to fake piston engine.</p>
 
     <p><b>High School</b></p>
     <p>In 2015-2018 I attended the High School, where I studied at a class with extended math
@@ -70,11 +71,7 @@ export const AboutMe = () => (
     a story focused on it.
     At the end of my first year at high school I was also a speaker at a conference about
     education, on which I was invited. The conference was about introduction of programming into
-    school as an obligatory subject and I've shown one of my projects there. Encouraged by it, my
-    teacher has bought an Arduino Uno board and gave it me for my projects. Not-so-much time
-    after it, I also have started to learn programming. I've learnt basics of C++ language and some
-    web development tools including HTML, CSS and JavaScript. I've used it to make a simple
-    website about physics, but it has been never published.</p>
+    school as an obligatory subject and I've shown one of my projects there.</p>
 
     <Image>
       <Img src={Debutant} width="480px" alt="EL-ROBO-MECH, Warsaw 2018" />
@@ -86,8 +83,10 @@ export const AboutMe = () => (
     Polish capital city. 
     With above achievements up to date, in my third year at high school I got my first
     schoolarship founded by a local seafood company SUEMPOL. With these money I've started
-    making a large project I had been thinking about for many years – a mechanical human arm.
-    The arm had seven pneumatic and two electric functions. I have submitted a model to the EL-ROBO-MECH contest organized by Bialystok University of Technology, where it took third
+    making a large project I had been thinking about for many 
+    years – a <StyledLink to="/human-arm">mechanical human arm</StyledLink>.
+    The arm had seven pneumatic and two electric functions. I have submitted a model to the 
+    EL-ROBO-MECH contest organized by Bialystok University of Technology, where it took third
     place winning money prize and the university priority admission card.
     In the time of high school my mentors were teachers Sławomir Zieniewski and Ewa Trzeszczkowska.
     A scholarship wasn't only money I've got for education. I also managed to get a subsidy
@@ -127,8 +126,9 @@ export const AboutMe = () => (
     During the last semester of my bachelor's degree I was studying at University of Southern Denmark in Odense as
     an exchange student. I also was one of the total of four students that got a grant from
     Diamonds' Explorers foundation launched and led by previous rector of BUT – PhD Lech
-    Dzienis. In the time of my stay in Denmark I was working at Nordbo Robotics company and I
-    wrote a thesis focused on robotic manipulation using computer vision system – a quintessential
+    Dzienis. In the time of my stay in Denmark I had a short period working at Nordbo Robotics company and I
+    wrote a <StyledLink to="/robotic-manipulation">thesis</StyledLink> focused on robotic manipulation 
+    using computer vision system – a quintessential
     problem in modern robotics. My supervisor was PhD Adam Wolniakowski.</p>
 
     <p><b>Plans for future</b></p>
@@ -139,8 +139,8 @@ export const AboutMe = () => (
 
     <p><b>People who inspire me</b></p>
     <ul>
-      <li><Link href="https://petrospsyllos.com/en/">Petros Psyllos</Link></li>
-      <li><Link href="https://pwwprojects.blogspot.com/">Piotr Wasilewski</Link></li>
+      <li><LinkA href="https://petrospsyllos.com/en/">Petros Psyllos</LinkA></li>
+      <li><LinkA href="https://pwwprojects.blogspot.com/">Piotr Wasilewski</LinkA></li>
     </ul>
 
     <p><b>Recommended books</b></p>

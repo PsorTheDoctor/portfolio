@@ -41,6 +41,7 @@ const Intro = styled.div`
 const About = styled.div`
   width: 630px;
   padding: 30px;
+  text-shadow: 2px 2px 2px darkblue;
 `;
 
 const Serif = styled.div`

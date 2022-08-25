@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Kangaroo from "../../images/kangaroo.jpg";
 import Yolo from "../../images/yolo.gif";
 import Ur5 from "../../images/ur5.gif";
+import Arm from "../../images/arm.gif";
 
 type PropsType = {};
 
@@ -48,18 +49,6 @@ const Img = styled.img`
   }
 `;
 
-// const Video = styled.video`
-//   @media (min-width: 480px) {
-//     width: 480px;
-//   }
-//   @media (max-width: 480px) {
-//     width: 100%;
-//   }
-//   &::-webkit-media-controls {
-//     display: none !important;
-//   }
-// `;
-
 const Title = styled.div`
   font-size: 20px;
   font-weight: bold;
@@ -76,6 +65,7 @@ const Button = styled.button`
   font-size: 13px;
   font-weight: bold;
   margin-bottom: 10px;
+  box-shadow: 5px 5px 5px lightgray;
   &:hover {
     background-color: lightgreen;
     transition: 0.3s;
@@ -106,10 +96,6 @@ export const Projects = (props: PropsType) => (
       <Post>
         <Link to="/object-recognition">
           <Img src={Yolo} width={480} alt="Object recognition" />
-          {/* <Video loop autoPlay muted>
-            <source src={ThumbYolo} type="video/mp4" />
-            Your browser does not support the video tag.
-          </Video> */}
         </Link>
         <Title>Object recognition for the autonomous vehicle</Title>
         <p>A project with Polish company STEKOP.</p>
@@ -120,14 +106,19 @@ export const Projects = (props: PropsType) => (
       <Post>
         <Link to="/robotic-manipulation">
          <Img src={Ur5}  width={480} alt="UR5 robot arm" />
-          {/* <Video loop autoPlay muted>
-            <source src={ThumbUR5} type="video/mp4" />
-            Your browser does not support the video tag.
-          </Video> */}
         </Link>
         <Title>Solving robotic manipulation problems</Title>
         <p>My bachelor thesis under the supervising of PhD Adam Wolniakowski.</p>
         <Button><ReadMore to="/robotic-manipulation">Read more</ReadMore></Button>
+      </Post>
+
+      <Post>
+        <Link to="/human-arm">
+         <Img src={Arm}  width={480} alt="Lego human arm" />
+        </Link>
+        <Title>Lego human arm</Title>
+        <p>Archival project from a high school.</p>
+        <Button><ReadMore to="/human-arm">Read more</ReadMore></Button>
       </Post>
     </Wrapper>
   </div>

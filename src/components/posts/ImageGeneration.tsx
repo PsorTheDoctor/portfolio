@@ -30,12 +30,14 @@ export const ImageGeneration = (props: PropsType) => (
 
     <p>To avoid explicit usage of the model generation of some topics including 
     realistic human faces has been prohibited. Anyway, I've managed to create the variations
-    of mine fooling the censorship system by FGSM (Fast Gradient Signed Method) attack.
+    of mine fooling the censorship system by FGSM (Fast Gradient Signed Method) attack. It's a way to
+    confuse neural networks by adding a special noise that makes the inputs are indistinguishable to
+    the human eye, but results failing to identify content by a classifer.
     The results were rather quite satisfying.</p>
 
     <Image>
       <Img src={Adam} width="600px" alt="Variations of my face" />
-      <p>Variations of my face.</p>
+      <p>Variations of my face. Proud of being the least ugly version of myself in a whole multiverse.</p>
     </Image>
 
     <p>Telling the truth, it's actually third product OpenAI has shared with me. 
