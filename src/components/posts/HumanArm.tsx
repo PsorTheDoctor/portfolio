@@ -1,7 +1,11 @@
 import styled from "styled-components";
-import { Wrapper, Title, Subtitle, Image } from "./Style";
+import { Wrapper, Title, Subtitle, Image, Iframe } from "./Style";
 
 type PropsType = {};
+
+const List = styled.p`
+  text-align: left;
+`;
 
 const Link = styled.a`
   text-decoration: none;
@@ -18,7 +22,7 @@ export const HumanArm = (props: PropsType) => (
     bend the fingers and a bunch of rubber bands to straighten them and clip the hoses. Obviously, except of "regular"
     and common parts we have electric circuit and quite extensive pneumatic system. These two complement 
     each other, I mean we have:</p>
-    <p>
+    <List>
       <ul>
         <li>2 IR receivers that enable remote control</li>
         <li>6 motors of which one propellers the compressor</li>
@@ -28,7 +32,7 @@ export const HumanArm = (props: PropsType) => (
         <li>compressor pump propelled by one of above motors</li>
         <li>pressure switch that turns off the compressor when pressure in the circuit is too high</li>
       </ul>
-    </p>
+    </List>
 
     <p>Since we have tamed with a bill of material, there's time to admit what induced me to build it.
     The idea came at the end of my primary school when 
@@ -64,8 +68,8 @@ export const HumanArm = (props: PropsType) => (
     low pressure.</p> */}
 
     <Image>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/OmCMfnaYNMU" title="YouTube video player" frameBorder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+      <Iframe width="560" height="315" src="https://www.youtube.com/embed/OmCMfnaYNMU" title="YouTube video player" frameBorder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></Iframe>
     </Image>
   </Wrapper>
 );

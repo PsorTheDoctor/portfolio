@@ -36,13 +36,13 @@ const Intro = styled.div`
   flex-direction: row;
   align-items: center;
   margin-bottom: 50px;
-  border-radius: 0 0 25px 25px ;
+  border-radius: 0 0 25px 25px;
 `;
 
 const About = styled.div`
   width: 630px;
   padding: 30px;
-  text-shadow: 2px 2px 2px darkblue;
+  text-shadow: 1px 1px 1px darkblue;
 `;
 
 const Serif = styled.div`
