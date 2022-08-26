@@ -42,21 +42,16 @@ const LinkA = styled.a`
 
 export const AboutMe = () => (
   <Wrapper>
-    <p><Header>About me</Header>
-    My name's Adam. I was born in Poland.</p>
+    <p><Header>About me</Header></p>
 
-    <p><b>Early years</b></p>
-    <p>Even being a kid I have been interested in technical fields. I've been building various
+    <p>My name's Adam. I was born in a small town in north-eastern Poland around fifty kilometers 
+    near to the Belarussian border where I grew up.
+    Even being a kid I have been interested in technical fields. I've been building various
     devices since my early years. I built my first project – a mechanical monkey when I was
     six. The idea was dead simple. It was basically an automata propelled by single motor geared
     down twenty times by a worm gear. The arms worked as slider-crank linkages ended with claws
     that were hooking a rope alternately. The result of this mechanism was a fully movable model of
     a monkey that works just fine.</p>
-    
-    <p><b>Primary school</b></p>
-    <p>Another things that kept me interested into mechanics were drivetrains. I built my first
-    gearbox at the age of eleven. It was a simple 4-speed manual transmission that trasmitted
-    rotary movement form car wheels to fake piston engine.</p>
 
     <p><b>High School</b></p>
     <p>In 2015-2018 I attended the High School, where I studied at a class with extended math

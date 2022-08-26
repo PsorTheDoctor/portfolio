@@ -30,13 +30,15 @@ const Intro = styled.div`
   @media (max-width: 900px) {
     background-blend-mode: soft-light;
   }
+  @media (min-width: 1000px) {
+    border-radius: 0 0 25px 25px;
+  }
   min-height: 530px;
   color: white;
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-bottom: 50px;
-  border-radius: 0 0 25px 25px;
 `;
 
 const About = styled.div`
