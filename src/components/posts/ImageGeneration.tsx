@@ -32,7 +32,7 @@ export const ImageGeneration = (props: PropsType) => (
     realistic human faces has been prohibited. Anyway, I've managed to create the variations
     of mine fooling the censorship system by FGSM (Fast Gradient Signed Method) attack. It's a way to
     confuse neural networks by adding a special noise that makes the inputs are indistinguishable to
-    the human eye, but results failing to identify content by a classifer.
+    the human eye, but results failing to identify content by a classifier.
     The results were rather quite satisfying.</p>
 
     <Image>
