@@ -35,8 +35,8 @@ const Header = styled.div`
 
 const Post = styled.div`
   max-width: 480px;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
   padding-bottom: 20px;
 `;
 

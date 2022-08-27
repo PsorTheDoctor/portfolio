@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Projects } from "./Projects";
-import Adam from "../../images/adam.png";
+import Adam from "../../images/adam_thumb.png";
 
 import RobotIcon from "@mui/icons-material/PrecisionManufacturing";
 import ComputerIcon from '@mui/icons-material/Computer';
@@ -42,7 +42,7 @@ const Intro = styled.div`
 `;
 
 const About = styled.div`
-  width: 630px;
+  width: 650px;
   padding: 30px;
   text-shadow: 1px 1px 1px darkblue;
 `;
@@ -132,7 +132,7 @@ export const Home = (props: PropsType) => (
         <p><Serif><b>Adam Wolkowycki</b></Serif>
         <h5>Robotics Engineer, Programmer</h5></p>
         <Serif>
-          <p>I am robotics and AI enthusiast currently doing my master degree of Robot Systems: Advanced Robotics Technology at University of Southern Denmark.</p>
+          <p>I am robotics and AI enthusiast currently doing my master's degree of Robot Systems: Advanced Robotics Technology at University of Southern Denmark.</p>
           <p>I received my bachelor of engineering at Bialystok University of Technology in Poland where I was founder and leader of AI science club and scholar of Diamonds' Explorers foundation.</p>
         </Serif>
       </About>

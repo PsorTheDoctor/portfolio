@@ -17,6 +17,13 @@ export const HumanArm = (props: PropsType) => (
     <Title>Lego human arm</Title>
     <Subtitle>Archival project from a high school.</Subtitle>
 
+    <p>Model built at the beginning of 2018 in the image of human arm.
+    The robot is a combination of pneumatic and electric components. Electric parts are controlled 
+    remotely while pneumatic - by the panel with a system of valves. It's quite large, even slightly
+    more than an actual human arm. It features prehensile palm with tendon-like controlled fingers,
+    natural range of thumb movement, fingers abduction, rotated and elevated forearm and
+    wrist axis that moves forward and backward.</p>
+
     <p>I may sound a bit childish talking that this robot has been built entirely out of original LEGO pieces
     (including electric and pneumatic components). Only not original elements are threads used to 
     bend the fingers and a bunch of rubber bands to straighten them and clip the hoses. Obviously, except of "regular"
@@ -71,5 +78,12 @@ export const HumanArm = (props: PropsType) => (
       <Iframe width="560" height="315" src="https://www.youtube.com/embed/OmCMfnaYNMU" title="YouTube video player" frameBorder="0" 
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></Iframe>
     </Image>
+
+  <p>To conclude I must say I'm satisfied with the model. It got into two local competitions: the podium 
+  of EL-ROBO-MECH in 2018 and final of KOKOS Students' Construction Contest in 2021 in the category of Smart Robots. 
+  It has also been shown at some expos where aroused significant interest. Eithey way, the construction
+  was rather flimsy. The weight, lenght of the pneumatic hoses and compessibility of the air made it didn't move smootly in fact.
+  However, it felt like something innovative to build and still was interesting to see it working.
+  </p>
   </Wrapper>
 );

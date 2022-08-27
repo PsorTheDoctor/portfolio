@@ -137,9 +137,8 @@ export const ObjectRecognition = () => {
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></Iframe>
     </Image>
 
-    <p>It was really satisfying to see how accurate some predictions were. 
-      and less satisfying - to notice 
-    the program run with the speed of two frames per second on my laptop's CPU. After adding GPU acceleration
+    <p>It was really satisfying to see how accurate some predictions were and less satisfying - to notice 
+    the program run with the speed of two frames per second on my laptop's CPU. After adding GPU acceleration on nVIDIA 3060 RTX
     the results were impressive achieving 64 FPS for the lighter neural net model and 16 FPS for more robust ones 
     (I don't know why it fixates on powers of two, but for unknown reason it does). The main disadvantage was rapid
     dissapearing the prediction bounding boxes that, at least in the theory, could be simply solved by using

@@ -45,8 +45,8 @@ export const AboutMe = () => (
     <p><Header>About me</Header></p>
 
     <p>My name's Adam. I was born in a small town in north-eastern Poland around fifty kilometers 
-    near to the Belarussian border where I grew up. As a kid I've experienced my first crush with LEGO 
-    that made me keen on building and brought to interesting in technical fields. I used to build various
+    near to the Belarussian border. As a kid I've experienced my first crush with LEGO 
+    that made me keen on building and interested in technical fields. I used to build various
     devices since my early years. I built my first project – a mechanical rope-walking monkey when I was
     six. The idea was dead simple. It was basically an automata propelled by single motor geared
     down twenty times by a worm gear. The arms worked as slider-crank linkages ended with claws
