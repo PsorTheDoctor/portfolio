@@ -1,5 +1,5 @@
 import { Wrapper, Title, Subtitle, Image, Button, Img, Iframe, Link } from "./Style";
-import ur from "../../images/ur5.jpg";
+import ur from "../../images/ur5_thumb.jpg";
 
 type PropsType = {};
 
@@ -16,7 +16,7 @@ export const RoboticManipulation = (props: PropsType) => (
     
     <p>The purpose of this thesis was to develop a solution that allows for recognition of a
     given object and perform grasping of it by a manipulator. The further development of the
-    problem known as bin picking aims at increasing a scope of industrial robots’ operation in
+    problem known as bin picking aims at increasing a scope of industrial robots' operation in
     a context of their work. It is quintessential in many modern robotic applications targeted
     for being more dexterous and intuitive.</p>
 
