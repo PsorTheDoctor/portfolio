@@ -5,7 +5,7 @@ const Wrapper = styled.div`
   background-color: darkblue;
   color: white;
   display: flex;
-  align-items: center;
+  align-items: top;
   justify-content: center;
   text-transform: uppercase;
   font-size: 13px;

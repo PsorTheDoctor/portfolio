@@ -144,6 +144,9 @@ export const ObjectRecognition = () => {
     dissapearing the prediction bounding boxes that, at least in the theory, could be simply solved by using
     Kalman filter.</p>
 
+    <p><b>Note</b></p>
+    <p>STEKOP S.A. does not authorize this post.</p>
+
     {/* <Photos>
       <Img src={Rover} alt="Test vehicle" />
       <Img src={Turtle} alt="Rover" />

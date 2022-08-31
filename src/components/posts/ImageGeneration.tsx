@@ -47,5 +47,8 @@ export const ImageGeneration = (props: PropsType) => (
     different story. It allows to see how much deep understanding actually is producing
     truly creative and unusual samples.
     </p>
+
+    <p><b>Note</b></p>
+    <p>OpenAI does not authorize this post.</p>
   </Wrapper>
 );

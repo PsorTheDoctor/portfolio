@@ -51,7 +51,7 @@ export const AboutMe = () => (
     six. The idea was dead simple. It was basically an automata propelled by single motor geared
     down twenty times by a worm gear. The arms worked as slider-crank linkages ended with claws
     that were hooking a rope alternately. The result of this mechanism was a fully movable model of
-    a monkey that works just fine.</p>
+    a monkey that worked just fine.</p>
 
     <p><b>High School</b></p>
     <p>In 2015-2018 I attended the High School, where I studied at a class with extended math
@@ -76,7 +76,7 @@ export const AboutMe = () => (
     <p>In spring 2017 I took a part in Regional E(x)plory Competition for young scientists with
     the project of automatic gearbox I've developed on my own. I have shown it widely in Warsaw –
     Polish capital city. 
-    With above achievements up to date, in my third year at high school I got my first
+    With above achievements up to this date, in my third year at high school I got my first
     schoolarship founded by a local seafood company SUEMPOL. With these money I've started
     making a large project I had been thinking about for many 
     years – a <StyledLink to="/human-arm">mechanical human arm</StyledLink>.

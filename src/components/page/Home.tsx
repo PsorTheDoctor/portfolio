@@ -31,7 +31,9 @@ const Intro = styled.div`
     background-blend-mode: soft-light;
   }
   @media (min-width: 1000px) {
-    border-radius: 0 0 25px 25px;
+    margin-top: 25px;
+    border-radius: 25px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
   }
   min-height: 530px;
   color: white;

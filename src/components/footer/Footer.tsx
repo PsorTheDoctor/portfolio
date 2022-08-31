@@ -29,6 +29,7 @@ const Button = styled.button`
   text-transform: uppercase;
   font-size: 13px;
   font-weight: bold;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
   &:hover {
     background-color: lightgreen;
     transition: 0.3s;
