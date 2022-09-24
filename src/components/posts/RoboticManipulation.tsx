@@ -1,9 +1,7 @@
 import { Wrapper, Title, Subtitle, Image, Button, Img, Iframe, Link } from "./Style";
 import ur from "../../images/ur5_thumb.jpg";
 
-type PropsType = {};
-
-export const RoboticManipulation = (props: PropsType) => (
+export const RoboticManipulation = () => (
   <Wrapper>
     <Title>Solving robotic manipulation problems</Title>
     <Subtitle>My bachelor thesis under the supervising of PhD Adam Wolniakowski.</Subtitle>

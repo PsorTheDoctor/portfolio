@@ -9,6 +9,7 @@ import { HumanArm } from "../posts/HumanArm";
 import { RoboticManipulation } from "../posts/RoboticManipulation";
 import { ObjectRecognition } from "../posts/ObjectRecognition";
 import { ImageGeneration } from "../posts/ImageGeneration";
+import { ObjectTracking } from "../posts/ObjectTracking";
 
 const Wrapper = styled.div`
   background-color: whitesmoke;
@@ -27,6 +28,7 @@ export const Page = () => (
       <Route path="/robotic-manipulation" element={<RoboticManipulation />} />
       <Route path="/object-recognition" element={<ObjectRecognition />} />
       <Route path="/image-generation" element={<ImageGeneration />} />
+      <Route path="/object-tracking" element={<ObjectTracking />} />
     </Routes>
   </Wrapper>
 );

@@ -12,8 +12,6 @@ import { Wrapper, Title, Subtitle, Image, Button, Iframe } from "./Style";
 // import Halftrack from "../../images/halftrack.jpg";
 // import Halftrack2 from "../../images/halftrack2.jpg";
 
-type PropsType = {};
-
 const Link = styled.a`
   color: white;
   text-decoration: none;

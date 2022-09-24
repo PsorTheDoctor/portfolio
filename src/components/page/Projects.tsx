@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import Tracking from "../../images/tracking.gif";
 import Kangaroo from "../../images/kangaroo.jpg";
 import Yolo from "../../images/yolo.gif";
 import Ur5 from "../../images/ur5.gif";
@@ -7,7 +8,7 @@ import Arm from "../../images/arm.gif";
 
 type PropsType = {};
 
-const Wrapper = styled.div`
+const Row = styled.div`
   @media (max-width: 1000px) {
     display: block;
   }
@@ -83,7 +84,16 @@ const ReadMore = styled(Link)`
 export const Projects = (props: PropsType) => (
   <div>
     <Header><p>Projects</p></Header>
-    <Wrapper>
+    <Row>
+      <Post>
+        <Link to="/object-tracking">
+          <Img src={Tracking} width={480} alt="Object tracking" />
+        </Link>
+        <Title>Object tracking toolkit</Title>
+        <p>Follow-up of the autonomous vehicle project.</p>
+        <Button><ReadMore to="/object-tracking">Read more</ReadMore></Button>
+      </Post>
+
       <Post>
         <Link to="/image-generation">
           <Img src={Kangaroo} width={393} height={270} alt="Kangaroo weraing an orange hoodie and blue sunglasses" />
@@ -92,7 +102,8 @@ export const Projects = (props: PropsType) => (
         <p>Overview of DALL-E text-to-image generator OpenAI kindly shared with me.</p>
         <Button><ReadMore to="/image-generation">Read more</ReadMore></Button>
       </Post>
-
+    </Row>
+    <Row>
       <Post>
         <Link to="/object-recognition">
           <Img src={Yolo} width={480} alt="Object recognition" />
@@ -101,8 +112,7 @@ export const Projects = (props: PropsType) => (
         <p>A project with Polish company STEKOP.</p>
         <Button><ReadMore to="/object-recognition">Read more</ReadMore></Button>
       </Post>
-    </Wrapper>
-    <Wrapper>
+
       <Post>
         <Link to="/robotic-manipulation">
          <Img src={Ur5}  width={480} alt="UR5 robot arm" />
@@ -111,7 +121,8 @@ export const Projects = (props: PropsType) => (
         <p>My bachelor thesis under the supervising of PhD Adam Wolniakowski.</p>
         <Button><ReadMore to="/robotic-manipulation">Read more</ReadMore></Button>
       </Post>
-
+    </Row>
+    <Row>
       <Post>
         <Link to="/human-arm">
          <Img src={Arm}  width={480} alt="Lego human arm" />
@@ -120,6 +131,6 @@ export const Projects = (props: PropsType) => (
         <p>Archival project from a high school.</p>
         <Button><ReadMore to="/human-arm">Read more</ReadMore></Button>
       </Post>
-    </Wrapper>
+    </Row>
   </div>
 );

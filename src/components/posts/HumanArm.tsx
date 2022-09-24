@@ -1,8 +1,6 @@
 import styled from "styled-components";
 import { Wrapper, Title, Subtitle, Image, Iframe } from "./Style";
 
-type PropsType = {};
-
 const List = styled.p`
   text-align: left;
 `;
@@ -12,7 +10,7 @@ const Link = styled.a`
   font-weight: bold;
 `;
 
-export const HumanArm = (props: PropsType) => (
+export const HumanArm = () => (
   <Wrapper>
     <Title>Lego human arm</Title>
     <Subtitle>Archival project from a high school.</Subtitle>

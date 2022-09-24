@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
   margin-left: auto;
   margin-right: auto;
   text-align: justify;
-  padding: 10px 10px 50px 10px;
+  padding: 10px 10px 30px 10px;
 `;
 
 export const Title = styled.div`

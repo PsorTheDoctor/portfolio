@@ -11,7 +11,7 @@ const Wrapper = styled.div`
   margin-left: auto;
   margin-right: auto;
   text-align: justify;
-  padding: 10px;
+  padding: 10px 10px 30px 10px;
 `;
 
 const Header = styled.div`
@@ -116,15 +116,23 @@ export const AboutMe = () => (
     produces plastic components especially the ignition coils. My role was to clean and unassemble
     the molding folds, operate an EDM machine and make models of parts in a CAD software.
     So far, I still take a part in some competitions once in a while. In my third year of
-    studies I got into the final of KOKOS Students' Construction Contest in the category of Smart
+    studies I got into the final of nationwide KOKOS Students' Construction Contest in the category of Smart
     Robots. A work presented there was my old mechanical human arm project.
-    During the last semester of my bachelor's degree I was studying at University of Southern Denmark in Odense as
+    During the last semester of my bachelor's degree I was studying at SDU (University of Southern Denmark) in Odense as
     an exchange student. I also was one of the total of four students that got a grant from
     Diamonds' Explorers foundation launched and led by previous rector of BUT – PhD Lech
     Dzienis. In the time of my stay in Denmark I had a short period working at Nordbo Robotics company and I
     wrote a <StyledLink to="/robotic-manipulation">thesis</StyledLink> focused on robotic manipulation 
     using computer vision system – a quintessential
     problem in modern robotics. My supervisor was PhD Adam Wolniakowski.</p>
+
+    <p><b>Master studies</b></p>
+    <p>After graduating I received an offer of work on the autonomous military vehicle project supervised
+    by Polish company STEKOP that specializes in the security systems. My role was to code computer vision
+    utilities, such as <StyledLink to="/object-recognition">object recognition</StyledLink>,
+    distance estimation and <StyledLink to="/object-tracking">tracking</StyledLink>. 
+    For my master's degree I was admitted to Aalborg University and SDU of which I chose the second – same place I've been studying on an exchange.
+    </p>
 
     <p><b>Plans for future</b></p>
     <p>In the near future I am going to still develop further in the fields of my interests:
