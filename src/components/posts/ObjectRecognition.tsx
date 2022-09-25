@@ -114,7 +114,7 @@ export const ObjectRecognition = () => {
     and distance estimation methods. The final solution will be implemented to an autonomous military vehicle.</p>
 
     <p>The story of my part of this project began shortly after my return to Poland from exchange studies and passing 
-    bachelor exam. One of my collegues from the rover section of KNR Robotics Science Club introduced me to
+    bachelor exam. One of my fellows from the rover section of KNR Robotics Science Club introduced me to
     the company called STEKOP. They specialize in security systems and were looking for a computer vision developer.
     Honestly, it wasn't first time I heard about this project - I've read somewhat before that made me curious
     about it. So, it's not needed to say I accepted the offer and sent them a resume with not much wondering.</p>

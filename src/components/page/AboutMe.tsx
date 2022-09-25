@@ -131,7 +131,9 @@ export const AboutMe = () => (
     by Polish company STEKOP that specializes in the security systems. My role was to code computer vision
     utilities, such as <StyledLink to="/object-recognition">object recognition</StyledLink>,
     distance estimation and <StyledLink to="/object-tracking">tracking</StyledLink>. 
-    For my master's degree I was admitted to Aalborg University and SDU of which I chose the second – same place I've been studying on an exchange.
+    I also had an opportunity to be a voluntary beta-tester of some of the popular OpenAI's products 
+    in the early stages of deployment. For my master's degree I was admitted to Aalborg University
+    and SDU of which I chose the second – same place I've been studying on the exchange.
     </p>
 
     <p><b>Plans for future</b></p>
