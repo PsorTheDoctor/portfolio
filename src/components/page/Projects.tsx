@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Tracking from "../../images/tracking.gif";
-import Kangaroo from "../../images/kangaroo.jpg";
+import Parrot from "../../images/parrot.gif";
 import Yolo from "../../images/yolo.gif";
 import Ur5 from "../../images/ur5.gif";
 import Arm from "../../images/arm.gif";
@@ -39,6 +39,11 @@ const Post = styled.div`
   /* margin-left: auto;
   margin-right: auto; */
   padding-bottom: 20px;
+`;
+
+const Link2 = styled(Link)`
+  display: flex;
+  justify-content: center;
 `;
 
 const Img = styled.img`
@@ -95,9 +100,9 @@ export const Projects = (props: PropsType) => (
       </Post>
 
       <Post>
-        <Link to="/image-generation">
-          <Img src={Kangaroo} width={393} height={270} alt="Kangaroo weraing an orange hoodie and blue sunglasses" />
-        </Link>
+        <Link2 to="/image-generation">
+          <Img src={Parrot} width={270} height={270} alt="Image interpolation between parrot and toucan" />
+        </Link2>
         <Title>Testing image generation tools</Title>
         <p>Overview of DALL-E text-to-image generator OpenAI kindly shared with me.</p>
         <Button><ReadMore to="/image-generation">Read more</ReadMore></Button>
