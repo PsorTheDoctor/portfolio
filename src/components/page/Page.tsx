@@ -26,9 +26,9 @@ export const Page = () => (
 
       <Route path="/human-arm" element={<HumanArm />} />
       <Route path="/robotic-manipulation" element={<RoboticManipulation />} />
-      <Route path="/object-recognition" element={<ObjectRecognition />} />
+      {/* <Route path="/object-recognition" element={<ObjectRecognition />} />
       <Route path="/image-generation" element={<ImageGeneration />} />
-      <Route path="/object-tracking" element={<ObjectTracking />} />
+      <Route path="/object-tracking" element={<ObjectTracking />} /> */}
     </Routes>
   </Wrapper>
 );

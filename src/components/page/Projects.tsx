@@ -89,7 +89,7 @@ const ReadMore = styled(Link)`
 export const Projects = (props: PropsType) => (
   <div>
     <Header><p>Projects</p></Header>
-    <Row>
+    {/* <Row>
       <Post>
         <Link to="/object-tracking">
           <Img src={Tracking} width={480} alt="Object tracking" />
@@ -107,16 +107,16 @@ export const Projects = (props: PropsType) => (
         <p>Overview of DALL-E text-to-image generator OpenAI kindly shared with me.</p>
         <Button><ReadMore to="/image-generation">Read more</ReadMore></Button>
       </Post>
-    </Row>
+    </Row> */}
     <Row>
-      <Post>
+      {/* <Post>
         <Link to="/object-recognition">
           <Img src={Yolo} width={480} alt="Object recognition" />
         </Link>
         <Title>Object recognition for the autonomous vehicle</Title>
         <p>A project with Polish company STEKOP.</p>
         <Button><ReadMore to="/object-recognition">Read more</ReadMore></Button>
-      </Post>
+      </Post> */}
 
       <Post>
         <Link to="/robotic-manipulation">
@@ -127,7 +127,7 @@ export const Projects = (props: PropsType) => (
         <Button><ReadMore to="/robotic-manipulation">Read more</ReadMore></Button>
       </Post>
     </Row>
-    <Row>
+    {/* <Row>
       <Post>
         <Link to="/human-arm">
          <Img src={Arm}  width={480} alt="Lego human arm" />
@@ -136,6 +136,6 @@ export const Projects = (props: PropsType) => (
         <p>Archival project from a high school.</p>
         <Button><ReadMore to="/human-arm">Read more</ReadMore></Button>
       </Post>
-    </Row>
+    </Row> */}
   </div>
 );
