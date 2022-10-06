@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Tracking from "../../images/tracking.gif";
 import Parrot from "../../images/parrot.gif";
 import Yolo from "../../images/yolo.gif";
+import Taero from "../../images/taero.jpg";
 import Ur5 from "../../images/ur5.gif";
 import Arm from "../../images/arm.gif";
 
@@ -77,8 +78,7 @@ const Button = styled.button`
     transition: 0.3s;
   }
 `
-
-const ReadMore = styled(Link)`
+const StyledLink = styled(Link)`
   color: white;
   text-decoration: none;
   &:hover {
@@ -117,20 +117,27 @@ export const Projects = (props: PropsType) => (
         <p>A project with Polish company STEKOP.</p>
         <Button><ReadMore to="/object-recognition">Read more</ReadMore></Button>
       </Post> */}
-
+      <Post>
+        <Link2 to="/autonomous-vehicle">
+         <Img src={Taero} height={270} alt="TAERO autonomous vehicle" />
+        </Link2>
+        <Title>Perception for the autonomous vehicle</Title>
+        <p>Software system for the autonomous military truck. Project realised with Polish company STEKOP.</p>
+        <Button><StyledLink to="/autonomous-vehicle">Read more</StyledLink></Button>
+      </Post>
       <Post>
         <Link to="/robotic-manipulation">
-         <Img src={Ur5}  width={480} alt="UR5 robot arm" />
+         <Img src={Ur5} width={480} alt="UR5 robot arm" />
         </Link>
         <Title>Solving robotic manipulation problems</Title>
         <p>My bachelor thesis under the supervising of PhD Adam Wolniakowski.</p>
-        <Button><ReadMore to="/robotic-manipulation">Read more</ReadMore></Button>
+        <Button><StyledLink to="/robotic-manipulation">Read more</StyledLink></Button>
       </Post>
     </Row>
     {/* <Row>
       <Post>
         <Link to="/human-arm">
-         <Img src={Arm}  width={480} alt="Lego human arm" />
+         <Img src={Arm} width={480} alt="Lego human arm" />
         </Link>
         <Title>Lego human arm</Title>
         <p>Archival project from a high school.</p>

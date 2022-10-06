@@ -2,16 +2,6 @@ import styled from "styled-components";
 import { useState } from 'react';
 import { Wrapper, Title, Subtitle, Image, Button, Iframe } from "./Style";
 
-// import Rover from "../../images/rover.jpg";
-// import Turtle from "../../images/turtle.jpg";
-// import Turtle2 from "../../images/turtle2.jpg";
-// import Quad from "../../images/quad.jpg";
-// import Quad2 from "../../images/quad2.jpg";
-// import Truck from "../../images/truck.jpg";
-// import Truck2 from "../../images/truck2.jpg";
-// import Halftrack from "../../images/halftrack.jpg";
-// import Halftrack2 from "../../images/halftrack2.jpg";
-
 const Link = styled.a`
   color: white;
   text-decoration: none;
@@ -144,18 +134,6 @@ export const ObjectRecognition = () => {
 
     <p><b>Note</b></p>
     <p>STEKOP S.A. does not authorize this post.</p>
-
-    {/* <Photos>
-      <Img src={Rover} alt="Test vehicle" />
-      <Img src={Turtle} alt="Rover" />
-      <Img src={Turtle2} alt="Rover" />
-      <Img src={Quad} alt="Quad-based vehicle" />
-      <Img src={Quad2} alt="Quad-based vehicle" />
-      <Img src={Halftrack} alt="Half-tracked vehicle" /> 
-      <Img src={Halftrack2} alt="Half-tracked vehicle" /> 
-      <Img src={Truck} alt="Military truck" />
-      <Img src={Truck2} alt="Military truck" />  
-    </Photos>     */}
   </Wrapper>
   );
 };

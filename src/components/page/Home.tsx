@@ -158,7 +158,7 @@ export const Home = (props: PropsType) => (
         <Hobby>
           <Computer />
           <p><h5>Computer Vision</h5></p>
-          <p>Image processing, <br/>object recognition</p>
+          <p>Image and video processing, <br/>object recognition</p>
         </Hobby>
         <Hobby>
           <Psychology />

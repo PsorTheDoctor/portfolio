@@ -40,6 +40,10 @@ const LinkA = styled.a`
   font-weight: bold;
 `;
 
+const List = styled.ul`
+  text-align: left;
+`
+
 export const AboutMe = () => (
   <Wrapper>
     <p><Header>About me</Header></p>
@@ -108,8 +112,8 @@ export const AboutMe = () => (
     some of them at my second Regional E(x)plory Competition.</p>
     
     <Image>
-      <Img src={Explory} width="600px" alt="Regional E(x)plory Competition, Warsaw 2019" />
-      <p>Regional E(x)plory competition, Warsaw 2019</p>
+      <Img src={Explory} width="600px" alt="Regional E(x)plory Competition, Lodz 2019" />
+      <p>Regional E(x)plory competition, Łódź 2019</p>
     </Image>
 
     <p>Programming aside, I did an internship at Standard Motor Products factory that
@@ -120,7 +124,7 @@ export const AboutMe = () => (
     Robots. A work presented there was my old mechanical human arm project.
     During the last semester of my bachelor's degree I was studying at SDU (University of Southern Denmark) in Odense as
     an exchange student. I also was one of the total of four students that got a grant from
-    Diamonds' Explorers foundation launched and led by previous rector of BUT – PhD Lech
+    Diamonds' Explorers foundation launched and led by previous rector of BUT – Professor Lech
     Dzienis. In the time of my stay in Denmark I had a short period working at Nordbo Robotics company and I
     wrote a <StyledLink to="/robotic-manipulation">thesis</StyledLink> focused on robotic manipulation 
     using computer vision system – a quintessential
@@ -147,7 +151,7 @@ export const AboutMe = () => (
     </ul>
 
     <p><b>Recommended books</b></p>
-    <ul>
+    <List>
       <li><i>Elon Musk</i> - Ashlee Vance</li>
       <li><i>Innovators</i> - Walter Isaacson</li>
       <li><i>Factfullness</i> - Hans Rosling</li>
@@ -158,14 +162,14 @@ export const AboutMe = () => (
       <li><i>Sapiens: A Brief History of Humankind</i> - Yuval Noah Harari</li>
       <li><i>Guns, Germs and Steel</i> - Jared Diamond</li>
       <li><i>Shoe Dog</i> - Phil Knight</li>
-    </ul>
+    </List>
     <p><b>Favourite movies</b></p>
-    <ul>
+    <List>
       <li><i>The Butterfly Effect, The Island, The Social Network, Forrest Gump, The Curious Case of Benjamin Button</i></li>
-    </ul>
+    </List>
     <p><b>TV series</b></p>
-    <ul>
+    <List>
       <li><i>13 Reasons Why, Black Mirror, Sillicon Valley</i></li>
-    </ul>
+    </List>
   </Wrapper>
 );

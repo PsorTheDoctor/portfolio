@@ -7,9 +7,7 @@ import { Contact } from "./Contact";
 
 import { HumanArm } from "../posts/HumanArm";
 import { RoboticManipulation } from "../posts/RoboticManipulation";
-import { ObjectRecognition } from "../posts/ObjectRecognition";
-import { ImageGeneration } from "../posts/ImageGeneration";
-import { ObjectTracking } from "../posts/ObjectTracking";
+import { AutonomousVehicle } from "../posts/AutonomousVehicle";
 
 const Wrapper = styled.div`
   background-color: whitesmoke;
@@ -26,9 +24,7 @@ export const Page = () => (
 
       <Route path="/human-arm" element={<HumanArm />} />
       <Route path="/robotic-manipulation" element={<RoboticManipulation />} />
-      {/* <Route path="/object-recognition" element={<ObjectRecognition />} />
-      <Route path="/image-generation" element={<ImageGeneration />} />
-      <Route path="/object-tracking" element={<ObjectTracking />} /> */}
+      <Route path="/autonomous-vehicle" element={<AutonomousVehicle />} />
     </Routes>
   </Wrapper>
 );
