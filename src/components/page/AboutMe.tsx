@@ -131,7 +131,8 @@ export const AboutMe = () => (
     problem in modern robotics. My supervisor was PhD Adam Wolniakowski.</p>
 
     <p><b>Master studies</b></p>
-    <p>After graduating I received an offer of work on the autonomous military vehicle project supervised
+    <p>After graduating I received an offer of work on 
+    the <StyledLink to="/autonomous-vehicle">autonomous military vehicle</StyledLink> project supervised
     by Polish company STEKOP that specializes in the security systems. My role was to code computer vision
     utilities, such as object recognition, distance estimation and tracking. 
     For my master's degree I was admitted to Aalborg University

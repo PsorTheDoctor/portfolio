@@ -30,7 +30,7 @@ export const HumanArm = () => (
     <List>
       <ul>
         <li>2 IR receivers that enable remote control</li>
-        <li>6 motors of which one propellers the compressor</li>
+        <li>6 motors of which one propels the compressor</li>
         <li>7 pneumatic cylinders</li>
         <li>4 linear actuators</li> 
         <li>6 valves that provide air to each cylinder</li>
