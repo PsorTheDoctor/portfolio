@@ -2,7 +2,7 @@ import { Wrapper, Title, Subtitle, Image, Iframe } from "./Style";
 
 export const AutonomousVehicle = () => (
   <Wrapper>
-    <Title>Object recognition for the autonomous vehicle</Title>
+    <Title>Perception for the autonomous vehicle</Title>
     <Subtitle>Software system for the autonomous military truck. Project realised with Polish company STEKOP.</Subtitle>
 
     <p>The task was to create a real-time GPU-accelerated environment recognition system including object detection
