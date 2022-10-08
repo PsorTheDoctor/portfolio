@@ -64,6 +64,9 @@ export const Footer = () => (
       <a href="mailto: adwol21@student.sdu.dk">
         <Button>Contact</Button>
       </a>
+      {/* <a href="https://www.buymeacoffee.com/adamwolkowycki" target="blank">
+        <Button>Buy me a coffee</Button>
+      </a> */}
       <SocialMedia>
         <Link href="https://www.linkedin.com/in/adam-wolkowycki-0a0570171" target="blank">
           <LinkedIn />

@@ -1,9 +1,12 @@
-import { Wrapper, Title, Subtitle, Image, Iframe } from "./Style";
+import { Wrapper, Title, Subtitle, Image, Img, Iframe } from "./Style";
+import Taero from "../../images/taero.jpg";
 
 export const AutonomousVehicle = () => (
   <Wrapper>
     <Title>Perception for the autonomous vehicle</Title>
     <Subtitle>Software system for the autonomous military truck. Project realised with Polish company STEKOP.</Subtitle>
+
+    <Image><Img src={Taero} width="600px" alt="Taero truck" /></Image>
 
     <p>The task was to create a real-time GPU-accelerated environment recognition system including object detection
     and distance estimation methods. The final solution will be implemented to TAERO autonomous military truck.</p>
