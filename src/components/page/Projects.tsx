@@ -1,11 +1,7 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import Tracking from "../../images/tracking.gif";
-import Parrot from "../../images/parrot.gif";
-import Yolo from "../../images/yolo.gif";
 import Taero from "../../images/taero.jpg";
-import Ur5 from "../../images/ur5.gif";
-import Arm from "../../images/arm.gif";
+import Ur5 from "../../images/ur5.gif";;
 
 type PropsType = {};
 
@@ -50,6 +46,8 @@ const Link2 = styled(Link)`
 const Img = styled.img`
   text-align: center;
   max-width: 100%;
+  max-height: 270px;
+  height: auto;
   &:hover {
     opacity: 0.9;
     transition: 0.3s;
@@ -119,7 +117,7 @@ export const Projects = (props: PropsType) => (
       </Post> */}
       <Post>
         <Link2 to="/autonomous-vehicle">
-         <Img src={Taero} height={270} alt="TAERO autonomous vehicle" />
+         <Img src={Taero} alt="TAERO autonomous vehicle" />
         </Link2>
         <Title>Perception for the autonomous vehicle</Title>
         <p>Software system for the autonomous military truck. Project realised with Polish company STEKOP.</p>
