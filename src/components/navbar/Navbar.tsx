@@ -41,7 +41,7 @@ export const Navbar = () => (
     <Tab to="/home">Home</Tab>
     <Tab to="/about-me">About me</Tab>
     <Tab to="/projects">Projects</Tab>
-    <TabA href="https://drive.google.com/file/d/1ZvTqL60nXqoFPjJGjoU0GKeCXKFsB_F3/view?usp=sharing" target="blank">
+    <TabA href="https://drive.google.com/file/d/1XOp30Fr8wbhqnblzaXQqOgzdrMhp0F-0/view?usp=sharing" target="blank">
       Resume
     </TabA>
     <Tab to="/contact">Contact</Tab>
