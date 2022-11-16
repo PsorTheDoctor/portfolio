@@ -21,26 +21,38 @@ const Wrapper = styled.div`
   margin-right: auto;
 `;
 
-const Intro = styled.div`
-  background-color: #0041c2;
-  background-image: url(${Adam});
-  background-repeat: no-repeat;
-  background-size: 400px;
-  background-position: right bottom;
-  @media (max-width: 900px) {
-    background-blend-mode: soft-light;
-  }
+const IntroWrapper = styled.div`
+  background-image: linear-gradient(to top right, #0000a0, #1569c7);
   @media (min-width: 1000px) {
     margin-top: 25px;
     border-radius: 25px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
   }
   min-height: 530px;
+  margin-bottom: 50px;
+`;
+
+const Intro = styled.div`
+  background-image: url(${Adam});
+  background-repeat: no-repeat;
+  background-size: 400px;
+  background-position: right bottom;
+  @media (max-width: 900px) {
+    background-color: #0041c2;
+    background-blend-mode: soft-light;
+  }
+  @media (min-width: 900px) {
+    filter: saturate(50%);
+  }
+  @media (min-width: 1000px) {
+    border-radius: 25px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
+  }
+  min-height: inherit;
   color: white;
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 50px;
 `;
 
 const About = styled.div`
@@ -129,16 +141,18 @@ const Psychology = styled(PsychologyIcon)`
 
 export const Home = (props: PropsType) => (
   <Wrapper>
-    <Intro>
-      <About>
-        <p><Serif><b>Adam Wolkowycki</b></Serif>
-        <h5>Robotics Engineer, Programmer</h5></p>
-        <Serif>
-          <p>I am robotics and AI enthusiast currently doing my master's degree of Robot Systems: Advanced Robotics Technology at University of Southern Denmark.</p>
-          <p>I received my bachelor of engineering at Bialystok University of Technology in Poland where I was founder and leader of AI science club and scholar of Diamonds' Explorers foundation.</p>
-        </Serif>
-      </About>
-    </Intro>
+    <IntroWrapper>
+      <Intro>
+        <About>
+          <p><Serif><b>Adam Wolkowycki</b></Serif>
+          <h5>Robotics Engineer, Programmer</h5></p>
+          <Serif>
+            <p>I am robotics and AI enthusiast currently doing my master's degree of Robot Systems: Advanced Robotics Technology at University of Southern Denmark.</p>
+            <p>I received my bachelor of engineering at Bialystok University of Technology in Poland where I was founder and leader of AI science club and scholar of Diamonds' Explorers foundation.</p>
+          </Serif>
+        </About>
+      </Intro>
+    </IntroWrapper>
 
     <Header><p>Fields of interest</p></Header>
     <Hobbies>

@@ -52,19 +52,14 @@ export const AboutMe = () => (
     near to the Belarussian border. As a kid I've experienced my first crush with LEGO 
     that made me keen on building and interested in technical fields. I used to build various
     devices since my early years. I built my first project – a mechanical rope-walking monkey when I was
-    six. The idea was dead simple. It was basically an automata propelled by single motor geared
+    six. The idea was dead simple. It was basically an automaton propelled by single motor geared
     down twenty times by a worm gear. The arms worked as slider-crank linkages ended with claws
     that were hooking a rope alternately. The result of this mechanism was a fully movable model of
     a monkey that worked just fine.</p>
 
     <p><b>High School</b></p>
     <p>In 2015-2018 I attended the High School, where I studied at a class with extended math
-    and physics. Then, at the age of sixteen I designed my first manipulator. It was formed as a lazy
-    vacation project among some others. It had four electric functions controlled remotely via IR:
-    base rotation, lifting, gripper rotation and grasp. It was also my first model that I've presented
-    out of home.</p>
-
-    <p>Mechanical models aside, I also took the initative to participate Poland's Olympics of
+    and physics. Then I took an initative to participate Poland's Olympics of
     Creativity called Destination Imagination. I was a leader of 6-person team and our challenge
     was to create a musical instrument that can withstand as large as possible payload and to write
     a story focused on it.
@@ -120,12 +115,11 @@ export const AboutMe = () => (
     produces plastic components especially the ignition coils. My role was to clean and unassemble
     the molding folds, operate an EDM machine and make models of parts in a CAD software.
     So far, I still take a part in some competitions once in a while. In my third year of
-    studies I got into the final of nationwide KOKOS Students' Construction Contest in the category of Smart
-    Robots. A work presented there was my old mechanical human arm project.
+    studies I got into the final of nationwide KOKOS Students' Construction Contest in the category of Smart Robots.
     During the last semester of my bachelor's degree I was studying at SDU (University of Southern Denmark) in Odense as
     an exchange student. I also was one of the total of four students that got a grant from
     Diamonds' Explorers foundation launched and led by previous rector of BUT – Professor Lech
-    Dzienis. In the time of my stay in Denmark I had a short period working at Nordbo Robotics company and I
+    Dzienis. In the time of my stay in Denmark I
     wrote a <StyledLink to="/robotic-manipulation">thesis</StyledLink> focused on robotic manipulation 
     using computer vision system – a quintessential
     problem in modern robotics. My supervisor was PhD Adam Wolniakowski.</p>

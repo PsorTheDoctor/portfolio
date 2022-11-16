@@ -9,7 +9,8 @@ export const AutonomousVehicle = () => (
     <Image><Img src={Taero} width="600px" alt="Taero truck" /></Image>
 
     <p>The task was to create a real-time GPU-accelerated environment recognition system including object detection
-    and distance estimation methods. The final solution will be implemented to TAERO autonomous military truck.</p>
+    and distance estimation methods. The final solution will be implemented to TAERO autonomous military truck.
+    The premiere of the vehicle was on autumn 2022 when it has been shown at 30th edition of International Defence Industry in Exhibition in Kielce, Poland.</p>
     
     <Image>
       <Iframe width="560" height="315" src="https://www.youtube.com/embed/enHP7vtQyUs" title="YouTube video player" frameBorder="0" 
