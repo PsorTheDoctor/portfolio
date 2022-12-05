@@ -15,7 +15,7 @@ const Radio = styled.div`
   margin-left: auto;
   margin-right: auto;
   border-radius: 15px;
-`
+`;
 
 const LeftButton = styled.button`
   background-color: lightgray;

@@ -70,7 +70,7 @@ export const RoboticManipulation = () => (
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></Iframe>
     </Image>
 
-    <p>All in all, the work is not self-sufficient system that would fulfill the industarial requirements in its current
+    <p>All in all, the work is not self-sufficient system that would fulfill the industrial requirements in its current
     state. Speaking of the future work, the problems like segmentation, noise reduction and object recognition still remain
     unsolved. It's simply opened to develop it further.
     Anyway, the project has a potential to become a part of larger software, where it would add

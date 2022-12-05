@@ -147,7 +147,7 @@ export const Home = (props: PropsType) => (
           <p><Serif><b>Adam Wolkowycki</b></Serif>
           <h5>Robotics Engineer, Programmer</h5></p>
           <Serif>
-            <p>I am robotics and AI enthusiast currently doing my master's degree of Robot Systems: Advanced Robotics Technology at University of Southern Denmark.</p>
+            <p>I am robotics and AI engineer currently doing my master's degree of Robot Systems: Advanced Robotics Technology at University of Southern Denmark.</p>
             <p>I received my bachelor of engineering at Bialystok University of Technology in Poland where I was founder and leader of AI science club and scholar of Diamonds' Explorers foundation.</p>
           </Serif>
         </About>

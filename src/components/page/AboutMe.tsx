@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Debutant from "../../images/debutant.jpg";
 import ElRoboMech from "../../images/elrobomech.jpg";
 import Explory from "../../images/explory.jpg";
+import Sonderborg from "../../images/sonderborg.jpg";
 
 const Wrapper = styled.div`
   display: flex;
@@ -58,11 +59,9 @@ export const AboutMe = () => (
     a monkey that worked just fine.</p>
 
     <p><b>High School</b></p>
-    <p>In 2015-2018 I attended the High School, where I studied at a class with extended math
-    and physics. Then I took an initative to participate Poland's Olympics of
-    Creativity called Destination Imagination. I was a leader of 6-person team and our challenge
-    was to create a musical instrument that can withstand as large as possible payload and to write
-    a story focused on it.
+    <p>In 2015-2018 I attended the High School where I studied at a class with extended math
+    and physics. Then I took an initative to participate in Polish Olympics of
+    Creativity called Destination Imagination, on which I was a leader of 6-person team.
     At the end of my first year at high school I was also a speaker at a conference about
     education, on which I was invited. The conference was about introduction of programming into
     school as an obligatory subject and I've shown one of my projects there.</p>
@@ -76,10 +75,10 @@ export const AboutMe = () => (
     the project of automatic gearbox I've developed on my own. I have shown it widely in Warsaw –
     Polish capital city. 
     With above achievements up to this date, in my third year at high school I got my first
-    schoolarship founded by a local seafood company SUEMPOL. With these money I've started
+    scholarship founded by a local seafood company SUEMPOL. With these money I've started
     making a large project I had been thinking about for many 
     years – a <StyledLink to="/human-arm">mechanical human arm</StyledLink>.
-    The arm had seven pneumatic and two electric functions. I have submitted a model to the 
+    I have submitted a model to the 
     EL-ROBO-MECH contest organized by Bialystok University of Technology, where it took third
     place winning money prize and the university priority admission card.
     In the time of high school my mentors were teachers Sławomir Zieniewski and Ewa Trzeszczkowska.
@@ -101,7 +100,7 @@ export const AboutMe = () => (
     section of Robotics Students' Club at the Mechanical Faculty of BUT. We were group of
     students that were learning modern technologies such as: neural networks, machine learning
     and computer vision by making more than a dozen of projects on various topics. My favorite one used special
-    kind of neural networks – recurrent network with LSTM cells in order to generate text in the
+    kind of neural networks – recurrent network in order to generate text in the
     style of Shakespeare based on his dramas. Another example was neural net with convolutional
     layers that could draw an image in a style of any artist, e.g. Picasso or Monet. I've also shown
     some of them at my second Regional E(x)plory Competition.</p>
@@ -127,10 +126,23 @@ export const AboutMe = () => (
     <p><b>Master studies</b></p>
     <p>After graduating I received an offer of work on 
     the <StyledLink to="/autonomous-vehicle">autonomous military vehicle</StyledLink> project supervised
-    by Polish company STEKOP that specializes in the security systems. My role was to code computer vision
-    utilities, such as object recognition, distance estimation and tracking. 
-    For my master's degree I was admitted to Aalborg University
+    by Polish company STEKOP that specializes in the security systems. As a freelance worker I was the main contributor responsible 
+    for computer vision containing object recognition, distance estimation and tracking. In autumn 2022 the truck has been revealed
+    at Polish International Defence Industry Exhibition in Kielce.
+    </p>
+
+    <Image>
+      <Img src={Sonderborg} width="600px" alt="SDU Case Competition, Sønderborg 2022" />
+      <p>SDU Case Competition, Sønderborg 2022</p>
+    </Image>
+
+    <p>For my master's degree I was admitted to Aalborg University
     and SDU of which I chose the second – same place I was studying on the exchange.
+    Not-so-long after that I had a pleasure to be a member of the winning team at SDU Case Competition in Sønderborg. 
+    The theme of the contest was to propose a solution that reduces carbon footprint backed by the usage of renewable energy sources.
+    Our team presented an idea of reusing exploited electric car batteries to store the green energy during high production periods
+    and use it while consumption raises. Successfully, the innovation had been noticed by the jury that decided to give us
+    first place and money prize. The cheque for 15000 DKK was handed over by chairman of the board of Danfoss and former billionaire – Jørgen Mads Clausen.
     </p>
 
     <p><b>Plans for future</b></p>
