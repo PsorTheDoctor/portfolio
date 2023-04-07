@@ -44,7 +44,7 @@ export const Contact = () => (
       
       <p>Feel free to contact me or reach out in the social media
       if you have any proposal that might be interesting or just want to stay in touch.
-      I usually try to help as much as I can, but keeping in mind cases when people were going to 
+      I usually try to help as much as I can, but keeping in mind the cases when people were going to 
       overuse my kindness I'm highly allergic to "you must help me" messages
       that annoy my inbox most freqently.</p>
       <p>E-mail: adwol21@student.sdu.dk</p>
