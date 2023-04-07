@@ -43,7 +43,7 @@ const LinkA = styled.a`
 
 const List = styled.ul`
   text-align: left;
-`
+`;
 
 export const AboutMe = () => (
   <Wrapper>
@@ -67,7 +67,7 @@ export const AboutMe = () => (
     school as an obligatory subject, and I showcased one of my projects there.</p>
 
     <Image>
-      <Img src={Debutant} width="480px" alt="EL-ROBO-MECH, Warsaw 2018" />
+      <Img src={Debutant} width="480px" alt="Destination Imagintion, Wrocław 2018" />
       <p>Destination Imagination Olympics of Creativity, Wrocław 2016</p>
     </Image>
 
@@ -85,13 +85,13 @@ export const AboutMe = () => (
     I also earned a subsidy
     from the European Union for a 7-month long Java programming course, in which I was the youngest participant. 
     During this time I also started to
-    read about my completely new area of interest – artificial intelligence. During the holidays
+    read about my completely new area of interest – artificial intelligence. On the holidays
     preceding my university studies, I created my first artificial neural network. It was 
     a program that simulates a simplified model of human brain processes in order to perform the tasks
     that are hard to algorithmize, e.g. object recognition.</p>
 
     <Image>
-      <Img src={ElRoboMech} width="600px" alt="EL-ROBO-MECH, Warsaw 2018" />
+      <Img src={ElRoboMech} width="600px" alt="EL-ROBO-MECH, Białystok 2018" />
       <p>EL-ROBO-MECH award ceremony, Białystok 2018</p>
     </Image>
 
@@ -100,14 +100,14 @@ export const AboutMe = () => (
     Technology (BUT) in 2018. A year after that I launched the Artificial Intelligence Research Club as a
     section of Robotics Students' Club at the Mechanical Faculty of BUT. We were a group of
     students that were learning modern technologies such as: neural networks, machine learning,
-    and computer vision. Durong this time, we made more than a dozen of projects on various topics. My favorite one used a special
+    and computer vision. During this time, we made more than a dozen of projects on various topics. My favorite one used a special
     kind of neural networks – recurrent networks in order to generate text in the
     style of Shakespeare based on his dramas. Another example was a neural net with convolutional
     layers that could draw an image in a style of any artist, e.g. Picasso or Monet. I've also shown
     some of them at my second Regional E(x)plory Competition.</p>
     
     <Image>
-      <Img src={Explory} width="600px" alt="Regional E(x)plory Competition, Lodz 2019" />
+      <Img src={Explory} width="600px" alt="Regional E(x)plory Competition, Łódź 2019" />
       <p>Regional E(x)plory competition, Łódź 2019</p>
     </Image>
 
@@ -143,9 +143,9 @@ export const AboutMe = () => (
     The theme of the contest was to propose a solution that reduces carbon footprint backed by the usage of renewable energy sources.
     Our team presented an <LinkA href="https://www.youtube.com/watch?v=ZPzBONO5VmA">idea</LinkA> of 
     reusing exploited electric car batteries to store the green energy during high production periods
-    and use it while consumption raises. Successfully, the innovation was noticed by the jury that decided to give us
-    first place and money prize. The check for 15000 DKK was handed over by previous chairman of the board of Danfoss 
-    and former billionaire – Jørgen Mads Clausen.
+    and use it while consumption raises. Successfully, an innovation was noticed by the jury that decided to give us
+    first place and money prize. The check for 15000 DKK was handed over by previous chairman of the board 
+    of Danfoss – Jørgen Mads Clausen.
     </p>
 
     <p><b>Plans for future</b></p>
@@ -162,16 +162,16 @@ export const AboutMe = () => (
 
     <p><b>Recommended books</b></p>
     <List>
-      <li><i>Elon Musk</i> - Ashlee Vance</li>
-      <li><i>Innovators</i> - Walter Isaacson</li>
-      <li><i>Factfullness</i> - Hans Rosling</li>
+      <li><i>Elon Musk</i> – Ashlee Vance</li>
+      <li><i>Innovators</i> – Walter Isaacson</li>
+      <li><i>Factfullness</i> – Hans Rosling</li>
       <li><i>The Accidental Billionaires</i> - Ben Melzrich</li>
-      <li><i>Permanent Record</i> - Edward Snowden</li>
-      <li><i>Outliers</i> - Malcolm Gladwell</li>
-      <li><i>The Selfish Gene</i> - Richard Dawkins</li>
-      <li><i>Sapiens: A Brief History of Humankind</i> - Yuval Noah Harari</li>
-      <li><i>Guns, Germs and Steel</i> - Jared Diamond</li>
-      <li><i>Shoe Dog</i> - Phil Knight</li>
+      <li><i>Permanent Record</i> – Edward Snowden</li>
+      <li><i>Outliers</i> – Malcolm Gladwell</li>
+      <li><i>The Selfish Gene</i> – Richard Dawkins</li>
+      <li><i>Sapiens: A Brief History of Humankind</i> – Yuval Noah Harari</li>
+      <li><i>The LEGO Story</i> – Jens Andersen</li>
+      <li><i>Shoe Dog</i> – Phil Knight</li>
     </List>
     <p><b>Favourite movies</b></p>
     <List>

@@ -11,8 +11,6 @@ import DiamondExplorers from "../../images/odkrywcy_diamentow.png";
 import PB from "../../images/pb.png";
 import Suempol from "../../images/suempol.png";
 
-type PropsType = {};
-
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -139,7 +137,7 @@ const Psychology = styled(PsychologyIcon)`
   margin: 15px;
 `;
 
-export const Home = (props: PropsType) => (
+export const Home = () => (
   <Wrapper>
     <IntroWrapper>
       <Intro>
