@@ -58,7 +58,7 @@ export const RoboticManipulation = () => (
     </Image>
 
     <p>Because the tasks I mentioned are often performed by a particular type of robots, in
-    my work I was using UR5 manipulator by Danish manufacturer Universal Robots.
+    my work I was using UR5 manipulator by Danish company Universal Robots.
     There was implemented algorithm on it that was able to define a location of seen
     objects based on the data from the computer vision sensors. In my work I was using
     code examples written in Python. Thanks to this it was possible to thoroughly verify
