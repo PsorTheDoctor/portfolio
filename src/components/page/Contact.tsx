@@ -21,9 +21,14 @@ const Header = styled.div`
 
 const Column = styled.div`
   float: left;
-  max-width: 380px;
   padding-right: 20px;
   text-align: justify;
+  @media (max-width: 1000px) {
+    max-width: 100%;
+  }
+  @media (min-width: 1000px) {
+    max-width: 380px;
+  }
 `;
 
 const Image = styled.div`
@@ -31,6 +36,10 @@ const Image = styled.div`
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
+`;
+
+const Img = styled.img`
+  max-width: 100%;
 `;
 
 export const Contact = () => (
@@ -45,12 +54,12 @@ export const Contact = () => (
       <p>Feel free to contact me or reach out in the social media
       if you have any proposal that might be interesting or just want to stay in touch.
       I usually try to help as much as I can, but keeping in mind the cases when people were going to 
-      overuse my kindness I'm highly allergic to "you must help me" messages
+      overuse my kindness I am highly allergic to "you must help me" messages
       that annoy my inbox most freqently.</p>
       <p>E-mail: adwol21@student.sdu.dk</p>
       </Column>
       <Image>
-        <img src={Work} width="600px" alt="Me" />
+        <Img src={Work} width="600px" alt="Me" />
       </Image>
     </div>
   </Wrapper>
