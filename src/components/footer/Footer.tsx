@@ -3,7 +3,7 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 
 const Wrapper = styled.div`
-  background-color: darkblue;
+  background-color: navy;
   color: white;
   height: 100px;
   text-align: center;
