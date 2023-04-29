@@ -144,8 +144,8 @@ export const AboutMe = () => (
     Our team presented an <LinkA href="https://www.youtube.com/watch?v=ZPzBONO5VmA">idea</LinkA> of 
     reusing exploited electric car batteries to store the green energy during high production periods
     and use it while consumption raises. Successfully, an innovation was noticed by the jury that decided to give us
-    first place and money prize. The check for 15000 DKK was handed over by previous chairman of the board 
-    of Danfoss – Jørgen Mads Clausen.
+    first place. 
+    {/*and money prize. The check for 15000 DKK was handed over by previous chairman of the board of Danfoss – Jørgen Mads Clausen. */}
     </p>
 
     <p><b>Plans for future</b></p>

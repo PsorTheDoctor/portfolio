@@ -143,7 +143,7 @@ export const Home = () => (
       <Intro>
         <About>
           <p><Serif><b>Adam Wolkowycki</b></Serif>
-          <h5>Robotics Engineer, Programmer</h5></p>
+          <h5>Robotics & AI Engineer</h5></p>
           <Serif>
             <p>I am robotics and AI engineer currently doing my master's degree of Robot Systems: Advanced Robotics Technology at University of Southern Denmark.</p>
             <p>I received my bachelor of engineering at Bialystok University of Technology in Poland where I was founder and leader of AI science club and scholar of Diamonds' Explorers foundation.</p>
@@ -182,11 +182,11 @@ export const Home = () => (
 
     <Projects/>
 
-    <Header><p>Former sponsors</p></Header>
+    {/* <Header><p>Former sponsors</p></Header>
     <Sponsors>
       <Sponsor><img src={DiamondExplorers} width="250px" alt="Odkrywcy Diamentów" /></Sponsor>
       <Sponsor><img src={PB} width="200px" alt="Bialystok University of Technology" /></Sponsor>
       <Sponsor><img src={Suempol} width="230px" alt="Suempol" /></Sponsor>
-    </Sponsors>
+    </Sponsors> */}
   </Wrapper>
 );
