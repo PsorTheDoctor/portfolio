@@ -60,9 +60,9 @@ export const AboutMe = () => (
 
     <p><b>High School</b></p>
     <p>In 2015-2018 I attended high school where I studied in a class with extended math
-    and physics. Then I took an initative to participate in the Polish Olympics of
+    and physics. Then I took an initiative to participate in the Polish Olympics of
     Creativity called Destination Imagination, on which I was a leader of 6-person team.
-    At the end of my first year at high school I was also a speaker at a conference about
+    At the end of my freshman's year at high school I was also a speaker at a conference about
     education that I was invited to attend. The conference was about the introduction of programming into
     school as an obligatory subject, and I showcased one of my projects there.</p>
 
@@ -71,10 +71,7 @@ export const AboutMe = () => (
       <p>Destination Imagination Olympics of Creativity, Wrocław 2016</p>
     </Image>
 
-    <p>In spring 2017 I took a part in the Regional E(x)plory Competition for young scientists with
-    the project of an automatic gearbox I developed on my own. I have shown it widely in Warsaw –
-    the Polish capital city. 
-    With these achievements up to this date, in my third year at high school I got my first
+    <p>With these achievements up to this date, in my third year at high school I got my first
     scholarship founded by a local seafood company named SUEMPOL. With this money I started
     making a large project I had been thinking about for many 
     years – a <StyledLink to="/human-arm">mechanical human arm</StyledLink>.
@@ -100,11 +97,12 @@ export const AboutMe = () => (
     Technology (BUT) in 2018. A year after that I launched the Artificial Intelligence Research Club as a
     section of Robotics Students' Club at the Mechanical Faculty of BUT. We were a group of
     students that were learning modern technologies such as: neural networks, machine learning,
-    and computer vision. During this time, we made more than a dozen of projects on various topics. My favorite one used a special
+    and computer vision.</p>
+    {/* During this time, we made more than a dozen of projects on various topics. My favorite one used a special
     kind of neural networks – recurrent networks in order to generate text in the
     style of Shakespeare based on his dramas. Another example was a neural net with convolutional
     layers that could draw an image in a style of any artist, e.g. Picasso or Monet. I've also shown
-    some of them at my second Regional E(x)plory Competition.</p>
+    some of them at my second Regional E(x)plory Competition.</p> */}
     
     <Image>
       <Img src={Explory} width="600px" alt="Regional E(x)plory Competition, Łódź 2019" />
@@ -118,7 +116,7 @@ export const AboutMe = () => (
     studies I got into the finals of the nationwide KOKOS Students' Construction Contest in the category of Smart Robots.
     During the last semester of my bachelor's degree I was studying at SDU (University of Southern Denmark) in Odense as
     an exchange student. I also was one of the total of four students that got a grant from
-    Diamonds' Explorers foundation, which was launched and led by the previous rector of BUT – Professor Lech
+    Diamonds' Explorers foundation, which was launched and led by the previous Rector of BUT – Professor Lech
     Dzienis. In the time of my stay in Denmark I
     wrote a <StyledLink to="/robotic-manipulation">thesis</StyledLink> focused on robotic manipulation 
     using computer vision system – a quintessential
@@ -165,7 +163,7 @@ export const AboutMe = () => (
       <li><i>Elon Musk</i> – Ashlee Vance</li>
       <li><i>Innovators</i> – Walter Isaacson</li>
       <li><i>Factfullness</i> – Hans Rosling</li>
-      <li><i>The Accidental Billionaires</i> - Ben Melzrich</li>
+      <li><i>The Accidental Billionaires</i> – Ben Mezrich</li>
       <li><i>Permanent Record</i> – Edward Snowden</li>
       <li><i>Outliers</i> – Malcolm Gladwell</li>
       <li><i>The Selfish Gene</i> – Richard Dawkins</li>

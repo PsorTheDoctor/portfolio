@@ -58,9 +58,9 @@ export const Contact = () => (
       that annoy my inbox most freqently.</p>
       <p>E-mail: adwol21@student.sdu.dk</p>
       </Column>
-      {/* <Image>
+      <Image>
         <Img src={Work} width="600px" alt="Me" />
-      </Image> */}
+      </Image>
     </div>
   </Wrapper>
 );
