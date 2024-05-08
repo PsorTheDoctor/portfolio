@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Taero from "../../images/taero2.jpg";
-import Ur5 from "../../images/ur5.gif";;
+import Ur5 from "../../images/ur5.gif";
 
 type PropsType = {};
 

@@ -71,21 +71,21 @@ export const AboutMe = () => (
       <p>Destination Imagination Olympics of Creativity, Wrocław 2016</p>
     </Image>
 
-    <p>With these achievements up to this date, in my third year at high school I got my first
+    <p>With above  achievements up to this date, in my third year at high school I got my first
     scholarship founded by a local seafood company named SUEMPOL. With this money I started
     making a large project I had been thinking about for many 
     years – a <StyledLink to="/human-arm">mechanical human arm</StyledLink>.
     I have submitted a model to the 
     EL-ROBO-MECH contest organized by Bialystok University of Technology, where it took third
-    place, winning a money prize and the university priority admission card.
+    place out of fifteen, winning a money prize and the university priority admission card.
     In the time of high school my mentors were teachers Sławomir Zieniewski and Ewa Trzeszczkowska.
     I also earned a subsidy
-    from the European Union for a 7-month long Java programming course, in which I was the youngest participant. 
-    During this time I also started to
-    read about my completely new area of interest – artificial intelligence. On the holidays
-    preceding my university studies, I created my first artificial neural network. It was 
+    from the European Union for a 7-month long Java programming course, in which I was the youngest participant.</p>
+    {/* During this time I also started to
+    read about my completely new area of interest – artificial intelligence.
+    On the holidays preceding my university studies, I created my first artificial neural network. It was 
     a program that simulates a simplified model of human brain processes in order to perform the tasks
-    that are hard to algorithmize, e.g. object recognition.</p>
+    that are hard to algorithmize, e.g. object recognition.</p> */}
 
     <Image>
       <Img src={ElRoboMech} width="600px" alt="EL-ROBO-MECH, Białystok 2018" />
@@ -109,8 +109,8 @@ export const AboutMe = () => (
       <p>Regional E(x)plory competition, Łódź 2019</p>
     </Image>
 
-    <p>Programming aside, I did an internship at Standard Motor Products factory that
-    produces plastic components, including the ignition coils. My role was to clean and unassemble
+    <p>Studies aside, I did an internship at Standard Motor Products factory that
+    produces plastic components, including the ignition coils. My role was to maintain
     the molding folds, operate an EDM machine, and make models of parts in a CAD software.
     So far, I still take a part in some competitions once in a while. In my third year of
     studies I got into the finals of the nationwide KOKOS Students' Construction Contest in the category of Smart Robots.
