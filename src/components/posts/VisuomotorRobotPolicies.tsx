@@ -97,6 +97,72 @@ const Img = styled.img`
   box-shadow: 10px 10px 10px lightgray;
 `;
 
+const Radio = styled.div`
+  background-color: lightgray;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+`
+
+const LeftButton = styled.button`
+  background-color: lightgray;
+  color: darkslategray;
+  width: 100px;
+  height: 30px;
+  float: left;
+  border: 0;
+  border-radius: 15px 0 0 15px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-right: 20px;
+  &:focus {
+    background-color: darkslategray;
+    color: white;
+    border-radius: 15px;
+  }
+`;
+
+const MiddleButton = styled.button`
+  background-color: lightgray;
+  color: darkslategray;
+  width: 100px;
+  height: 30px;
+  float: left;
+  border: 0;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: bold;;
+  padding-left: 20px;
+  padding-right: 20px;
+  &:focus {
+    background-color: darkslategray;
+    color: white;
+    border-radius: 15px;
+  }
+`;
+
+const RightButton = styled.button`
+  background-color: lightgray;
+  color: darkslategray;
+  width: 100px;
+  height: 30px;
+  float: left;
+  border: 0;
+  border-radius: 0 15px 15px 0;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-right: 20px;
+  &:focus {
+    background-color: darkslategray;
+    color: white;
+    border-radius: 15px;
+  }
+`;
+
 const TableSmall = styled.table`
   border-collapse: collapse;
   text-align: center;
@@ -118,6 +184,17 @@ const Vertical = styled.td`
   font-size: 18px;
   max-width: 30px;
 `;
+
+const ScoreTable = styled.table`
+  text-align: center;
+  margin: 0 auto 30px auto;
+  td, th {
+    min-width: 100px;
+  }
+  tr:nth-child(even) {
+    background-color: #cfecec;
+  }
+`
 
 export const VisuomotorRobotPoliciesAuth = () => {
   const correctPassword = 'banana';
@@ -159,7 +236,14 @@ export const VisuomotorRobotPoliciesAuth = () => {
   );
 }
 
-const VisuomotorRobotPolicies = () => (
+const VisuomotorRobotPolicies = () => {
+  const [modality, setModality] = useState('state');
+
+  const handleModalityChange = (modality: string) => {
+    setModality(modality);
+  }
+
+  return (
     <Wrapper>
       <Title><p>Learning Visuomotor Robot Policies</p></Title>
       <Subtitle>
@@ -217,41 +301,129 @@ const VisuomotorRobotPolicies = () => (
       </tr>
       </TableSmall>
 
-      <h4>Experiments on state data</h4>
+      <Radio>
+        <LeftButton onClick={() => handleModalityChange('state')}>State</LeftButton>
+        <MiddleButton onClick={() => handleModalityChange('image')}>Image</MiddleButton>
+        <RightButton onClick={() => handleModalityChange('hybrid')}>Hybrid</RightButton>
+      </Radio>
 
-      <Table>
-      <tr>
-        <Vertical>miniBET</Vertical>
-        <td><iframe src={bet_lift_state} height="200" width="200" title=""></iframe></td>
-        <td><iframe src={bet_can_state} height="200" width="200" title=""></iframe></td>
-        <td><iframe src={bet_square_state} height="200" width="200" title=""></iframe></td>
-        <td><iframe src={bet_toolhang_state} height="200" width="200" title=""></iframe></td>
-      </tr>
-      <tr>
-        <Vertical>Diffusion Policy</Vertical>
-        <td><iframe src={dp_lift_state} height="200" width="200" title=""></iframe></td>
-        <td><iframe src={dp_can_state} height="200" width="200" title=""></iframe></td>
-        <td><iframe src={dp_square_state} height="200" width="200" title=""></iframe></td>
-        <td><iframe src={dp_toolhang_state} height="200" width="200" title=""></iframe></td>
-      </tr>
-      </Table>
+      {modality === 'state' && <StateTable />}
+      {modality === 'image' && <ImageTable />}
+      {modality === 'hybrid' && <HybridTable />}
 
-      <h4>Experiments on visual data</h4>
-
-      <Table>
-      <tr>
-        <Vertical>miniBET</Vertical>
-        <td><iframe src={bet_lift_vision} height="250" width="250" title=""></iframe></td>
-        <td><iframe src={bet_can_vision} height="250" width="250" title=""></iframe></td>
-        <td><iframe src={bet_square_vision} height="250" width="250" title=""></iframe></td>
-      </tr>
-      <tr>
-        <Vertical>Diffusion Policy</Vertical>
-        <td><iframe src={dp_lift_vision} height="250" width="250" title=""></iframe></td>
-        <td><iframe src={dp_can_vision} height="250" width="250" title=""></iframe></td>
-        <td><iframe src={dp_square_vision} height="250" width="250" title=""></iframe></td>
-      </tr>
-      </Table>
-
+      <p>Success rate (mean of last 60 trials)</p>
+      <ScoreTable>
+        <thead>
+          <tr>
+            <th></th>
+            <th>Modality</th>
+            <th>Lift</th>
+            <th>Can</th>
+            <th>Square</th>
+            <th>ToolHang</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>miniBET</td>
+            <td>State</td>
+            <td><strong>0.97</strong></td>
+            <td><strong>0.97</strong></td>
+            <td>0.55</td>
+            <td>0.17</td>
+          </tr>
+          <tr>
+            <td>DiffusionPolicy</td>
+            <td></td>
+            <td><strong>0.97</strong></td>
+            <td>0.92</td>
+            <td><strong>0.67</strong></td>
+            <td><strong>0.23</strong></td>
+          </tr>
+          <tr>
+            <td>miniBET</td>
+            <td>Image</td>
+            <td><strong>0.82</strong></td>
+            <td>0.05</td>
+            <td>0.07</td>
+            <td>--</td>
+          </tr>
+          <tr>
+            <td>DiffusionPolicy</td>
+            <td></td>
+            <td>0.7</td>
+            <td><strong>0.67</strong></td>
+            <td><strong>0.7</strong></td>
+            <td>--</td>
+          </tr>
+          <tr>
+            <td>miniBET</td>
+            <td>Hybrid</td>
+            <td><strong>0.92</strong></td>
+            <td>0.1</td>
+            <td>0.27</td>
+            <td>--</td>
+          </tr>
+          <tr>
+            <td>DiffusionPolicy</td>
+            <td></td>
+            <td>0.72</td>
+            <td>0.77</td>
+            <td>0.6</td>
+            <td>--</td>
+          </tr>
+        </tbody>
+      </ScoreTable>
     </Wrapper>
+  );
+}
+
+const StateTable = () => (
+  <div>
+    <h4>Experiments on state data</h4>
+    <Table>
+    <tr>
+      <Vertical>miniBET</Vertical>
+      <td><iframe src={bet_lift_state} height="200" width="200" title=""></iframe></td>
+      <td><iframe src={bet_can_state} height="200" width="200" title=""></iframe></td>
+      <td><iframe src={bet_square_state} height="200" width="200" title=""></iframe></td>
+      <td><iframe src={bet_toolhang_state} height="200" width="200" title=""></iframe></td>
+    </tr>
+    <tr>
+      <Vertical>Diffusion Policy</Vertical>
+      <td><iframe src={dp_lift_state} height="200" width="200" title=""></iframe></td>
+      <td><iframe src={dp_can_state} height="200" width="200" title=""></iframe></td>
+      <td><iframe src={dp_square_state} height="200" width="200" title=""></iframe></td>
+      <td><iframe src={dp_toolhang_state} height="200" width="200" title=""></iframe></td>
+    </tr>
+    </Table>
+  </div>
+);
+
+const ImageTable = () => (
+  <div>
+    <h4>Experiments on image data</h4>
+    <Table>
+    <tr>
+      <Vertical>miniBET</Vertical>
+      <td><iframe src={bet_lift_vision} height="250" width="250" title=""></iframe></td>
+      <td><iframe src={bet_can_vision} height="250" width="250" title=""></iframe></td>
+      <td><iframe src={bet_square_vision} height="250" width="250" title=""></iframe></td>
+    </tr>
+    <tr>
+      <Vertical>Diffusion Policy</Vertical>
+      <td><iframe src={dp_lift_vision} height="250" width="250" title=""></iframe></td>
+      <td><iframe src={dp_can_vision} height="250" width="250" title=""></iframe></td>
+      <td><iframe src={dp_square_vision} height="250" width="250" title=""></iframe></td>
+    </tr>
+    </Table>
+  </div>
+);
+
+const HybridTable = () => (
+  <div>
+    <h4>Experiments on hybrid data</h4>
+    <Table>
+    </Table>
+  </div>
 );
