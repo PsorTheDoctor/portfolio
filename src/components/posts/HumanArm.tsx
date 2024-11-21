@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { Wrapper, Title, Subtitle, Image, Iframe } from "./Style";
+import { Wrapper, Title, Subtitle, Image, Img, Iframe } from "./Style";
+import Arm from "../../images/arm.jpg";
 
 const List = styled.p`
   text-align: left;
@@ -13,14 +14,16 @@ const Link = styled.a`
 export const HumanArm = () => (
   <Wrapper>
     <Title>Lego human arm</Title>
-    <Subtitle>Archival project from a high school.</Subtitle>
+    <Subtitle>Archival project from high school.</Subtitle>
+
+    <Image><Img src={Arm} width="600px" alt="Taero truck" /></Image>
 
     <p>Model built at the beginning of 2018 in the image of a human arm.
     The robot is a combination of pneumatic and electric components. Electric parts are controlled 
-    remotely while pneumatic - by the panel with a system of valves. It's quite large, even slightly
+    remotely while pneumatic – by the panel with a system of valves. It's quite large, even slightly
     more than an actual human arm. It features prehensile palm with tendon-like controlled fingers,
-    natural range of thumb movement, fingers abduction, rotated and elevated forearm and
-    wrist axis that moves forward and backward.</p>
+    natural range of thumb movement, fingers abduction, rotated and elevated forearm, and
+    wrist axis that moves back and forth.</p>
 
     <p>I may sound a bit childish talking that this robot has been built entirely out of original LEGO pieces
     (including electric and pneumatic components). Only not original elements are threads used to 
@@ -55,7 +58,7 @@ export const HumanArm = () => (
     around longitudinal forearm axis. Both are controlled remotely via IR thanks to the receivers located
     in the shoulder. Among pneumatic functions we have typical for the fine motor skill. They are: 
     movement of a wrist and functions that allow for grasping and finger abduction. They are performed
-    thanks to the pneumatic cylinders - each connected to the seperate valve. The valves are propelled by
+    thanks to the pneumatic cylinders – each connected to the seperate valve. The valves are propelled by
     a single compressor trough the pressure switch.
     </p>
 

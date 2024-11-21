@@ -3,9 +3,9 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 
 const Wrapper = styled.div`
-  background-color: navy;
+  background-color: midnightblue;
   color: white;
-  height: 100px;
+  height: 120px;
   text-align: center;
 `;
 
@@ -20,7 +20,7 @@ const Container = styled.div`
 `;
 
 const Button = styled.button`
-  background-color: blue;
+  background-color: #0041c2;
   color: white;
   height: 30px;
   width: 130px;
@@ -76,6 +76,6 @@ export const Footer = () => (
         </Link>
       </SocialMedia>
     </Container>
-    Adam Wolkowycki ©2022
+    Adam Wolkowycki ©2024
   </Wrapper>
 );

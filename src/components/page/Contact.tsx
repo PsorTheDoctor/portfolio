@@ -11,12 +11,10 @@ const Wrapper = styled.div`
   padding: 10px;
 `;
 
-const Header = styled.div`
+const Header = styled.p`
   font-size: 32px;
   font-weight: bold;
   text-align: left;
-  padding-top: 10px;
-  padding-bottom: 10px;
 `;
 
 const Column = styled.div`
@@ -49,14 +47,14 @@ export const Contact = () => (
       <Column>
       <p>As a person who likes to show my stuff in public
       for the last years I was receiving several requests regarding 
-      showcasing of my projects, mechanical design, and AI related software development.</p>
+      showcase of my projects, mechanical design, and AI related software development.</p>
       
       <p>Feel free to contact me or reach out in the social media
       if you have any proposal that might be interesting or just want to stay in touch.
       I usually try to help as much as I can, but keeping in mind the cases when people were going to 
       overuse my kindness I am chronically allergic to "you must help me" messages
-      that annoy my inbox most freqently.</p>
-      <p>E-mail: adwol21@student.sdu.dk</p>
+      that annoy my inbox most frequently.</p>
+      <p>E-mail: <b>psor2.0@gmail.com</b></p>
       </Column>
       <Image>
         <Img src={Work} width="600px" alt="Me" />

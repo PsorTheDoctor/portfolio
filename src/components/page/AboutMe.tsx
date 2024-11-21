@@ -15,10 +15,14 @@ const Wrapper = styled.div`
   padding: 10px 10px 30px 10px;
 `;
 
-const Header = styled.div`
+const Header = styled.p`
   font-size: 32px;
   font-weight: bold;
   text-align: left;
+`;
+
+const Chapter = styled.h5`
+  margin-top: 10px;
 `;
 
 const Image = styled.div`
@@ -47,9 +51,9 @@ const List = styled.ul`
 
 export const AboutMe = () => (
   <Wrapper>
-    <p><Header>About me</Header></p>
+    <Header>About me</Header>
 
-    <p>My name is Adam. I was born in a small town in north-eastern Poland around fifty kilometers 
+    <p>My name is Adam. I was born in a small town in north-eastern Poland around thirty kilometers 
     near to the Belarussian border. As a kid I experienced my first crush with LEGO 
     that made me keen on building and interested in technical fields. I used to build various
     devices since my early years. I built my first project – a mechanical rope-walking monkey when I was
@@ -58,7 +62,7 @@ export const AboutMe = () => (
     that hooked a rope in an alternating pattern. The result of this mechanism was a fully movable model of
     a monkey.</p>
 
-    <p><b>High School</b></p>
+    <Chapter>High School</Chapter>
     <p>In 2015-2018 I attended high school where I studied in a class with extended math
     and physics. Then I took an initiative to participate in the Polish Olympics of
     Creativity called Destination Imagination, on which I was a leader of 6-person team.
@@ -81,35 +85,25 @@ export const AboutMe = () => (
     In the time of high school my mentors were teachers Sławomir Zieniewski and Ewa Trzeszczkowska.
     I also earned a subsidy
     from the European Union for a 7-month long Java programming course, in which I was the youngest participant.</p>
-    {/* During this time I also started to
-    read about my completely new area of interest – artificial intelligence.
-    On the holidays preceding my university studies, I created my first artificial neural network. It was 
-    a program that simulates a simplified model of human brain processes in order to perform the tasks
-    that are hard to algorithmize, e.g. object recognition.</p> */}
 
     <Image>
       <Img src={ElRoboMech} width="600px" alt="EL-ROBO-MECH, Białystok 2018" />
       <p>EL-ROBO-MECH award ceremony, Białystok 2018</p>
     </Image>
 
-    <p><b>Undergraduate studies</b></p>
+    <Chapter>Undergraduate studies</Chapter>
     <p>I started studying Automatic Control and Robotics in the Bialystok University of
-    Technology (BUT) in 2018. A year after that I launched the Artificial Intelligence Research Club as a
+    Technology (BUT) in 2018. A year after that I launched the Artificial Intelligence Scientific Club as a
     section of Robotics Students' Club at the Mechanical Faculty of BUT. We were a group of
     students that were learning modern technologies such as: neural networks, machine learning,
     and computer vision.</p>
-    {/* During this time, we made more than a dozen of projects on various topics. My favorite one used a special
-    kind of neural networks – recurrent networks in order to generate text in the
-    style of Shakespeare based on his dramas. Another example was a neural net with convolutional
-    layers that could draw an image in a style of any artist, e.g. Picasso or Monet. I've also shown
-    some of them at my second Regional E(x)plory Competition.</p> */}
     
     <Image>
       <Img src={Explory} width="600px" alt="Regional E(x)plory Competition, Łódź 2019" />
       <p>Regional E(x)plory competition, Łódź 2019</p>
     </Image>
 
-    <p>Studies aside, I did an internship at Standard Motor Products factory that
+    <p>Studies aside, I completed an internship at Standard Motor Products factory that
     produces plastic components, including the ignition coils. My role was to maintain
     the molding folds, operate an EDM machine, and make models of parts in a CAD software.
     So far, I still take a part in some competitions once in a while. In my third year of
@@ -120,13 +114,13 @@ export const AboutMe = () => (
     Dzienis. In the time of my stay in Denmark I
     wrote a <StyledLink to="/robotic-manipulation">thesis</StyledLink> focused on robotic manipulation 
     using computer vision system – a quintessential
-    problem in modern robotics. My supervisor was PhD Adam Wolniakowski.</p>
+    problem in modern robotics. My supervisor was Adam Wolniakowski, PhD.</p>
 
-    <p><b>Master studies</b></p>
+    <Chapter>Master studies</Chapter>
     <p>After graduating I received an offer of work on 
     the <StyledLink to="/autonomous-vehicle">autonomous military vehicle</StyledLink> project supervised
     by Polish company STEKOP that specializes in security systems. As a freelance worker I was the main contributor responsible 
-    for computer vision related to object recognition, distance estimation and tracking. In autumn 2022 the truck had been revealed
+    for computer vision related to object recognition, distance estimation, and tracking. In fall 2022 the truck was unveiled
     at the Polish International Defence Industry Exhibition in Kielce.
     </p>
 
@@ -146,21 +140,21 @@ export const AboutMe = () => (
     {/*and money prize. The check for 15000 DKK was handed over by previous chairman of the board of Danfoss – Jørgen Mads Clausen. */}
     </p>
 
-    <p><b>Plans for future</b></p>
+    <Chapter>Plans for future</Chapter>
     <p>In the near future I am going to still develop further in the fields of my interests:
     robotics, artificial intelligence, but also cognitive science and psychology. Before the end of my
     studies I want to publish articles about robotic manipulation and practical
     usage of AI systems.</p>
 
-    <p><b>People who inspire me</b></p>
+    <Chapter>People who inspire me</Chapter>
     <ul>
       <li><LinkA href="https://petrospsyllos.com/en/">Petros Psyllos</LinkA></li>
       <li><LinkA href="https://pwwprojects.blogspot.com/">Piotr Wasilewski</LinkA></li>
     </ul>
 
-    <p><b>Recommended books</b></p>
+    <Chapter>Recommended books</Chapter>
     <List>
-      <li><i>Elon Musk</i> – Ashlee Vance</li>
+      <li><i>Elon Musk</i> – Walter Isaacson</li>
       <li><i>Innovators</i> – Walter Isaacson</li>
       <li><i>Factfullness</i> – Hans Rosling</li>
       <li><i>The Accidental Billionaires</i> – Ben Mezrich</li>
@@ -171,13 +165,13 @@ export const AboutMe = () => (
       <li><i>The LEGO Story</i> – Jens Andersen</li>
       <li><i>Shoe Dog</i> – Phil Knight</li>
     </List>
-    <p><b>Favourite movies</b></p>
+    <Chapter>Favourite movies</Chapter>
     <List>
       <li><i>The Butterfly Effect, The Island, The Social Network, Forrest Gump, The Curious Case of Benjamin Button</i></li>
     </List>
-    <p><b>TV series</b></p>
+    <Chapter>TV series</Chapter>
     <List>
-      <li><i>13 Reasons Why, Black Mirror, Sillicon Valley</i></li>
+      <li><i>13 Reasons Why, Black Mirror, Sillicon Valley, The Dropout</i></li>
     </List>
   </Wrapper>
 );

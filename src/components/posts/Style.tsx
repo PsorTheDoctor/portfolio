@@ -41,7 +41,7 @@ export const Iframe = styled.iframe`
 `;
 
 export const Button = styled.button`
-  background-color: blue;
+  background-color: #0041c2;
   color: white;
   height: 30px;
   border: 0;

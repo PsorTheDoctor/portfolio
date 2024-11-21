@@ -1,9 +1,17 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+
+import Robomimic from "../../images/robomimic_trimmed.gif";
 import Taero from "../../images/taero2.jpg";
 import Ur5 from "../../images/ur5.gif";
+import Arm from "../../images/arm.gif";
 
-type PropsType = {};
+const Wrapper = styled.div`
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 0 10px 0;
+`;
 
 const Row = styled.div`
   @media (max-width: 1000px) {
@@ -21,14 +29,12 @@ const Row = styled.div`
   padding-right: 10px;
 `;
 
-const Header = styled.div`
-  background-color: whitesmoke;
-  text-align: center;
-  justify-content: center;
-  text-transform: uppercase;
-  font-size: 13px;
+const Header = styled.p`
+  font-size: 32px;
   font-weight: bold;
-  padding-top: 25px;
+  text-align: left;
+  padding-left: 10px;
+  padding-bottom: 10px;
 `;
 
 const Post = styled.div`
@@ -61,7 +67,7 @@ const Title = styled.div`
 `;
 
 const Button = styled.button`
-  background-color: blue;
+  background-color: #0041c2;
   height: 30px;
   width: 130px;
   border: 0;
@@ -75,72 +81,61 @@ const Button = styled.button`
     background-color: lightgreen;
     transition: 0.3s;
   }
-`
+`;
+
 const StyledLink = styled(Link)`
   color: white;
   text-decoration: none;
   &:hover {
     color: white;
   };
-`
+`;
 
-export const Projects = (props: PropsType) => (
+export const ProjectsContent = () => (
   <div>
-    <Header><p>Projects</p></Header>
-    {/* <Row>
-      <Post>
-        <Link to="/object-tracking">
-          <Img src={Tracking} width={480} alt="Object tracking" />
-        </Link>
-        <Title>Object tracking toolkit</Title>
-        <p>Follow-up of the autonomous vehicle project.</p>
-        <Button><ReadMore to="/object-tracking">Read more</ReadMore></Button>
-      </Post>
-
-      <Post>
-        <Link2 to="/image-generation">
-          <Img src={Parrot} width={270} height={270} alt="Image interpolation between parrot and toucan" />
-        </Link2>
-        <Title>Testing image generation tools</Title>
-        <p>Overview of DALL-E text-to-image generator OpenAI kindly shared with me.</p>
-        <Button><ReadMore to="/image-generation">Read more</ReadMore></Button>
-      </Post>
-    </Row> */}
     <Row>
-      {/* <Post>
-        <Link to="/object-recognition">
-          <Img src={Yolo} width={480} alt="Object recognition" />
-        </Link>
-        <Title>Object recognition for the autonomous vehicle</Title>
-        <p>A project with Polish company STEKOP.</p>
-        <Button><ReadMore to="/object-recognition">Read more</ReadMore></Button>
-      </Post> */}
+      <Post>
+        <Link2 to="/visuomotor-robot-policies">
+          <Img src={Robomimic} alt="robomimic simulation" />
+        </Link2>
+        <Title>Learning Visuomotor Robot Policies</Title>
+        <p>My master's thesis focused on teaching robots based on a raw visual input. 
+          Project supervised by Iñigo Iturrate and Ralph Brorsen and carried out in collaboration with the Danish company Universal Robots.</p>
+        <Button><StyledLink to="/visuomotor-robot-policies">Read more</StyledLink></Button>
+      </Post>
       <Post>
         <Link2 to="/autonomous-vehicle">
-         <Img src={Taero} alt="TAERO autonomous vehicle" />
+          <Img src={Taero} alt="TAERO autonomous vehicle" />
         </Link2>
         <Title>Perception for the autonomous vehicle</Title>
-        <p>Software system for the autonomous military truck. Project realised with Polish company STEKOP.</p>
+        <p>Computer vision system for the autonomous military truck. Project implemented with the Polish company STEKOP.</p>
         <Button><StyledLink to="/autonomous-vehicle">Read more</StyledLink></Button>
       </Post>
+    </Row>
+    <Row>
       <Post>
         <Link to="/robotic-manipulation">
-         <Img src={Ur5} width={480} alt="UR5 robot arm" />
+          <Img src={Ur5} width={480} alt="UR5 robot arm" />
         </Link>
         <Title>Solving robotic manipulation problems</Title>
-        <p>My bachelor thesis under the supervising of PhD Adam Wolniakowski.</p>
+        <p>My bachelor's thesis about pose estimation under the supervision of Adam Wolniakowski.</p>
         <Button><StyledLink to="/robotic-manipulation">Read more</StyledLink></Button>
       </Post>
-    </Row>
-    {/* <Row>
       <Post>
         <Link to="/human-arm">
-         <Img src={Arm} width={480} alt="Lego human arm" />
+          <Img src={Arm} width={480} alt="Lego human arm" />
         </Link>
         <Title>Lego human arm</Title>
-        <p>Archival project from a high school.</p>
-        <Button><ReadMore to="/human-arm">Read more</ReadMore></Button>
+        <p>Archival project from high school.</p>
+        <Button><StyledLink to="/human-arm">Read more</StyledLink></Button>
       </Post>
-    </Row> */}
+    </Row>
   </div>
+);
+
+export const Projects = () => (
+  <Wrapper>
+    <Header>Projects</Header>
+    <ProjectsContent/>
+  </Wrapper>
 );
