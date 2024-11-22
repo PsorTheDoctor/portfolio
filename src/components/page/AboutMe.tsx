@@ -81,7 +81,7 @@ export const AboutMe = () => (
     years – a <StyledLink to="/human-arm">mechanical human arm</StyledLink>.
     I have submitted a model to the 
     EL-ROBO-MECH contest organized by Bialystok University of Technology, where it took third
-    place out of fifteen, winning a money prize and the university priority admission card.
+    place out of fifteen, winning a monetary prize and the university priority admission card.
     In the time of high school my mentors were teachers Sławomir Zieniewski and Ewa Trzeszczkowska.
     I also earned a subsidy
     from the European Union for a 7-month long Java programming course, in which I was the youngest participant.</p>
@@ -120,7 +120,7 @@ export const AboutMe = () => (
     <p>After graduating I received an offer of work on 
     the <StyledLink to="/autonomous-vehicle">autonomous military vehicle</StyledLink> project supervised
     by Polish company STEKOP that specializes in security systems. As a freelance worker I was the main contributor responsible 
-    for computer vision related to object recognition, distance estimation, and tracking. In fall 2022 the truck was unveiled
+    for computer vision related to object detection and distance estimation. In fall 2022 the truck was unveiled
     at the Polish International Defence Industry Exhibition in Kielce.
     </p>
 
