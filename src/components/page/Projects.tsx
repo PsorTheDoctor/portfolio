@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-import Robomimic from "../../images/robomimic_trimmed.gif";
+import Robomimic from "../../images/robomimic.gif";
 import Taero from "../../images/taero2.jpg";
-import Ur5 from "../../images/ur5.gif";
-import Arm from "../../images/arm.gif";
+// import Ur5 from "../../images/ur5.gif";
+// import Arm from "../../images/arm.gif";
 
 const Wrapper = styled.div`
   max-width: 1000px;
@@ -13,21 +13,21 @@ const Wrapper = styled.div`
   padding: 10px 0 10px 0;
 `;
 
-const Row = styled.div`
-  @media (max-width: 1000px) {
-    display: block;
-  }
-  @media (min-width: 1000px) {
-    display: flex;
-  } 
-  flex-direction: row;
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: space-between;
-  padding-left: 10px;
-  padding-right: 10px;
-`;
+// const Row = styled.div`
+//   @media (max-width: 1000px) {
+//     display: block;
+//   }
+//   @media (min-width: 1000px) {
+//     display: flex;
+//   } 
+//   flex-direction: row;
+//   max-width: 1000px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   justify-content: space-between;
+//   padding-left: 10px;
+//   padding-right: 10px;
+// `;
 
 const Header = styled.p`
   font-size: 32px;
@@ -37,8 +37,17 @@ const Header = styled.p`
   padding-bottom: 10px;
 `;
 
+const Posts = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+`;
+
 const Post = styled.div`
-  max-width: 480px;
+  float: left;
+  width: 480px;
   /* margin-left: auto;
   margin-right: auto; */
   padding-bottom: 20px;
@@ -92,8 +101,7 @@ const StyledLink = styled(Link)`
 `;
 
 export const ProjectsContent = () => (
-  <div>
-    <Row>
+  <Posts>
       <Post>
         <Link2 to="/visuomotor-robot-policies">
           <Img src={Robomimic} alt="robomimic simulation" />
@@ -111,26 +119,23 @@ export const ProjectsContent = () => (
         <p>Computer vision system for the autonomous military truck. Project implemented with the Polish company STEKOP.</p>
         <Button><StyledLink to="/autonomous-vehicle">Read more</StyledLink></Button>
       </Post>
-    </Row>
-    <Row>
       <Post>
-        <Link to="/robotic-manipulation">
+        {/* <Link to="/robotic-manipulation">
           <Img src={Ur5} width={480} alt="UR5 robot arm" />
-        </Link>
+        </Link> */}
         <Title>Solving robotic manipulation problems</Title>
         <p>My bachelor's thesis about pose estimation under the supervision of Adam Wolniakowski.</p>
         <Button><StyledLink to="/robotic-manipulation">Read more</StyledLink></Button>
       </Post>
       <Post>
-        <Link to="/human-arm">
+        {/* <Link to="/human-arm">
           <Img src={Arm} width={480} alt="Lego human arm" />
-        </Link>
+        </Link> */}
         <Title>Lego human arm</Title>
         <p>Archival project from high school.</p>
         <Button><StyledLink to="/human-arm">Read more</StyledLink></Button>
       </Post>
-    </Row>
-  </div>
+  </Posts>
 );
 
 export const Projects = () => (

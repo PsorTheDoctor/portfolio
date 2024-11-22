@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  background-color: whitesmoke;
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
@@ -19,6 +18,10 @@ export const Title = styled.div`
 
 export const Subtitle = styled.p`
   text-align: left;
+`;
+
+export const Header = styled.h5`
+  margin-top: 10px;
 `;
 
 export const Image = styled.div`

@@ -1,10 +1,10 @@
-import { Wrapper, Title, Subtitle, Image, Img, Iframe } from "./Style";
+import { Wrapper, Title, Subtitle, Header, Image, Img, Iframe } from "./Style";
 import Taero from "../../images/taero2.jpg";
 
 export const AutonomousVehicle = () => (
   <Wrapper>
     <Title>Perception for the autonomous vehicle</Title>
-    <Subtitle>Software system for the autonomous military truck. Project realised with Polish company STEKOP.</Subtitle>
+    <Subtitle>Software system for the autonomous military truck. Project implemented with the Polish company STEKOP.</Subtitle>
 
     <Image><Img src={Taero} width="600px" alt="Taero truck" /></Image>
 
@@ -17,7 +17,7 @@ export const AutonomousVehicle = () => (
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></Iframe>      
     </Image>
 
-    <p><b>Note</b></p>
+    <Header>Note</Header>
     <p>STEKOP S.A. does not authorize this post.</p>
   </Wrapper>
 );

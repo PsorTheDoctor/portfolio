@@ -1,10 +1,10 @@
-import { Wrapper, Title, Subtitle, Image, Button, Img, Iframe, Link } from "./Style";
+import { Wrapper, Title, Subtitle, Header, Image, Button, Img, Iframe, Link } from "./Style";
 import ur from "../../images/ur5_thumb.jpg";
 
 export const RoboticManipulation = () => (
   <Wrapper>
     <Title>Solving robotic manipulation problems</Title>
-    <Subtitle>My bachelor thesis under the supervising of PhD Adam Wolniakowski.</Subtitle>
+    <Subtitle>My bachelor's thesis under the supervision of Adam Wolniakowski, PhD.</Subtitle>
     
     <Link href="https://drive.google.com/file/d/1PeADvlRFClfSULNUVIoF0y-2QDnNqUGp/view?usp=sharing" target="blank">
       <Button>Thesis (in Polish)</Button>
@@ -26,7 +26,7 @@ export const RoboticManipulation = () => (
       Then I had a chance to meet PhD Adam Wolniakowski who was introduced to me as a person having knowledge
       about this topic and was helpful in solving robotic control issues. So, he finally became my supervisor.</p>
 
-    <p><b>What is dexterity and why is it so important?</b></p>
+    <Header>What is dexterity and why is it so important?</Header>
     <p>Dexterity is a coordination of small muscles in movement with eyes, hands and fingers. It's also called fine motor skill.
       For example, it's a defining feature of a cat enabled by the use of its tail, claws and a lean body.
       The dexterous operations are common for many species by the use of their hands, beaks, jaws and tentacles. 
@@ -34,7 +34,7 @@ export const RoboticManipulation = () => (
       but they're ususally very robust. The goal was to find a simpler way to achieve the same.
     </p>
 
-    <p><h5>Phases of solving the problem</h5></p>
+    <Header>Phases of solving the problem</Header>
     <ol>
       <li>Setting the most convenient orientation of the gripper to an object template manually.</li>
       <li>Finding a transformation between an object and a template.</li>
@@ -42,7 +42,7 @@ export const RoboticManipulation = () => (
       <li>Grasping.</li>
     </ol>
 
-    <p><b>Iterative Closest Point</b></p>
+    <Header>Iterative Closest Point</Header>
     <p>At the start we admit we know the shape of the desired object, but don't know its position and orientation. 
     We need a transformation between the object and the template to be able to reach it and catch by robot's gripper.
     In order to find it the Iterative Closest Point algorithm has been used. It's an algorithm employed to minimize the
@@ -58,7 +58,7 @@ export const RoboticManipulation = () => (
     </Image>
 
     <p>Because the tasks I mentioned are often performed by a particular type of robots, in
-    my work I was using UR5 manipulator by Danish company Universal Robots.
+    my work I was using UR5 manipulator by Danish manufacturer Universal Robots.
     There was implemented algorithm on it that was able to define a location of seen
     objects based on the data from the computer vision sensors. In my work I was using
     code examples written in Python. Thanks to this it was possible to thoroughly verify
