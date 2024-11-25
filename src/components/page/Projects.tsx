@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-import Robomimic from "../../images/robomimic.gif";
+// import Robomimic from "../../images/robomimic_trimmed.gif";
 import Taero from "../../images/taero2.jpg";
 // import Ur5 from "../../images/ur5.gif";
 // import Arm from "../../images/arm.gif";
@@ -48,6 +48,7 @@ const Posts = styled.div`
 const Post = styled.div`
   float: left;
   width: 480px;
+  // max-height: 450px;
   /* margin-left: auto;
   margin-right: auto; */
   padding-bottom: 20px;
@@ -104,7 +105,7 @@ export const ProjectsContent = () => (
   <Posts>
       <Post>
         <Link2 to="/visuomotor-robot-policies">
-          <Img src={Robomimic} alt="robomimic simulation" />
+          <Img src="https://github.com/PsorTheDoctor/visuomotor-robot-policies-v2/raw/main/static/robomimic_trimmed.gif" alt="robomimic simulation" />
         </Link2>
         <Title>Learning Visuomotor Robot Policies</Title>
         <p>My master's thesis focused on teaching robots based on a raw visual input. 

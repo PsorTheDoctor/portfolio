@@ -5,40 +5,40 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import policies from "../../images/policies.png";
 import results from "../../images/robomimic_results.png";
 
-import bet_pusht_state from "../../videos/thesis/pusht/mini_bet_state_tr.gif";
-import bet_pusht_hybrid from "../../videos/thesis/pusht/mini_bet_hybrid_tr.gif";
-import bet_pusht_vision from "../../videos/thesis/pusht/mini_bet_vision_tr.gif";
-import dp_pusht_state from "../../videos/thesis/pusht/dp_state_tr.gif";
-import dp_pusht_hybrid from "../../videos/thesis/pusht/dp_hybrid_tr.gif";
-import dp_pusht_vision from "../../videos/thesis/pusht/dp_vision_2_tr.gif";
-import ibc_pusht_state from "../../videos/thesis/pusht/ibc_state_tr.gif";
-import ibc_pusht_hybrid from "../../videos/thesis/pusht/ibc_hybrid_tr.gif";
+import bet_pusht_state from "../../videos/thesis_optim/pusht/mini_bet_state_tr.gif";
+import bet_pusht_hybrid from "../../videos/thesis_optim/pusht/mini_bet_hybrid_tr.gif";
+import bet_pusht_vision from "../../videos/thesis_optim/pusht/mini_bet_vision_tr.gif";
+import dp_pusht_state from "../../videos/thesis_optim/pusht/dp_state_tr.gif";
+import dp_pusht_hybrid from "../../videos/thesis_optim/pusht/dp_hybrid_tr.gif";
+import dp_pusht_vision from "../../videos/thesis_optim/pusht/dp_vision_2_tr.gif";
+import ibc_pusht_state from "../../videos/thesis_optim/pusht/ibc_state_tr.gif";
+import ibc_pusht_hybrid from "../../videos/thesis_optim/pusht/ibc_hybrid_tr.gif";
 
-import bet_lift_state from "../../videos/thesis/bet_state/Lift_epoch_60.mp4";
-import bet_can_state from "../../videos/thesis/bet_state/PickPlaceCan_epoch_600.mp4";
-import bet_square_state from "../../videos/thesis/bet_state/NutAssemblySquare_epoch_2000.mp4";
-import bet_toolhang_state from "../../videos/thesis/bet_state/ToolHang_epoch_1800.mp4";
-import dp_lift_state from "../../videos/thesis/dp_state/Lift_epoch_90.mp4";
-import dp_can_state from "../../videos/thesis/dp_state/PickPlaceCan_epoch_600.mp4";
-import dp_square_state from "../../videos/thesis/dp_state/NutAssemblySquare_epoch_600.mp4";
-import dp_toolhang_state from "../../videos/thesis/dp_state/ToolHang_epoch_1000.mp4";
+import bet_lift_state from "../../videos/thesis_optim/bet_state/Lift_epoch_60.mp4";
+import bet_can_state from "../../videos/thesis_optim/bet_state/PickPlaceCan_epoch_600.mp4";
+import bet_square_state from "../../videos/thesis_optim/bet_state/NutAssemblySquare_epoch_2000.mp4";
+import bet_toolhang_state from "../../videos/thesis_optim/bet_state/ToolHang_epoch_1800.mp4";
+import dp_lift_state from "../../videos/thesis_optim/dp_state/Lift_epoch_90.mp4";
+import dp_can_state from "../../videos/thesis_optim/dp_state/PickPlaceCan_epoch_600.mp4";
+import dp_square_state from "../../videos/thesis_optim/dp_state/NutAssemblySquare_epoch_600.mp4";
+import dp_toolhang_state from "../../videos/thesis_optim/dp_state/ToolHang_epoch_1000.mp4";
 
-import bet_lift_vision from "../../videos/thesis/bet_vision/Lift_epoch_100.mp4";
-import bet_can_vision from "../../videos/thesis/bet_vision/PickPlaceCan_epoch_1000.mp4";
-import bet_square_vision from "../../videos/thesis/bet_vision/NutAssemblySquare_epoch_2000.mp4";
-import dp_lift_vision from "../../videos/thesis/dp_vision/Lift_epoch_60.mp4";
-import dp_can_vision from "../../videos/thesis/dp_vision/PickPlaceCan_epoch_1400.mp4";
-import dp_square_vision from "../../videos/thesis/dp_vision/NutAssemblySquare_epoch_1800.mp4";
+import bet_lift_vision from "../../videos/thesis_optim/bet_vision/Lift_epoch_100.mp4";
+import bet_can_vision from "../../videos/thesis_optim/bet_vision/PickPlaceCan_epoch_1000.mp4";
+import bet_square_vision from "../../videos/thesis_optim/bet_vision/NutAssemblySquare_epoch_2000.mp4";
+import dp_lift_vision from "../../videos/thesis_optim/dp_vision/Lift_epoch_60.mp4";
+import dp_can_vision from "../../videos/thesis_optim/dp_vision/PickPlaceCan_epoch_1400.mp4";
+import dp_square_vision from "../../videos/thesis_optim/dp_vision/NutAssemblySquare_epoch_1800.mp4";
 
-import bet_lift_hybrid from "../../videos/thesis/bet_hybrid/Lift_epoch_90.mp4";
-import bet_can_hybrid from "../../videos/thesis/bet_hybrid/PickPlaceCan_epoch_600.mp4";
-import bet_square_hybrid from "../../videos/thesis/bet_hybrid/NutAssemblySquare_epoch_800.mp4";
-import dp_lift_hybrid from "../../videos/thesis/dp_hybrid/Lift_epoch_70.mp4";
-import dp_can_hybrid from "../../videos/thesis/dp_hybrid/PickPlaceCan_epoch_2000.mp4";
-import dp_square_hybrid from "../../videos/thesis/dp_hybrid/NutAssemblySquare_epoch_1000.mp4";
+import bet_lift_hybrid from "../../videos/thesis_optim/bet_hybrid/Lift_epoch_90.mp4";
+import bet_can_hybrid from "../../videos/thesis_optim/bet_hybrid/PickPlaceCan_epoch_600.mp4";
+import bet_square_hybrid from "../../videos/thesis_optim/bet_hybrid/NutAssemblySquare_epoch_800.mp4";
+import dp_lift_hybrid from "../../videos/thesis_optim/dp_hybrid/Lift_epoch_70.mp4";
+import dp_can_hybrid from "../../videos/thesis_optim/dp_hybrid/PickPlaceCan_epoch_2000.mp4";
+import dp_square_hybrid from "../../videos/thesis_optim/dp_hybrid/NutAssemblySquare_epoch_1000.mp4";
 
-import dp_can_stationary from "../../videos/thesis/dp_vision_stationary/PickPlaceCan_epoch_2000.mp4";
-import dp_can_end_eff from "../../videos/thesis/dp_vision_end_eff/PickPlaceCan_epoch_1000.mp4";
+import dp_can_stationary from "../../videos/thesis_optim/dp_vision_stationary/PickPlaceCan_epoch_2000.mp4";
+import dp_can_end_eff from "../../videos/thesis_optim/dp_vision_end_eff/PickPlaceCan_epoch_1000.mp4";
 
 const Wrapper = styled.div`
   display: flex;
@@ -139,9 +139,10 @@ const ColumnImg = styled.img`
 
 const Radio = styled.div`
   background-color: lightgray;
+  width: 360px;
   margin: 0 auto 15px auto;
   border-radius: 15px;
-`
+`;
 
 interface ToggleButtonProps {
   modality: string;
@@ -238,6 +239,10 @@ const Center = styled.span`
 
 const LinkA = styled.a`
   text-decoration: none;
+`;
+
+const List = styled.ul`
+  text-align: left;
 `;
 
 export const VisuomotorRobotPoliciesAuth = () => {
@@ -432,13 +437,12 @@ export const VisuomotorRobotPolicies = () => {
       </Center>
 
       <Header>Credits</Header>
-      <ul>
+      <List>
         <li>Behavior Transformer: <LinkA href="https://mahis.life/bet/" target="blank">https://mahis.life/bet/</LinkA></li>
         <li>Implicit Behavioral Cloning: <LinkA href="https://implicitbc.github.io/" target="blank">https://implicitbc.github.io/</LinkA></li>
         <li>Diffusion Policy: <LinkA href="https://diffusion-policy.cs.columbia.edu/" target="blank">https://diffusion-policy.cs.columbia.edu/</LinkA></li>
         <li>robomimic dataset: <LinkA href="https://robomimic.github.io/" target="blank">https://robomimic.github.io/</LinkA></li>
-      </ul>
-
+      </List>
     </Wrapper>
   );
 }

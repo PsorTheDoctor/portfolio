@@ -61,7 +61,7 @@ const GitHub = styled(GitHubIcon)`
 export const Footer = () => (
   <Wrapper>
     <Container>
-      <a href="mailto: adwol21@student.sdu.dk">
+      <a href="mailto: psor2.0@gmail.com">
         <Button>Contact</Button>
       </a>
       {/* <a href="https://www.buymeacoffee.com/adamwolkowycki" target="blank">
