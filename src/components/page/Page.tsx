@@ -10,12 +10,7 @@ import { RoboticManipulation } from "../posts/RoboticManipulation";
 import { AutonomousVehicle } from "../posts/AutonomousVehicle";
 import { VisuomotorRobotPolicies } from "../posts/VisuomotorRobotPolicies";
 
-const Wrapper = styled.div`
-  background-color: whitesmoke;
-`;
-
 export const Page = () => (
-  <Wrapper>
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/home" element={<Home />} />
@@ -29,5 +24,4 @@ export const Page = () => (
       {/* <Route path="/visuomotor-robot-policies" element={<VisuomotorRobotPoliciesAuth />} /> */}
       <Route path="/visuomotor-robot-policies" element={<VisuomotorRobotPolicies />} />
     </Routes>
-  </Wrapper>
 );
