@@ -83,7 +83,7 @@ export const HumanArm = () => (
   <p>To conclude I must say I'm satisfied with the model. It got into two local competitions: the podium 
   of EL-ROBO-MECH in 2018 and final of KOKOS Students' Construction Contest in the category of Smart Robots in 2021. 
   It has also been shown at some expos where aroused significant interest. Either way, the construction
-  was rather flimsy. The weight, lenght of the pneumatic hoses and compessibility of the air made it didn't move smootly in a fact.
+  was rather flimsy. The weight, length of the pneumatic hoses and compessibility of the air made it didn't move smootly in a fact.
   However, it felt like something innovative to build and still was interesting to see it working.
   </p>
   </Wrapper>

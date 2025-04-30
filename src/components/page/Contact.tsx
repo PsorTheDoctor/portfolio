@@ -47,7 +47,7 @@ export const Contact = () => (
       <Column>
       <p>As a person who likes to show my stuff in public
       for the last years I was receiving several requests regarding 
-      showcase of my projects, mechanical design, and AI related software development.</p>
+      showcase of my projects, mechanical design, and AI-related software development.</p>
       
       <p>Feel free to contact me or reach out in the social media
       if you have any proposal that might be interesting or just want to stay in touch.

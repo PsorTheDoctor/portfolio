@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-// import Robomimic from "../../images/robomimic_trimmed.gif";
-import Taero from "../../images/taero2.jpg";
-// import Ur5 from "../../images/ur5.gif";
-// import Arm from "../../images/arm.gif";
+import Rbos from '../../images/rbos.jpg';
+import Taero from '../../images/taero2.jpg';
+import Arm from '../../images/arm.jpg';
+// import Ur5 from "../../images/ur5_thumb.jpg";
 
 const Wrapper = styled.div`
   max-width: 1000px;
@@ -42,7 +42,7 @@ const Posts = styled.div`
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
+  
 `;
 
 const Post = styled.div`
@@ -51,10 +51,15 @@ const Post = styled.div`
   // max-height: 450px;
   /* margin-left: auto;
   margin-right: auto; */
-  padding-bottom: 20px;
+  padding: 10px 10px 30px 10px;
 `;
 
 const Link2 = styled(Link)`
+  display: flex;
+  justify-content: center;
+`;
+
+const Anchor = styled.a`
   display: flex;
   justify-content: center;
 `;
@@ -101,8 +106,24 @@ const StyledLink = styled(Link)`
   };
 `;
 
+const StyledAnchor = styled.a`
+  color: white;
+  text-decoration: none;
+  &:hover {
+    color: white;
+  }
+`;
+
 export const ProjectsContent = () => (
   <Posts>
+      <Post>
+        <Anchor href="https://r-bos.com/" target="_blank">
+          <Img src={Rbos} alt="RBOS" />
+        </Anchor>
+        <Title>Mobile strawberry-picking platform</Title>
+        <p>A simulation of the mobile strawberry-picking platform for the Polish start-up R-BOS as a part of the Hub of Talents 3 incubation program.</p>
+        <Button><StyledAnchor href="https://r-bos.com/" target="_blank">Project site</StyledAnchor></Button>
+      </Post>
       <Post>
         <Link2 to="/visuomotor-robot-policies">
           <Img src="https://github.com/PsorTheDoctor/visuomotor-robot-policies-v2/raw/main/static/robomimic_trimmed.gif" alt="robomimic simulation" />
@@ -121,20 +142,20 @@ export const ProjectsContent = () => (
         <Button><StyledLink to="/autonomous-vehicle">Read more</StyledLink></Button>
       </Post>
       <Post>
-        {/* <Link to="/robotic-manipulation">
-          <Img src={Ur5} width={480} alt="UR5 robot arm" />
-        </Link> */}
-        <Title>Solving robotic manipulation problems</Title>
-        <p>My bachelor's thesis about pose estimation under the supervision of Adam Wolniakowski.</p>
-        <Button><StyledLink to="/robotic-manipulation">Read more</StyledLink></Button>
-      </Post>
-      <Post>
-        {/* <Link to="/human-arm">
+        <Link to="/human-arm">
           <Img src={Arm} width={480} alt="Lego human arm" />
-        </Link> */}
+        </Link>
         <Title>Lego human arm</Title>
         <p>Archival project from high school.</p>
         <Button><StyledLink to="/human-arm">Read more</StyledLink></Button>
+      </Post>
+      <Post>
+        {/* <Link2 to="/robotic-manipulation">
+          <Img src={Ur5} alt="UR5 robot arm" />
+        </Link2> */}
+        <Title>Solving robotic manipulation problems</Title>
+        <p>My bachelor's thesis about pose estimation under the supervision of Adam Wolniakowski.</p>
+        <Button><StyledLink to="/robotic-manipulation">Read more</StyledLink></Button>
       </Post>
   </Posts>
 );

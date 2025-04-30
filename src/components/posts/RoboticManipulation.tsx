@@ -23,7 +23,7 @@ export const RoboticManipulation = () => (
       in modern robotics. The idea came at the beginning of my studies when I joined KNR Robotic Science Club 
       at the Mechanical Faculty of Bialystok University of Technology.
       I wanted to work with robot arms that use information from camera in order to achieve dexterous manipulation.
-      Then I had a chance to meet PhD Adam Wolniakowski who was introduced to me as a person having knowledge
+      Then I had a chance to meet Adam Wolniakowski who was introduced to me as a person having knowledge
       about this topic and was helpful in solving robotic control issues. So, he finally became my supervisor.</p>
 
     <Header>What is dexterity and why is it so important?</Header>

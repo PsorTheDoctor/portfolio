@@ -112,9 +112,8 @@ export const AboutMe = () => (
     an exchange student. I also was one of the total of four students that got a grant from
     Diamonds' Explorers foundation, which was launched and led by the previous Rector of BUT – Professor Lech
     Dzienis. In the time of my stay in Denmark I
-    wrote a <StyledLink to="/robotic-manipulation">thesis</StyledLink> focused on robotic manipulation 
-    using computer vision system – a quintessential
-    problem in modern robotics. My supervisor was Adam Wolniakowski, PhD.</p>
+    wrote a <StyledLink to="/robotic-manipulation">thesis</StyledLink> focused on object pose estimation.
+    My supervisor was Adam Wolniakowski, PhD.</p>
 
     <Chapter>Master studies</Chapter>
     <p>After graduating I received an offer of work on 
@@ -146,11 +145,11 @@ export const AboutMe = () => (
     studies I want to publish articles about robotic manipulation and practical
     usage of AI systems.</p>
 
-    <Chapter>People who inspire me</Chapter>
+    {/* <Chapter>People who inspire me</Chapter>
     <ul>
       <li><LinkA href="https://petrospsyllos.com/en/">Petros Psyllos</LinkA></li>
       <li><LinkA href="https://pwwprojects.blogspot.com/">Piotr Wasilewski</LinkA></li>
-    </ul>
+    </ul> */}
 
     <Chapter>Recommended books</Chapter>
     <List>
