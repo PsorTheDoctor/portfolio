@@ -9,6 +9,7 @@ import { HumanArm } from "../posts/HumanArm";
 import { RoboticManipulation } from "../posts/RoboticManipulation";
 import { AutonomousVehicle } from "../posts/AutonomousVehicle";
 import { VisuomotorRobotPolicies } from "../posts/VisuomotorRobotPolicies";
+import { Pickaberry } from "../posts/Pickaberry";
 
 export const Page = () => (
     <Routes>
@@ -21,7 +22,7 @@ export const Page = () => (
       <Route path="/human-arm" element={<HumanArm />} />
       <Route path="/robotic-manipulation" element={<RoboticManipulation />} />
       <Route path="/autonomous-vehicle" element={<AutonomousVehicle />} />
-      {/* <Route path="/visuomotor-robot-policies" element={<VisuomotorRobotPoliciesAuth />} /> */}
       <Route path="/visuomotor-robot-policies" element={<VisuomotorRobotPolicies />} />
+      <Route path="/pickaberry" element={<Pickaberry />} />
     </Routes>
 );

@@ -33,6 +33,7 @@ const Image = styled.div`
 
 const Img = styled.img`
   max-width: 100%;
+  margin-bottom: 5px;
 `;
 
 const StyledLink = styled(Link)`
@@ -58,7 +59,7 @@ export const AboutMe = () => (
     that made me keen on building and interested in technical fields. I used to build various
     devices since my early years. I built my first project – a mechanical rope-walking monkey when I was
     six. It was a simple automaton propelled by single motor geared
-    down twenty times with a worm gear. The arms worked as slider-crank linkages ended with claws
+    down with a worm gear. The arms worked as slider-crank linkages ended with claws
     that hooked a rope in an alternating pattern. The result of this mechanism was a fully movable model of
     a monkey.</p>
 
@@ -79,7 +80,7 @@ export const AboutMe = () => (
     scholarship founded by a local seafood company named SUEMPOL. With this money I started
     making a large project I had been thinking about for many 
     years – a <StyledLink to="/human-arm">mechanical human arm</StyledLink>.
-    I have submitted a model to the 
+    I have submitted the model to the 
     EL-ROBO-MECH contest organized by Bialystok University of Technology, where it took third
     place out of fifteen, winning a monetary prize and the university priority admission card.
     In the time of high school my mentors were teachers Sławomir Zieniewski and Ewa Trzeszczkowska.
@@ -94,7 +95,7 @@ export const AboutMe = () => (
     <Chapter>Undergraduate studies</Chapter>
     <p>I started studying Automatic Control and Robotics in the Bialystok University of
     Technology (BUT) in 2018. A year after that I launched the Artificial Intelligence Scientific Club as a
-    section of Robotics Students' Club at the Mechanical Faculty of BUT. We were a group of
+    section of Robotics Student Club at the Mechanical Faculty of BUT. We were a group of
     students that were learning modern technologies such as: neural networks, machine learning,
     and computer vision.</p>
     
@@ -105,12 +106,12 @@ export const AboutMe = () => (
 
     <p>Studies aside, I completed an internship at Standard Motor Products factory that
     produces plastic components, including the ignition coils. My role was to maintain
-    the molding folds, operate an EDM machine, and make models of parts in a CAD software.
-    So far, I still take a part in some competitions once in a while. In my third year of
-    studies I got into the finals of the nationwide KOKOS Students' Construction Contest in the category of Smart Robots.
+    the injection molds, operate an EDM machine, and make models of parts in a CAD software.
+    In my third year of
+    studies I got into the finals of the nationwide KOKOS Student Construction Contest in the category of Smart Robots.
     During the last semester of my bachelor's degree I was studying at SDU (University of Southern Denmark) in Odense as
     an exchange student. I also was one of the total of four students that got a grant from
-    Diamonds' Explorers foundation, which was launched and led by the previous Rector of BUT – Professor Lech
+    Diamond Explorers foundation, which was launched and led by the previous Rector of BUT – Professor Lech
     Dzienis. In the time of my stay in Denmark I
     wrote a <StyledLink to="/robotic-manipulation">thesis</StyledLink> focused on object pose estimation.
     My supervisor was Adam Wolniakowski, PhD.</p>
@@ -134,22 +135,14 @@ export const AboutMe = () => (
     The theme of the contest was to propose a solution that reduces carbon footprint backed by the usage of renewable energy sources.
     Our team presented an <LinkA href="https://www.youtube.com/watch?v=ZPzBONO5VmA">idea</LinkA> of 
     reusing exploited electric car batteries to store the green energy during high production periods
-    and use it while consumption raises. Successfully, an innovation was noticed by the jury that decided to give us
+    and use it while consumption raises. Successfully, the innovation was noticed by the jury that decided to give us
     first place. 
     {/*and money prize. The check for 15000 DKK was handed over by previous chairman of the board of Danfoss – Jørgen Mads Clausen. */}
     </p>
 
     <Chapter>Plans for future</Chapter>
     <p>In the near future I am going to still develop further in the fields of my interests:
-    robotics, artificial intelligence, but also cognitive science and psychology. Before the end of my
-    studies I want to publish articles about robotic manipulation and practical
-    usage of AI systems.</p>
-
-    {/* <Chapter>People who inspire me</Chapter>
-    <ul>
-      <li><LinkA href="https://petrospsyllos.com/en/">Petros Psyllos</LinkA></li>
-      <li><LinkA href="https://pwwprojects.blogspot.com/">Piotr Wasilewski</LinkA></li>
-    </ul> */}
+    robotics, artificial intelligence, but also cognitive science and psychology.</p>
 
     <Chapter>Recommended books</Chapter>
     <List>

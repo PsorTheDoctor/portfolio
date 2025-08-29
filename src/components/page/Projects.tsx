@@ -12,7 +12,7 @@ const Wrapper = styled.div`
   margin-right: auto;
   padding: 10px 0 10px 0;
 `;
-
+ 
 // const Row = styled.div`
 //   @media (max-width: 1000px) {
 //     display: block;

@@ -119,10 +119,8 @@ const Sponsor = styled.div`
 
 const Logo = styled.img`
   opacity: 0.9;
-  filter: grayscale(50%);
   &:hover {
     opacity: 1;
-    filter: grayscale(0%);
   }
 `;
 
@@ -182,8 +180,9 @@ export const Home = () => (
           <p><Serif><b>Adam Wolkowycki</b></Serif>
           <h5>Robotics & AI Engineer</h5></p>
           <Serif>
-            <p>I am robotics and AI engineer who graduated from University of Southern Denmark with a master's degree of Robot Systems: Advanced Robotics Technology.
-            I also hold a bachelor's from Bialystok University of Technology in Poland where I was founder and leader of AI science club and scholar of Diamonds' Explorers foundation.</p>
+            <p>I am robotics and AI engineer currently working on robot perception and manipulation.</p>
+            <p>I graduated from University of Southern Denmark with a master's degree of Robot Systems: Advanced Robotics Technology.</p>
+            {/* I also hold a bachelor's from Bialystok University of Technology in Poland where I was founder and leader of AI science club and scholar of Diamond Explorers foundation.</p> */}
           </Serif>
         </About>
       </Intro>
