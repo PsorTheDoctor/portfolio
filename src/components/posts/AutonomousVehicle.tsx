@@ -3,13 +3,13 @@ import Taero from "../../images/taero2.jpg";
 
 export const AutonomousVehicle = () => (
   <Wrapper>
-    <Title>Perception for the autonomous vehicle</Title>
-    <Subtitle>Software system for the autonomous military truck. Project implemented with the Polish company STEKOP.</Subtitle>
+    <Title>Perception for the military vehicle</Title>
+    <Subtitle>Software system for the military truck. Project implemented with the Polish company STEKOP.</Subtitle>
 
     <Image><Img src={Taero} width="600px" alt="Taero truck" /></Image>
 
     <p>The task was to create a real-time GPU-accelerated environment recognition system including object detection
-    and distance estimation methods. The final solution will be implemented to TAERO autonomous military truck.
+    and distance estimation methods. The final solution was implemented in TAERO military truck that was able to drive in both manned and unmanned mode. 
     The vehicle was unveiled in fall 2022 at 30th edition of International Defence Industry Exhibition in Kielce, Poland.</p>
     
     <Image>

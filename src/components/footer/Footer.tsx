@@ -76,6 +76,6 @@ export const Footer = () => (
         </Link>
       </SocialMedia>
     </Container>
-    Adam Wolkowycki ©2025
+    Adam Wolkowycki ©2026
   </Wrapper>
 );

@@ -45,7 +45,7 @@ export const HumanArm = () => (
     <p>Since we have tamed with a bill of material, there's time to admit what induced me to build it.
     The idea came at the end of my primary school when 
     found <Link href="https://www.youtube.com/watch?v=KR3IiXvzrds">this</Link> video. A conception
-    has seemed to be interesting, even brilliant in applied solutions. After the years I had a pleasure to
+    seemed interesting, even brilliant in applied solutions. After the years I had a pleasure to
     rebuild this model in almost an exact way, but its working honestly dissapointed me. Large stress and
     stiffness of some parts were causing breaks in working, sometimes even blocking a range of movements 
     (especially for palm and wrist). Keeping that in mind, I set myself a goal to build it better, stronger

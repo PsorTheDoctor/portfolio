@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-import Rbos from '../../images/rbos.jpg';
+import Si from '../../images/si.jpg';
+import Rbos from '../../images/rbos2.jpg';
 import Taero from '../../images/taero2.jpg';
 import Arm from '../../images/arm.jpg';
-// import Ur5 from "../../images/ur5_thumb.jpg";
 
 const Wrapper = styled.div`
   max-width: 1000px;
@@ -67,7 +67,7 @@ const Anchor = styled.a`
 const Img = styled.img`
   text-align: center;
   max-width: 100%;
-  max-height: 270px;
+  /* max-height: 270px; */
   height: auto;
   &:hover {
     opacity: 0.9;
@@ -91,11 +91,26 @@ const Button = styled.button`
   font-size: 13px;
   font-weight: bold;
   margin-bottom: 10px;
-  box-shadow: 5px 5px 5px lightgray;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
   &:hover {
     background-color: lightgreen;
     transition: 0.3s;
   }
+`;
+
+const IdleButton = styled.button`
+  background-color: #0041c2;
+  height: 30px;
+  width: 130px;
+  border: 0;
+  border-radius: 15px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  pointer-events: none;
 `;
 
 const StyledLink = styled(Link)`
@@ -117,11 +132,19 @@ const StyledAnchor = styled.a`
 export const ProjectsContent = () => (
   <Posts>
       <Post>
-        <Anchor href="https://r-bos.com/" target="_blank">
-          <Img src={Rbos} alt="RBOS" />
+        <Anchor href="https://sirobotics.eu/" target="_blank">
+          <Img src={Si} alt="SI Robotics" />
+        </Anchor>
+        <Title>Joule the Humanoid</Title>
+        <p>Development of AI-related software for the Polish humanoid start-up SI Robotics.</p>
+        <IdleButton>Coming soon</IdleButton>
+      </Post>
+      <Post>
+         <Anchor href="https://r-bos.com/" target="_blank">
+          <Img src={Rbos} alt="R-BOS" />
         </Anchor>
         <Title>Mobile strawberry-picking platform</Title>
-        <p>A simulation of the mobile strawberry-picking platform for the Polish start-up R-BOS as a part of the Hub of Talents 3 incubation program.</p>
+        <p>A simulation of the mobile strawberry-picking platform for the Polish agritech start-up R-BOS.</p>
         <Button><StyledAnchor href="https://r-bos.com/" target="_blank">Project site</StyledAnchor></Button>
       </Post>
       <Post>
@@ -137,8 +160,8 @@ export const ProjectsContent = () => (
         <Link2 to="/autonomous-vehicle">
           <Img src={Taero} alt="TAERO autonomous vehicle" />
         </Link2>
-        <Title>Perception for the autonomous vehicle</Title>
-        <p>Computer vision system for the autonomous military truck. Project implemented with the Polish company STEKOP.</p>
+        <Title>Perception for the military vehicle</Title>
+        <p>Computer vision system for the military truck. Project implemented with the Polish company STEKOP.</p>
         <Button><StyledLink to="/autonomous-vehicle">Read more</StyledLink></Button>
       </Post>
       <Post>
@@ -149,14 +172,11 @@ export const ProjectsContent = () => (
         <p>Archival project from high school.</p>
         <Button><StyledLink to="/human-arm">Read more</StyledLink></Button>
       </Post>
-      <Post>
-        {/* <Link2 to="/robotic-manipulation">
-          <Img src={Ur5} alt="UR5 robot arm" />
-        </Link2> */}
+      {/* <Post>
         <Title>Solving robotic manipulation problems</Title>
         <p>My bachelor's thesis about pose estimation under the supervision of Adam Wolniakowski.</p>
         <Button><StyledLink to="/robotic-manipulation">Read more</StyledLink></Button>
-      </Post>
+      </Post> */}
   </Posts>
 );
 

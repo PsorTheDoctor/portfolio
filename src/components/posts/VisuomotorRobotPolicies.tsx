@@ -41,6 +41,11 @@ import dp_can_stationary from "../../videos/thesis_optim/dp_vision_stationary/Pi
 import dp_can_end_eff from "../../videos/thesis_optim/dp_vision_end_eff/PickPlaceCan_epoch_1000.mp4";
 
 const Wrapper = styled.div`
+  background-color: whitesmoke;
+  width: 100%;
+`;
+
+const Content = styled.div`
   display: flex;
   flex-direction: column;
   color: darkslategray;
@@ -170,6 +175,7 @@ const LeftButton = styled(ToggleButton)`
   background-color: ${({ modality }) => (modality === 'state' ? 'darkslategray' : 'lightgray')};
   color: ${({ modality }) => (modality === 'state' ? 'white' : 'darkslategray')};
 `;
+
 const MiddleButton = styled(ToggleButton)`
   background-color: ${({ modality }) => (modality === 'image' ? 'darkslategray' : 'lightgray')};
   color: ${({ modality }) => (modality === 'image' ? 'white' : 'darkslategray')};
@@ -245,45 +251,45 @@ const List = styled.ul`
   text-align: left;
 `;
 
-export const VisuomotorRobotPoliciesAuth = () => {
-  const correctPassword = 'banana';
+// export const VisuomotorRobotPoliciesAuth = () => {
+//   const correctPassword = 'banana';
 
-  const [thisPassword, setThisPassword] = useState('');
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
+//   const [thisPassword, setThisPassword] = useState('');
+//   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
-  const handlePasswordChange = (event: ChangeEvent<HTMLInputElement>) => {
-    setThisPassword(event.target.value);
-  };
+//   const handlePasswordChange = (event: ChangeEvent<HTMLInputElement>) => {
+//     setThisPassword(event.target.value);
+//   };
 
-  const handlePasswordSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault(); 
+//   const handlePasswordSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+//     event.preventDefault(); 
 
-    if (thisPassword === correctPassword) {
-      setIsAuthenticated(true);
-    } else {
-      alert('Incorrect password. Please try again.');
-      setThisPassword('');
-    }
-  };
+//     if (thisPassword === correctPassword) {
+//       setIsAuthenticated(true);
+//     } else {
+//       alert('Incorrect password. Please try again.');
+//       setThisPassword('');
+//     }
+//   };
 
-  return (
-    <div>
-      {isAuthenticated ? (
-        <VisuomotorRobotPolicies />
-      ) : (
-        <Wrapper>
-          <Title><p>Confidential data</p></Title>
-          <form onSubmit={handlePasswordSubmit}>
-            <label>
-              Enter a password to see the content: 
-              <input type="password" value={thisPassword} onChange={handlePasswordChange} autoFocus />
-            </label>
-          </form>
-        </Wrapper>
-      )}
-    </div>
-  );
-}
+//   return (
+//     <div>
+//       {isAuthenticated ? (
+//         <VisuomotorRobotPolicies />
+//       ) : (
+//         <Wrapper>
+//           <Title><p>Confidential data</p></Title>
+//           <form onSubmit={handlePasswordSubmit}>
+//             <label>
+//               Enter a password to see the content: 
+//               <input type="password" value={thisPassword} onChange={handlePasswordChange} autoFocus />
+//             </label>
+//           </form>
+//         </Wrapper>
+//       )}
+//     </div>
+//   );
+// }
 
 export const VisuomotorRobotPolicies = () => {
   const [modality, setModality] = useState('state');
@@ -294,6 +300,7 @@ export const VisuomotorRobotPolicies = () => {
 
   return (
     <Wrapper>
+    <Content>
       <Title><p>Learning Visuomotor Robot Policies</p></Title>
       <Subtitle>
         <p>Adam Wolkowycki<br/>
@@ -443,6 +450,7 @@ export const VisuomotorRobotPolicies = () => {
         <li>Diffusion Policy: <LinkA href="https://diffusion-policy.cs.columbia.edu/" target="blank">https://diffusion-policy.cs.columbia.edu/</LinkA></li>
         <li>robomimic dataset: <LinkA href="https://robomimic.github.io/" target="blank">https://robomimic.github.io/</LinkA></li>
       </List>
+    </Content>
     </Wrapper>
   );
 }

@@ -22,6 +22,7 @@ export const Subtitle = styled.p`
 
 export const Header = styled.h5`
   margin-top: 10px;
+  font-weight: bold;
 `;
 
 export const Image = styled.div`

@@ -1,7 +1,7 @@
 import React, { useState, useEffect, ReactNode } from 'react';
 import styled from "styled-components";
 import { ProjectsContent } from "./Projects";
-import Adam from "../../images/adam_spectacular.png";
+import Adam from "../../images/adam_spectacular.png"
 
 import BracketsIcon from '@mui/icons-material/DataObject';
 import CameraIcon from '@mui/icons-material/PhotoCamera';
@@ -10,6 +10,7 @@ import DesignIcon from '@mui/icons-material/DesignServices';
 import RobotIcon from '@mui/icons-material/PrecisionManufacturing';
 import PsychologyIcon from '@mui/icons-material/Psychology';
 
+import Si from '../../images/si_logo.png';
 import UR from '../../images/ur_logo.png';
 import Stekop from '../../images/stekop_logo.png';
 import Qpurpose from '../../images/qpurpose_logo.png';
@@ -97,24 +98,26 @@ const Hobbies = styled.div`
 const Hobby = styled.div`
   text-align: center;
   width: 303px;
-  padding: 5px 5px 15px 5px;
+  min-height: 170px;
+  padding: 5px;
 `;
 
 const Sponsors = styled.div`
-  @media (max-width: 680px) {
-    display: block;
+  @media (max-width: 900px) {
+    flex-direction: column;
   }
-  @media (min-width: 680px) {
-    display: flex;
-  } 
+  display: flex;
+  background-color: whitesmoke;
+  border-radius: 25px;
   align-items: center;
   justify-content: space-around;
   margin: 25px 0 25px 0;
+  row-gap: 25px;
 `;
 
 const Sponsor = styled.div`
   text-align: center;
-  margin: 50px 0 50px 0;
+  margin: 25px 0 25px 0;
 `;
 
 const Logo = styled.img`
@@ -180,9 +183,9 @@ export const Home = () => (
           <p><Serif><b>Adam Wolkowycki</b></Serif>
           <h5>Robotics & AI Engineer</h5></p>
           <Serif>
-            <p>I am robotics and AI engineer currently working on robot perception and manipulation.</p>
+            <p>I am robotics and AI engineer helping tech start-ups to implement AI and computer vision systems. 
+              Currently working with robot perception and manipulation.</p>
             <p>I graduated from University of Southern Denmark with a master's degree of Robot Systems: Advanced Robotics Technology.</p>
-            {/* I also hold a bachelor's from Bialystok University of Technology in Poland where I was founder and leader of AI science club and scholar of Diamond Explorers foundation.</p> */}
           </Serif>
         </About>
       </Intro>
@@ -221,7 +224,7 @@ export const Home = () => (
       <Hobby>
         <Icon><RobotIcon /></Icon>
         <h5>Robotics</h5>
-        Control theory, simulation engines <br/>(ROS, PyBullet, MuJoCo)
+        Control theory, ROS middleware, simulation engines (Isaac Sim, PyBullet, MuJoCo)
       </Hobby>
     </Hobbies>
     </Fade>
@@ -229,10 +232,11 @@ export const Home = () => (
     <Header><p>I was working with</p></Header>
     <Fade fadeStart={ 500 } fadeEnd={ 800 }>
     <Sponsors>
-      <Sponsor><Logo src={UR} width="200px" alt="Universal Robots" /></Sponsor>
-      <Sponsor><Logo src={Stekop} width="200px" alt="STEKOP" /></Sponsor>
-      <Sponsor><Logo src={Qpurpose} width="125px" alt="Qpurpose" /></Sponsor>
+      <Sponsor><Logo src={Si} width="175px" alt="SI Robotics" /></Sponsor>
       <Sponsor><Logo src={Rbos} width="150px" alt="R-BOS" /></Sponsor>
+      <Sponsor><Logo src={UR} width="175px" alt="Universal Robots" /></Sponsor>
+      <Sponsor><Logo src={Qpurpose} width="125px" alt="Qpurpose" /></Sponsor>
+      <Sponsor><Logo src={Stekop} width="175px" alt="STEKOP" /></Sponsor>
     </Sponsors>
     </Fade>
 
