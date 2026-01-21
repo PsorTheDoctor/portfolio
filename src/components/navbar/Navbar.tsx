@@ -16,7 +16,7 @@ const Nav = styled.div`
   margin: 0 auto;
   display: flex;
   align-items: top;
-  justify-content: space-between;
+  justify-content: space-around;
   text-transform: uppercase;
   font-size: 13px;
   font-weight: bold;
@@ -73,16 +73,16 @@ const Menu = styled.div`
 const Radio = styled.div`
   display: flex;
   background-color: #141a51;
-  width: 100px;
+  width: 80px;
   height: 30px;
   border-radius: 15px;
-  margin-top: 5px;
+  margin: 5px 10px;
 `;
 
 const ToggleButton = styled.button`
   background-color: #141a51;
   color: white;
-  width: 50px;
+  width: 40px;
   height: 30px;
   border: 0;
   border-radius: 15px;
@@ -94,6 +94,10 @@ const LightButton = styled(ToggleButton)`
 
 const DarkButton = styled(ToggleButton)`
   background-color: ${({ theme }) => (theme === 'dark' ? '#1f297e' : '#141a51')};
+`;
+
+const Icon = styled.div`
+  transform: scale(0.75);
 `;
 
 interface NavbarProps {
@@ -108,6 +112,10 @@ export const Navbar: React.FC<NavbarProps> = ({ darkMode, setDarkMode }) => {
     setIsOpen(!isOpen);
   };
 
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
   return (
     <Wrapper>
       <Nav>
@@ -115,18 +123,22 @@ export const Navbar: React.FC<NavbarProps> = ({ darkMode, setDarkMode }) => {
           { isOpen ? <CloseIcon  /> : <MenuIcon /> }
         </Menu>
         <Tabs isOpen={ isOpen }>
-          <Tab to="/home">Home</Tab>
-          <Tab to="/about-me">About me</Tab>
-          <Tab to="/projects">Projects</Tab>
-          <TabA href="https://drive.google.com/file/d/15A7EvEOvrP3Y_BU_cUhrhxdYVeoHKG-W/view?usp=drive_link" target="blank">
-            Resume
+          <Tab to="/home"><span onClick={closeMenu}>Home</span></Tab>
+          <Tab to="/about-me"><span onClick={closeMenu}>About me</span></Tab>
+          <Tab to="/projects"><span onClick={closeMenu}>Projects</span></Tab>
+          <TabA href="https://drive.google.com/file/d/1b5efsuAeRqWlLU8EjOXKO6h1cwTl9YlX/view?usp=sharing" target="blank">
+            <span onClick={closeMenu}>Resume</span>
           </TabA>
-          <Tab to="/contact">Contact</Tab>
+          <Tab to="/contact"><span onClick={closeMenu}>Contact</span></Tab>
+          <Radio>
+            <LightButton theme={darkMode ? 'dark' : 'light'} onClick={() => setDarkMode(false)}>
+              <Icon><SunIcon /></Icon>
+            </LightButton>
+            <DarkButton theme={darkMode ? 'dark' : 'light'} onClick={() => setDarkMode(true)}>
+              <Icon><MoonIcon /></Icon>
+            </DarkButton>
+          </Radio>
         </Tabs>
-        <Radio>
-          <LightButton theme={darkMode ? 'dark' : 'light'} onClick={() => setDarkMode(false)}><SunIcon /></LightButton>
-          <DarkButton theme={darkMode ? 'dark' : 'light'} onClick={() => setDarkMode(true)}><MoonIcon /></DarkButton>
-        </Radio>
       </Nav>
     </Wrapper>
   );

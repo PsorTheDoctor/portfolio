@@ -63,6 +63,26 @@ const LinkA = styled.a`
   font-weight: bold;
 `;
 
+const Books = styled.div`
+  float: left;
+  @media (max-width: 1000px) {
+    max-width: 100%;
+  }
+  @media (min-width: 1000px) {
+    min-width: 540px;
+  }
+`;
+
+const Movies = styled.div`
+  float: left;
+  @media (max-width: 1000px) {
+    max-width: 100%;
+  }
+  @media (min-width: 1000px) {
+    min-width: 420px;
+  }
+`;
+
 const List = styled.ul`
   text-align: left;
 `;
@@ -101,15 +121,14 @@ export const AboutMe = () => (
       </Image>
       <Column>
         <p>Keeping above in mind, in my third year at high school I got my first
-        scholarship funded by a local seafood company named SUEMPOL. With this money I started
+        scholarship funded by a local seafood company SUEMPOL. With this money I started
         making a large project I had been thinking about for many 
         years – a <StyledLink to="/human-arm">mechanical human arm</StyledLink>.
         I have submitted the model to the 
         EL-ROBO-MECH contest organized by Bialystok University of Technology, where it took third
         place out of fifteen, winning a monetary prize and the university priority admission card.
         In the time of high school my teachers were Sławomir Zieniewski and Ewa Trzeszczkowska.
-        I also earned a subsidy
-        from the European Union for a 7-month long Java programming course.</p>
+        I also earned a subsidy from the European Union for a 7-month long Java programming course.</p>
       </Column>
     </Grid>
 
@@ -118,13 +137,13 @@ export const AboutMe = () => (
       <Column>
         <p>I started studying Automatic Control and Robotics in the Bialystok University of
         Technology (BUT) in 2018. A year after that I launched the AI Science Club as a
-        section of Robotics Student Club at the Mechanical Faculty of BUT. We were a group of
-        students learning modern technologies such as: neural networks, machine learning,
-        and computer vision.</p>
+        section of Robotics Student Club at the Mechanical Faculty of BUT. 
+        Seventeen students enrolled, but only a bunch of them actually participated in our meetings
+        on whose we covered the fundamentals of AI, which was even more exciting before the ChatGPT era.</p>
 
         <p>Studies aside, I completed an internship at Standard Motor Products factory that
-        produces plastic components, including the ignition coils. My role was to maintain
-        the injection molds, operate an EDM machine, and make models of parts in a CAD software.
+        produces plastic components, primarily ignition coils. My role was to maintain
+        injection molds, operate an EDM machine, and make models of parts in a CAD software.
         During the last semester of my bachelor's degree I was studying at SDU (University of Southern Denmark) in Odense as
         an exchange student. I also was one of the total of four students that got a grant from
         Diamond Explorers foundation, which was launched and led by the former Rector of BUT – Professor Lech
@@ -161,37 +180,68 @@ export const AboutMe = () => (
       </Column>
     </Grid>
     <p>In the third semester of my master's I was employed as a student programmer at Qpurpose – a spin-off company from Center of Quantum Mathematics at SDU. 
-    Despite how overstating it sounds, my role was to develop python programs to analyze and visualize given data. I took a part in two projects: from finance and healthcare sectors. 
-    The healtcare one was to assist physicians to diagnose liver diseases based on biomarkers. I deployed it as a standalone window app with a functional GUI. 
-    At the end of my formal education I wrote a <StyledLink to="/visuomotor-robot-policies">thesis</StyledLink> focused on teaching robots dexterous skills based on a raw visual input.
-    It was supervised by Iñigo Iturrate and Ralph Brorsen and written in collaboration with Universal Robots A/S.</p>
+    Despite how overstating it sounds, my role was to develop python programs to analyze and visualize given data. 
+    I took a part in two projects. One of them was the healthcare application to assist physicians in diagnosing liver diseases based on biomarkers. 
+    I deployed it as a standalone window app with a functional GUI. Another one was the finance project in collaboration with Jyske Bank 
+    focused on value estimation of financial products where I did a basic data processing, such as sorting and segregation.
+    At the end of my formal education I defended my master's <StyledLink to="/visuomotor-robot-policies">thesis</StyledLink> supervised 
+    by Iñigo Iturrate and Ralph Brorsen with the highest grade.
+    The thesis was focused on teaching robots dexterous skills based on a raw visual input. It was written in collaboration with Universal Robots 
+    who provided me with computational assets and a pleasant working atmosphere.</p>
 
     <Chapter>Tech start-ups and humanoids</Chapter>
     <p>Seeking opportunities to get involved in humanoids I contacted the Polish-American start-up Clone. 
     They invited me to their facility and offered me a job, which I later rejected due to very invasive contract. 
-    
-    I moved to Warsaw and joined a newly-founded humanoid start-up SI Robotics where I stay until today.</p>
-    
-    <Chapter>Recommended books</Chapter>
-    <List>
-      <li><i>Elon Musk</i> – Walter Isaacson</li>
-      <li><i>Innovators</i> – Walter Isaacson</li>
-      <li><i>Factfullness</i> – Hans Rosling</li>
-      <li><i>The Accidental Billionaires</i> – Ben Mezrich</li>
-      <li><i>Permanent Record</i> – Edward Snowden</li>
-      <li><i>Outliers</i> – Malcolm Gladwell</li>
-      <li><i>The Selfish Gene</i> – Richard Dawkins</li>
-      <li><i>Sapiens: A Brief History of Humankind</i> – Yuval Noah Harari</li>
-      <li><i>The Righteous Mind</i> – Jonathan Haidt</li>
-      <li><i>Shoe Dog</i> – Phil Knight</li>
-    </List>
-    <Chapter>Favourite movies</Chapter>
-    <List>
-      <li><i>The Butterfly Effect, The Island, The Social Network, Forrest Gump, The Curious Case of Benjamin Button</i></li>
-    </List>
-    <Chapter>TV series</Chapter>
-    <List>
-      <li><i>13 Reasons Why, Black Mirror, Sillicon Valley, The Dropout</i></li>
-    </List>
+    Luckily, at the same time, a strawberry plantation owner contacted me with a proposal to join his start-up R-BOS 
+    that builds mobile berry-picking platforms. Since it was pretty aligned to what I had covered during my studies, 
+    I didn't hesitate much and joined the initiative as an engineer specialized in robot perception and kinematics. 
+    Later that year, I got intrigued by a newly-founded Polish humanoid start-up SI Robotics. 
+    Trying to find out more about them, I went to a job interview that made me hired the same day. 
+    My role at SI came down to implementing AI solutions, including teleoperation, teaching robots how to walk and manipulate objects.
+    This was also my first chance to take a part in developing a full-size humanoid.</p>
+
+    <Chapter>Recommendations</Chapter>
+    <Grid>
+      <Books>
+        <h6>Books</h6>
+        <List>
+          <li><i>The Accidental Billionaires</i> – Ben Mezrich</li>
+          <li><i>The Diary of a CEO</i> – Steven Bartlett</li>
+          <li><i>Elon Musk</i> – Walter Isaacson</li>
+          <li><i>Factfullness</i> – Hans Rosling</li>
+          <li><i>Innovators</i> – Walter Isaacson</li>
+          <li><i>Losing My Virginity</i> – Richard Branson</li>
+          <li><i>Outliers</i> – Malcolm Gladwell</li>
+          <li><i>Permanent Record</i> – Edward Snowden</li>
+          <li><i>The Righteous Mind</i> – Jonathan Haidt</li>
+          <li><i>Sapiens: A Brief History of Humankind</i> – Yuval Noah Harari</li>
+          <li><i>Steve Jobs</i> – Walter Isaacson</li>
+          <li><i>The Selfish Gene</i> – Richard Dawkins</li>
+          <li><i>Shoe Dog</i> – Phil Knight</li>
+          <li><i>Surely You're Joking, Mr. Feynman!</i> – Richard Feynman</li>
+        </List>
+      </Books>
+      <Movies>
+        <h6>Movies</h6>
+        <List>
+          <li><i>Amateur</i> (2018)</li>
+          <li><i>The Butterfly Effect</i></li>
+          <li><i>The Curious Case of Benjamin Button</i></li>
+          <li><i>The Elephant Man</i></li>
+          <li><i>Forrest Gump</i></li>
+          <li><i>The Great Gatsby</i> (2013)</li>
+          <li><i>The Island</i> (2005)</li>
+          <li><i>Lost Highway</i></li>
+          <li><i>The Social Network</i></li>
+        </List>
+        <h6>TV series</h6>
+        <List>
+          <li><i>13 Reasons Why</i></li>
+          <li><i>Black Mirror</i></li>
+          <li><i>The Dropout</i></li>
+          <li><i>Silicon Valley</i></li>
+        </List>
+      </Movies>
+    </Grid>
   </Wrapper>
 );
